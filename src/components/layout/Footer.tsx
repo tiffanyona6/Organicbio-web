@@ -1,7 +1,13 @@
-import Link from 'next/link';
+"use client";
+
+import { Link } from '@/i18n/routing';
 import Image from 'next/image';
+import { useTranslations } from 'next-intl';
 
 export function Footer() {
+    const t = useTranslations('Footer');
+    const headerT = useTranslations('Header');
+
     return (
         <div className="pt-8 mt-auto w-full">
             <footer className="bg-green-org text-white rounded-t-[40px] w-full">
@@ -21,31 +27,31 @@ export function Footer() {
                                 />
                             </Link>
                             <p className="text-[15px] leading-relaxed text-white max-w-xs">
-                                Exportando las mejores hortalizas ecológicas de Almería al mundo. Sostenible, ético y siempre fresco.
+                                {t('description')}
                             </p>
                         </div>
 
                         {/* Col 2: Main Links */}
                         <div className="flex flex-col items-start lg:justify-self-center gap-5">
-                            <h4 className="text-white font-bold text-lg">MENU</h4>
+                            <h4 className="text-white font-bold text-lg">{t('menu')}</h4>
                             <ul className="flex flex-col gap-3 text-[15px] font-normal text-white w-full">
-                                <li><Link href="/" className="hover:text-white transition-colors block">Inicio</Link></li>
-                                <li><Link href="/productos" className="hover:text-white transition-colors block">Productos</Link></li>
-                                <li><Link href="/compromiso" className="hover:text-white transition-colors block">Compromiso</Link></li>
-                                <li><Link href="/sobre-organic-bio" className="hover:text-white transition-colors block">Sobre Organic Bio</Link></li>
-                                <li><Link href="/contacto" className="hover:text-white transition-colors block">Contacto</Link></li>
+                                <li><Link href="/" className="hover:text-white transition-colors block">{headerT('home')}</Link></li>
+                                <li><Link href="/productos" className="hover:text-white transition-colors block">{headerT('products')}</Link></li>
+                                <li><Link href="/compromiso" className="hover:text-white transition-colors block">{headerT('commitment')}</Link></li>
+                                <li><Link href="/sobre-organic-bio" className="hover:text-white transition-colors block">{headerT('about')}</Link></li>
+                                <li><Link href="/contacto" className="hover:text-white transition-colors block">{headerT('contact')}</Link></li>
                             </ul>
                         </div>
 
                         {/* Col 3: Contact */}
                         <div className="flex flex-col items-start lg:justify-self-end gap-5">
-                            <h4 className="text-white font-bold text-lg uppercase">CONTACTO</h4>
+                            <h4 className="text-white font-bold text-lg uppercase">{t('contact')}</h4>
                             <ul className="flex flex-col gap-4 text-[15px] font-normal text-white w-full">
                                 <li className="flex items-start gap-3">
                                     <span className="text-white mt-1">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor" stroke="none"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z" /></svg>
                                     </span>
-                                    <span className="leading-relaxed">Calle Alcudia de Monteagud,<br />04009 Almería, España</span>
+                                    <span className="leading-relaxed">{t('address')}</span>
                                 </li>
                                 <li className="flex items-center gap-3">
                                     <span className="text-white">
@@ -65,11 +71,11 @@ export function Footer() {
 
                     {/* Bottom Legal Section */}
                     <div className="flex flex-col md:flex-row items-center md:items-start justify-between gap-6 pt-8 border-t border-white/10 text-[14px] text-white">
-                        <p className="text-center md:text-left">&copy; 2026 Organic-Bio Agriculture SL. Todos los derechos reservados.</p>
+                        <p className="text-center md:text-left">{t('rights')}</p>
                         <div className="flex flex-col md:flex-row items-center gap-4 md:gap-6">
-                            <Link href="/privacidad" className="hover:text-white transition-colors text-center md:text-left">Política de Privacidad</Link>
-                            <Link href="/terminos" className="hover:text-white transition-colors text-center md:text-left">Términos de Servicio</Link>
-                            <Link href="/cookies" className="hover:text-white transition-colors text-center md:text-left">Política de Cookies</Link>
+                            <Link href="/privacidad" className="hover:text-white transition-colors text-center md:text-left">{t('privacy')}</Link>
+                            <Link href="/terminos" className="hover:text-white transition-colors text-center md:text-left">{t('terms')}</Link>
+                            <Link href="/cookies" className="hover:text-white transition-colors text-center md:text-left">{t('cookies')}</Link>
                         </div>
                     </div>
                 </div>

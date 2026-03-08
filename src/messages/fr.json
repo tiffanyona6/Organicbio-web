@@ -1,0 +1,351 @@
+{
+    "Header": {
+        "home": "Accueil",
+        "products": "Produits",
+        "commitment": "Engagement",
+        "about": "À propos d'Organic Bio",
+        "contact": "Contact"
+    },
+    "Footer": {
+        "description": "Exportation des meilleurs légumes biologiques d'Almería à travers le monde. Durable, éthique et toujours frais.",
+        "menu": "MENU",
+        "contact": "CONTACT",
+        "address": "Calle Alcudia de Monteagud, 04009 Almería, Espagne",
+        "rights": "© 2026 Organic-Bio Agriculture SL. Tous droits réservés.",
+        "privacy": "Politique de confidentialité",
+        "terms": "Conditions d'utilisation",
+        "cookies": "Politique relative aux cookies"
+    },
+    "Home": {
+        "hero": {
+            "title": "Savourez la<br></br><span>Nature</span><br></br>la Plus Pure.",
+            "subtitle": "Nous exportons des légumes biologiques de première qualité directement de nos champs d'Almería à votre table.",
+            "cta": "Voir les produits",
+            "about": "Faites notre connaissance"
+        },
+        "introQuote": "\"Production écologique <green>certifiée</green>, traçabilité garantie et approvisionnement <green>international</green>.\"",
+        "proofs": {
+            "eco": {
+                "title": "Production écologique certifiée",
+                "desc": "Nous respectons strictement les réglementations EU Bio et les normes internationales de l'agriculture biologique pour garantir la pureté de chaque produit.",
+                "footer": "Label EU Bio"
+            },
+            "control": {
+                "title": "Contrôle direct de l'origine",
+                "desc": "Nous exploitons nos propres fermes qui garantissent une qualité, une fraîcheur maximales et une traçabilité totale de la graine à la destination finale.",
+                "footer": "Fermes Propres"
+            },
+            "export": {
+                "title": "Exportation internationale",
+                "desc": "Approvisionnement efficace et logistique optimisée vers les principaux marchés européens, garantissant fraîcheur et ponctualité commerciale.",
+                "footer": "Marché Européen"
+            }
+        },
+        "products": {
+            "title": "Nos Produits Biologiques",
+            "subtitle": "Nous produisons des légumes de qualité supérieure selon des normes biologiques strictes.",
+            "tomate": {
+                "name": "Tomate",
+                "desc": "Variétés biologiques au goût intense et à longue conservation."
+            },
+            "pimiento": {
+                "name": "Poivron",
+                "desc": "Poivrons biologiques cultivés avec les meilleures pratiques."
+            },
+            "calabacin": {
+                "name": "Courgette",
+                "desc": "Production continue de courgettes fraîches et tendres."
+            },
+            "cta": "Voir les détails"
+        },
+        "calendar": {
+            "title": "Calendrier de Campagne",
+            "placeholder": "[Graphique visuel du calendrier annuel par mois]"
+        },
+        "certifications": {
+            "title": "Nos Certifications"
+        },
+        "commitment": {
+            "title": "Un engagement réel pour une agriculture durable",
+            "desc": "Nous cultivons nos légumes selon des pratiques agricoles responsables qui protègent les sols, optimisent l'utilisation de l'eau et réduisent l'impact environnemental.",
+            "cta": "Notre engagement"
+        },
+        "location": {
+            "title": "Emplacement Stratégique",
+            "subtitle": "Almería, Espagne",
+            "caption": "Le Potager de l'Europe",
+            "desc": "Nos fermes sont situées au cœur d'Almería, connue comme 'Le Potager de l'Europe'. Le microclima unique nous permet de produire des légumes biologiques de haute qualité toute l'année.",
+            "features": {
+                "logistics": {
+                    "title": "Logistique Rapide",
+                    "desc": "Livraison en 48 heures vers les principaux marchés européens."
+                },
+                "quality": {
+                    "title": "Contrôle Qualité Premium",
+                    "desc": "Contrôles rigoureux de la récolte à l'emballage."
+                }
+            }
+        }
+    },
+    "Productos": {
+        "categories": {
+            "Todas": "Tous",
+            "Hortalizas": "Légumes",
+            "Frutas": "Fruits"
+        },
+        "search": "Rechercher un produit...",
+        "noResults": {
+            "title": "Aucun produit trouvé.",
+            "desc": "Essayez une autre recherche ou sélectionnez une autre catégorie."
+        },
+        "items": {
+            "tomate-rama": {
+                "name": "Tomate Grappe",
+                "desc": "Tomate grappe écologique, mûrie au soleil avec une saveur intense et authentique."
+            },
+            "tomate-cherry": {
+                "name": "Tomate Cerise",
+                "desc": "Petites, douces et croquantes. Parfaites pour les salades et les collations saines."
+            },
+            "calabacin": {
+                "name": "Courgette",
+                "desc": "Courgette verte cylindrique à texture tendre et à la peau brillante et sans défaut."
+            },
+            "pepino": {
+                "name": "Concombre",
+                "desc": "Concombre de type hollandais, de couleur vert foncé, d'une excellente fraîcheur."
+            },
+            "pimiento-california-rojo": {
+                "name": "Poivron California Rouge",
+                "desc": "Poivron biologique charnu et doux avec une couleur rouge vif et intense."
+            },
+            "pimiento-california-verde": {
+                "name": "Poivron California Vert",
+                "desc": "Poivron vert biologique très croquant, idéal pour la cuisson ou cru."
+            },
+            "pimiento-california-amarillo": {
+                "name": "Poivron California Jaune",
+                "desc": "Poivron biologique juteux et de saveur douce avec une couleur jaune vif."
+            }
+        },
+        "viewDetails": "Voir les détails",
+        "photo": "Photo"
+    },
+    "Contacto": {
+        "title": "Coordonnées",
+        "cards": {
+            "hq": {
+                "title": "Siège Social",
+                "address": "Calle Alcudia de Monteagud, 04009 Almería, Espagne"
+            },
+            "email": {
+                "title": "Email Direct",
+                "desc": "Support commercial B2B"
+            },
+            "phone": {
+                "title": "Téléphone",
+                "hours": "Lun - Ven : 08:00 - 18:00"
+            },
+            "whatsapp": {
+                "title": "WhatsApp",
+                "desc": "Support export rapide"
+            }
+        },
+        "features": {
+            "support": {
+                "title": "Support 24/7",
+                "desc": "Attention continue pour les incidents logistiques internationaux et le suivi des commandes."
+            },
+            "advice": {
+                "title": "Conseil Technique",
+                "desc": "Experts en qualité agricole pour garantir que le produit répond à vos normes exactas."
+            },
+            "logistics": {
+                "title": "Gestion Logistique",
+                "desc": "Optimisation des itinéraires et de la chaîne du froid pour les exportations dans toute l'Europe et au Royaume-Uni."
+            }
+        }
+    },
+    "SobreOrganicBio": {
+        "intro": {
+            "title": "À propos d'OrganicBio",
+            "desc": "Organic-Bio Agriculture SL est une entreprise dédiée corps et âme à la production et à la commercialisation de légumes biologiques. Nous opérons depuis Almería, le potager de l'Europe, apportant nos produits sains sur les marchés internationaux les plus exigeants."
+        },
+        "history": {
+            "title": "Notre Histoire et Mission",
+            "p1": "Nous sommes nés avec une vision claire : cultiver l'avenir. Nous avons grandi en croyant fermement que l'agriculture biologique est la seule voie durable pour fournir des aliments sains sans compromettre les ressources des générations futures.",
+            "p2": "Notre mission est de fournir aux entreprises et distributeurs de fruits et légumes de premier plan des produits biologiques réels, traçables et d'une fraîcheur maximale."
+        },
+        "stats": {
+            "production": "Production Propre",
+            "countries": "Pays Exportés"
+        },
+        "infrastructure": {
+            "title": "Infrastructure",
+            "desc": "Nous contrôlons l'ensemble du processus. De nos propres fermes à Almería, où la lumière du soleil opère sa magie tout au long de l'année, jusqu'à nos installations de manipulation.",
+            "list": {
+                "item1": "Fermes dotées d'une technologie d'irrigation intelligente.",
+                "item2": "Entrepôt climatisé pour maintenir la chaîne du froid.",
+                "item3": "Lignes d'emballage certifiées biologiques.",
+                "item4": "Alliances logistiques pour un transport international rapide."
+            }
+        },
+        "markets": {
+            "title": "Nos Marchés",
+            "desc": "Notre principal volume d'affaires est l'exportation B2B, envoyant la saveur et la santé de l'agriculture biologique espagnole à travers toute l'Europe.",
+            "countries": [
+                "Allemagne",
+                "Royaume-Uni",
+                "France",
+                "Pays-Bas",
+                "Suisse",
+                "Pays Nordiques"
+            ]
+        },
+        "imageLabel": "Image Installation / Champ"
+    },
+    "Compromiso": {
+        "hero": {
+            "title": "Agriculture Responsable et Transparente",
+            "desc": "Chez Organic Bio Agriculture SL, nous nous consacrons à une agriculture responsable et transparente, en respectant les cycles de la nature pour offrir des produits de la plus haute qualité internationale. Notre mission va au-delà de l'exportation ; c'est un engagement envers l'avenir de la planète."
+        },
+        "ecoProduction": {
+            "subtitle": "EXCELLENCE AGRICOLE",
+            "title": "Production Écologique",
+            "desc": "Nos méthodes préservent l'écosystème et garantissent des produits exempts de produits chimiques synthétiques, en conservant la pureté originale du fruit.",
+            "card1": {
+                "title": "Santé du Sol",
+                "desc": "Rotation des cultures et engrais organiques pour maintenir la vitalité de la terre et sa biodiversité microbiologique."
+            },
+            "card2": {
+                "title": "Zéro Pesticide",
+                "desc": "Lutte biologique contre les ravageurs par des ennemis naturels, éliminant complètement l'utilisation de substances synthétiques nocives."
+            },
+            "imageBadge": "100% Certifié selon les normes internationales de sécurité alimentaire."
+        },
+        "certifications": {
+            "eu": {
+                "title": "EU Organic",
+                "desc": "Garantit que nos produits respectent les normes européennes strictes en matière de production biologique et de durabilité environnementale."
+            },
+            "globalGap": {
+                "title": "Global G.A.P.",
+                "desc": "Certifie nos bonnes pratiques agricoles, assurant la traçabilité, la sécurité alimentaire et le bien-être de nos travailleurs."
+            }
+        },
+        "traceability": {
+            "title": "Traçabilité Totale",
+            "subtitle": "Du champ à sa destination, chaque étape est surveillée",
+            "steps": {
+                "step1": {
+                    "title": "Culture",
+                    "desc": "Contrôle rigoureux dès le semis biologique."
+                },
+                "step2": {
+                    "title": "Traitement",
+                    "desc": "Emballage soigné préservant la fraîcheur."
+                },
+                "step3": {
+                    "title": "Exportation",
+                    "desc": "Logistique mondiale avec contrôle thermique."
+                },
+                "step4": {
+                    "title": "Consommateur",
+                    "desc": "Qualité garantie sur votre table."
+                }
+            }
+        },
+        "quality": {
+            "title": "Qualité et Traçabilité",
+            "desc": "Nous disposons d'un système de contrôle qualité intégré, des semailles à l'expédition.",
+            "steps": {
+                "item1": {
+                    "title": "Contrôle à la Ferme",
+                    "desc": "Surveillance constante de la croissance, optimisation des ressources et utilisation stricte du contrôle biologique."
+                },
+                "item2": {
+                    "title": "Sélection et Emballage",
+                    "desc": "Processus automatisé et supervision manuelle pour garantir le calibre, la couleur et la fraîcheur optimale du produit."
+                },
+                "item3": {
+                    "title": "Traçabilité Totale",
+                    "desc": "Système informatisé qui permet de connaître l'origine exacte (ferme, lot, date) de chaque caisse envoyée."
+                }
+            },
+            "image": "Image du Processus Qualité",
+            "certs": "Certifications Accréditées"
+        },
+        "sustainability": {
+            "title": "Durabilité Réelle",
+            "desc": "L'agriculture biologique n'est pas seulement un label ; c'est une philosophie de travail qui cherche à minimiser l'empreinte environnementale.",
+            "features": {
+                "water": {
+                    "title": "Gestion Efficace de l'Eau",
+                    "desc": "Systèmes d'irrigation goutte à goutte de haute précision gérés par des capteurs d'humidité, optimisant chaque goutte dans l'environnement aride d'Almería."
+                },
+                "soil": {
+                    "title": "Conservation des Sols",
+                    "desc": "Rotation des cultures et engrais organiques pour maintenir la fertilité naturelle de la terre et éviter sa dégradation."
+                },
+                "biodiversity": {
+                    "title": "Biodiversité",
+                    "desc": "Utilisation exclusive de la faune auxiliaire (contrôle biologique) pour lutter contre les parasites, favorisant un équilibre écologique naturel dans les serres."
+                },
+                "energy": {
+                    "title": "Réduction Énergétique",
+                    "desc": "Utilisation de l'énergie solaire passive (le 'Miracle d'Almería') sans recours au chauffage fossile dans les serres."
+                },
+                "waste": {
+                    "title": "Gestion des Déchets",
+                    "desc": "Recyclage des restes végétaux pour le compostage et intégration d'emballages plus durables et biodégradables."
+                }
+            }
+        }
+    },
+    "ProductDetail": {
+        "breadcrumb": {
+            "home": "Accueil",
+            "products": "Produits"
+        },
+        "tag": "Bio Certifié",
+        "labels": {
+            "eco": "Certifié Écologique",
+            "origin": "Origine: Almería, Espagne",
+            "ref": "Réf:"
+        },
+        "description": "Cultivé selon des normes biologiques strictes dans nos fermes d'Almería. Spécialement sélectionné pour l'exportation B2B et les marchés internationaux exigeants en matière de santé et d'environnement.",
+        "calendar": {
+            "title": "Disponibilité Saisonnière",
+            "months": [
+                "Jan",
+                "Fév",
+                "Mar",
+                "Avr",
+                "Mai",
+                "Juin",
+                "Juil",
+                "Août",
+                "Sep",
+                "Oct",
+                "Nov",
+                "Déc"
+            ]
+        },
+        "cta": "Demander un Devis",
+        "tabs": {
+            "info": "Infos Produit",
+            "specs": "Spécifications Techniques",
+            "logistics": "Logistique & Emballage",
+            "crop": {
+                "title": "Informations sur la Culture",
+                "p1": "Notre produit est cultivé dans des serres solaires de la province d'Almería, en profitant au maximum de la lumière naturelle et en utilisant des techniques de contrôle biologique des ravageurs. Nous n'utilisons ni pesticides synthétiques ni engrais chimiques, garantissant un produit 100 % naturel, respectueux de la biodiversité et sûr pour le consommateur.",
+                "p2": "Chaque lot est rigoureusement inspecté pour s'assurer qu'il répond aux normes de qualité européennes et nord-américaines pour les aliments biologiques."
+            },
+            "certs": "Certifications du Produit"
+        },
+        "related": {
+            "title": "Produits Associés",
+            "cta": "Voir le produit"
+        }
+    }
+}

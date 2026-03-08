@@ -1,13 +1,23 @@
 "use client";
 
-import Link from 'next/link';
+import { Link, useRouter, usePathname } from '@/i18n/routing';
 import Image from 'next/image';
 import { useState } from 'react';
+import { useTranslations, useLocale } from 'next-intl';
 
 export function Header() {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
+    const t = useTranslations('Header');
+    const locale = useLocale();
+    const router = useRouter();
+    const pathname = usePathname();
 
     const closeMenu = () => setIsMenuOpen(false);
+
+    const handleLanguageChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
+        const newLocale = e.target.value;
+        router.replace(pathname, { locale: newLocale });
+    };
 
     return (
         <header className="sticky top-0 z-40 w-full bg-white shadow-sm">
@@ -24,18 +34,23 @@ export function Header() {
                 </Link>
 
                 <nav className="hidden md:flex items-center gap-8">
-                    <Link href="/" className="text-gray-org-dark hover:text-green-org transition-colors text-[15px] font-medium">Inicio</Link>
-                    <Link href="/productos" className="text-gray-org-dark hover:text-green-org transition-colors text-[15px] font-medium">Productos</Link>
-                    <Link href="/compromiso" className="text-gray-org-dark hover:text-green-org transition-colors text-[15px] font-medium">Compromiso</Link>
-                    <Link href="/sobre-organic-bio" className="text-gray-org-dark hover:text-green-org transition-colors text-[15px] font-medium">Sobre Organic Bio</Link>
-                    <Link href="/contacto" className="text-gray-org-dark hover:text-green-org transition-colors text-[15px] font-medium">Contacto</Link>
+                    <Link href="/" className="text-gray-org-dark hover:text-green-org transition-colors text-[15px] font-medium">{t('home')}</Link>
+                    <Link href="/productos" className="text-gray-org-dark hover:text-green-org transition-colors text-[15px] font-medium">{t('products')}</Link>
+                    <Link href="/compromiso" className="text-gray-org-dark hover:text-green-org transition-colors text-[15px] font-medium">{t('commitment')}</Link>
+                    <Link href="/sobre-organic-bio" className="text-gray-org-dark hover:text-green-org transition-colors text-[15px] font-medium">{t('about')}</Link>
+                    <Link href="/contacto" className="text-gray-org-dark hover:text-green-org transition-colors text-[15px] font-medium">{t('contact')}</Link>
                 </nav>
 
                 <div className="flex items-center gap-4">
-                    <select className="bg-transparent text-sm font-medium text-gray-org-dark outline-none cursor-pointer hover:text-green-org transition-colors">
+                    <select
+                        value={locale}
+                        onChange={handleLanguageChange}
+                        className="bg-transparent text-sm font-medium text-gray-org-dark outline-none cursor-pointer hover:text-green-org transition-colors"
+                    >
                         <option value="es">ES</option>
                         <option value="en">EN</option>
                         <option value="de">DE</option>
+                        <option value="fr">FR</option>
                     </select>
 
                     <button
@@ -56,11 +71,11 @@ export function Header() {
             {isMenuOpen && (
                 <div className="md:hidden border-t border-gray-100 bg-white">
                     <nav className="flex flex-col container-global py-4 space-y-4">
-                        <Link href="/" className="text-gray-org-dark hover:text-green-org transition-colors font-medium py-2" onClick={closeMenu}>Inicio</Link>
-                        <Link href="/productos" className="text-gray-org-dark hover:text-green-org transition-colors font-medium py-2" onClick={closeMenu}>Productos</Link>
-                        <Link href="/compromiso" className="text-gray-org-dark hover:text-green-org transition-colors font-medium py-2" onClick={closeMenu}>Compromiso</Link>
-                        <Link href="/sobre-organic-bio" className="text-gray-org-dark hover:text-green-org transition-colors font-medium py-2" onClick={closeMenu}>Sobre Organic Bio</Link>
-                        <Link href="/contacto" className="text-gray-org-dark hover:text-green-org transition-colors font-medium py-2" onClick={closeMenu}>Contacto</Link>
+                        <Link href="/" className="text-gray-org-dark hover:text-green-org transition-colors font-medium py-2" onClick={closeMenu}>{t('home')}</Link>
+                        <Link href="/productos" className="text-gray-org-dark hover:text-green-org transition-colors font-medium py-2" onClick={closeMenu}>{t('products')}</Link>
+                        <Link href="/compromiso" className="text-gray-org-dark hover:text-green-org transition-colors font-medium py-2" onClick={closeMenu}>{t('commitment')}</Link>
+                        <Link href="/sobre-organic-bio" className="text-gray-org-dark hover:text-green-org transition-colors font-medium py-2" onClick={closeMenu}>{t('about')}</Link>
+                        <Link href="/contacto" className="text-gray-org-dark hover:text-green-org transition-colors font-medium py-2" onClick={closeMenu}>{t('contact')}</Link>
                     </nav>
                 </div>
             )}

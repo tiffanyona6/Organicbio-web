@@ -143,25 +143,25 @@
     .hero-title {
         font-family: var(--font-playfair);
         font-weight: 700;
-        font-size: 40px;
+        font-size: 52px;
         line-height: 1.1;
     }
 
     @media (min-width: 480px) {
         .hero-title {
-            font-size: 48px;
+            font-size: 60px;
         }
     }
 
     @media (min-width: 768px) {
         .hero-title {
-            font-size: 64px;
+            font-size: 76px;
         }
     }
 
     @media (min-width: 1024px) {
         .hero-title {
-            font-size: 72px;
+            font-size: 90px;
             line-height: 1.05;
         }
     }

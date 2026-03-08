@@ -1,0 +1,351 @@
+{
+    "Header": {
+        "home": "Home",
+        "products": "Products",
+        "commitment": "Commitment",
+        "about": "About Organic Bio",
+        "contact": "Contact"
+    },
+    "Footer": {
+        "description": "Exporting the best organic vegetables from Almería to the world. Sustainable, ethical and always fresh.",
+        "menu": "MENU",
+        "contact": "CONTACT",
+        "address": "Calle Alcudia de Monteagud, 04009 Almería, Spain",
+        "rights": "© 2026 Organic-Bio Agriculture SL. All rights reserved.",
+        "privacy": "Privacy Policy",
+        "terms": "Terms of Service",
+        "cookies": "Cookie Policy"
+    },
+    "Home": {
+        "hero": {
+            "title": "Savor the<br></br><span>Purest</span><br></br>Nature.",
+            "subtitle": "We export premium organic vegetables directly from our fields in Almería to your table.",
+            "cta": "View products",
+            "about": "Get to know us"
+        },
+        "introQuote": "\"Certified organic <green>production</green>, guaranteed traceability, and <green>international</green> supply.\"",
+        "proofs": {
+            "eco": {
+                "title": "Certified organic production",
+                "desc": "Strictly complying with EU Bio regulations and international organic agriculture standards to ensure the purity of each product.",
+                "footer": "EU Bio Seal"
+            },
+            "control": {
+                "title": "Direct control of origin",
+                "desc": "We operate our own farms that ensure maximum quality, freshness, and total traceability from seed to final destination.",
+                "footer": "Own Farms"
+            },
+            "export": {
+                "title": "International export",
+                "desc": "Efficient supply and optimized logistics to major European markets, guaranteeing freshness and commercial punctuality.",
+                "footer": "European Market"
+            }
+        },
+        "products": {
+            "title": "Our Organic Products",
+            "subtitle": "We produce high-quality vegetables under strict organic standards.",
+            "tomate": {
+                "name": "Tomato",
+                "desc": "Organic varieties with intense flavor and high shelf life."
+            },
+            "pimiento": {
+                "name": "Pepper",
+                "desc": "Organic peppers grown with the best practices."
+            },
+            "calabacin": {
+                "name": "Zucchini",
+                "desc": "Continuous production of fresh and tender zucchini."
+            },
+            "cta": "View details"
+        },
+        "calendar": {
+            "title": "Campaign Calendar",
+            "placeholder": "[Annual calendar visual chart by months]"
+        },
+        "certifications": {
+            "title": "Our Certifications"
+        },
+        "commitment": {
+            "title": "Real commitment to sustainable agriculture",
+            "desc": "We grow our vegetables following responsible agricultural practices that protect the soil, optimize water use and reduce environmental impact.",
+            "cta": "Our commitment"
+        },
+        "location": {
+            "title": "Strategic Location",
+            "subtitle": "Almería, Spain",
+            "caption": "The Garden of Europe",
+            "desc": "Our farms are located in the heart of Almería, known as 'The Garden of Europe'. The unique microclimate allows us to produce high-quality organic vegetables year-round.",
+            "features": {
+                "logistics": {
+                    "title": "Fast Logistics",
+                    "desc": "Delivery within 48 hours to major European markets."
+                },
+                "quality": {
+                    "title": "Premium Quality Control",
+                    "desc": "Rigorous controls from harvest to packaging."
+                }
+            }
+        }
+    },
+    "Productos": {
+        "categories": {
+            "Todas": "All",
+            "Hortalizas": "Vegetables",
+            "Frutas": "Fruits"
+        },
+        "search": "Search product...",
+        "noResults": {
+            "title": "No products found.",
+            "desc": "Try another search or select another category."
+        },
+        "items": {
+            "tomate-rama": {
+                "name": "Vine Tomato",
+                "desc": "Organic vine tomato, sun-ripened with an intense and authentic flavor."
+            },
+            "tomate-cherry": {
+                "name": "Cherry Tomato",
+                "desc": "Small, sweet, and crunchy. Perfect for salads and healthy snacks."
+            },
+            "calabacin": {
+                "name": "Zucchini",
+                "desc": "Cylindrical green zucchini with a tender texture and shiny, blemish-free skin."
+            },
+            "pepino": {
+                "name": "Cucumber",
+                "desc": "Dutch type cucumber, dark green color, excellent freshness, and high hydration."
+            },
+            "pimiento-california-rojo": {
+                "name": "Red California Pepper",
+                "desc": "Meaty and sweet organic pepper with a bright and intense red color."
+            },
+            "pimiento-california-verde": {
+                "name": "Green California Pepper",
+                "desc": "Very crunchy organic green pepper, ideal for cooking or eating raw."
+            },
+            "pimiento-california-amarillo": {
+                "name": "Yellow California Pepper",
+                "desc": "Juicy and mild-flavored organic pepper with a vibrant yellow color."
+            }
+        },
+        "viewDetails": "View details",
+        "photo": "Photo"
+    },
+    "Contacto": {
+        "title": "Contact Details",
+        "cards": {
+            "hq": {
+                "title": "Headquarters",
+                "address": "Calle Alcudia de Monteagud, 04009 Almería, Spain"
+            },
+            "email": {
+                "title": "Direct Email",
+                "desc": "B2B commercial support"
+            },
+            "phone": {
+                "title": "Phone",
+                "hours": "Mon - Fri: 08:00 - 18:00"
+            },
+            "whatsapp": {
+                "title": "WhatsApp",
+                "desc": "Fast export support"
+            }
+        },
+        "features": {
+            "support": {
+                "title": "24/7 Support",
+                "desc": "Continuous attention for international logistical incidents and order tracking."
+            },
+            "advice": {
+                "title": "Technical Advice",
+                "desc": "Agricultural quality experts to ensure the product meets your exact standards."
+            },
+            "logistics": {
+                "title": "Logistics Management",
+                "desc": "Optimization of routes and cold chain for exports across Europe and the UK."
+            }
+        }
+    },
+    "SobreOrganicBio": {
+        "intro": {
+            "title": "About OrganicBio",
+            "desc": "Organic-Bio Agriculture SL is a company dedicated heart and soul to the production and marketing of organic vegetables. We operate from Almería, the garden of Europe, taking our healthy products to the most demanding international markets."
+        },
+        "history": {
+            "title": "Our History and Mission",
+            "p1": "We were born with a clear vision: to cultivate the future. We have grown firmly believing that organic agriculture is the only sustainable way to provide healthy food without compromising the resources of next generations.",
+            "p2": "Our mission is to supply top-tier fruit and vegetable companies and distributors with real, traceable organic products of maximum freshness."
+        },
+        "stats": {
+            "production": "Own Production",
+            "countries": "Exported Countries"
+        },
+        "infrastructure": {
+            "title": "Infrastructure",
+            "desc": "We control the complete process. From our own farms in Almería, where the sunlight works magic throughout the year, to our handling facilities.",
+            "list": {
+                "item1": "Farms with smart irrigation technology.",
+                "item2": "Climate-controlled warehouse to maintain the cold chain.",
+                "item3": "Organic certified packaging lines.",
+                "item4": "Logistics alliances for fast international transport."
+            }
+        },
+        "markets": {
+            "title": "Our Markets",
+            "desc": "Our main business volume is B2B export, sending the flavor and health of Spanish organic agriculture across Europe.",
+            "countries": [
+                "Germany",
+                "United Kingdom",
+                "France",
+                "Netherlands",
+                "Switzerland",
+                "Nordic Countries"
+            ]
+        },
+        "imageLabel": "Facility / Field Image"
+    },
+    "Compromiso": {
+        "hero": {
+            "title": "Responsible and Transparent Agriculture",
+            "desc": "At Organic Bio Agriculture SL, we are dedicated to responsible and transparent agriculture, respecting nature's cycles to offer products of the highest international quality. Our mission goes beyond export; it is a commitment to the future of the planet."
+        },
+        "ecoProduction": {
+            "subtitle": "AGRICULTURAL EXCELLENCE",
+            "title": "Organic Production",
+            "desc": "Our methods preserve the ecosystem and guarantee products free of synthetic chemicals, maintaining the original purity of the fruit.",
+            "card1": {
+                "title": "Soil Health",
+                "desc": "Crop rotation and organic fertilizers to maintain the vitality of the land and its microbiological biodiversity."
+            },
+            "card2": {
+                "title": "Zero Pesticides",
+                "desc": "Biological pest control using natural enemies, completely eliminating the use of harmful synthetic substances."
+            },
+            "imageBadge": "100% Certified under international food safety regulations."
+        },
+        "certifications": {
+            "eu": {
+                "title": "EU Organic",
+                "desc": "Guarantees that our products comply with strict European standards for organic production and environmental sustainability."
+            },
+            "globalGap": {
+                "title": "Global G.A.P.",
+                "desc": "Certifies our good agricultural practices, ensuring traceability, food safety, and the welfare of our workers."
+            }
+        },
+        "traceability": {
+            "title": "Total Traceability",
+            "subtitle": "From the field to its destination, every step is monitored",
+            "steps": {
+                "step1": {
+                    "title": "Cultivation",
+                    "desc": "Rigorous control from organic sowing."
+                },
+                "step2": {
+                    "title": "Processing",
+                    "desc": "Careful packaging preserving freshness."
+                },
+                "step3": {
+                    "title": "Export",
+                    "desc": "Global logistics with thermal control."
+                },
+                "step4": {
+                    "title": "Consumer",
+                    "desc": "Guaranteed quality on your table."
+                }
+            }
+        },
+        "quality": {
+            "title": "Quality and Traceability",
+            "desc": "We have an integrated quality control system from sowing to shipping.",
+            "steps": {
+                "item1": {
+                    "title": "Farm Control",
+                    "desc": "Constant monitoring of growth, resource optimization and strict use of biological control."
+                },
+                "item2": {
+                    "title": "Selection and Packaging",
+                    "desc": "Automated process and manual supervision to ensure product caliber, color and optimal freshness."
+                },
+                "item3": {
+                    "title": "Total Traceability",
+                    "desc": "Computerized system that allows knowing the exact origin (farm, lot, date) of each box sent."
+                }
+            },
+            "image": "Quality Process Image",
+            "certs": "Accredited Certifications"
+        },
+        "sustainability": {
+            "title": "Real Sustainability",
+            "desc": "Organic farming is not just a label; it is a work philosophy that seeks to minimize the environmental footprint.",
+            "features": {
+                "water": {
+                    "title": "Efficient Water Management",
+                    "desc": "High-precision drip irrigation systems managed by humidity sensors, optimizing every drop in the arid environment of Almería."
+                },
+                "soil": {
+                    "title": "Soil Conservation",
+                    "desc": "Crop rotation and organic fertilizer to maintain the natural fertility of the land and avoid degradation."
+                },
+                "biodiversity": {
+                    "title": "Biodiversity",
+                    "desc": "Exclusive use of auxiliary fauna (biological control) to combat pests, fostering a natural ecological balance in the greenhouses."
+                },
+                "energy": {
+                    "title": "Energy Reduction",
+                    "desc": "Use of passive solar energy (the 'Miracle of Almería') without the use of fossil heating in the greenhouses."
+                },
+                "waste": {
+                    "title": "Waste Management",
+                    "desc": "Recycling of plant remains for composting and integration of more sustainable and biodegradable packaging."
+                }
+            }
+        }
+    },
+    "ProductDetail": {
+        "breadcrumb": {
+            "home": "Home",
+            "products": "Products"
+        },
+        "tag": "Bio Certified",
+        "labels": {
+            "eco": "Organic Certified",
+            "origin": "Origin: Almería, Spain",
+            "ref": "Ref:"
+        },
+        "description": "Grown under strict organic standards in our Almería farms. Specially selected for B2B export and international markets demanding health and environment.",
+        "calendar": {
+            "title": "Seasonal Availability",
+            "months": [
+                "Jan",
+                "Feb",
+                "Mar",
+                "Apr",
+                "May",
+                "Jun",
+                "Jul",
+                "Aug",
+                "Sep",
+                "Oct",
+                "Nov",
+                "Dec"
+            ]
+        },
+        "cta": "Request Quote",
+        "tabs": {
+            "info": "Product Info",
+            "specs": "Technical Specs",
+            "logistics": "Logistics & Packaging",
+            "crop": {
+                "title": "Crop Information",
+                "p1": "Our product is grown in solar greenhouses in the province of Almería, making the most of natural light and using biological pest control techniques. We do not use synthetic pesticides or chemical fertilizers, ensuring a 100% natural product, respectful of biodiversity and safe for the consumer.",
+                "p2": "Each lot is rigorously inspected to ensure it meets European and North American quality standards for organic food."
+            },
+            "certs": "Product Certifications"
+        },
+        "related": {
+            "title": "Related Products",
+            "cta": "View product"
+        }
+    }
+}

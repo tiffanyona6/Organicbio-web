@@ -1,0 +1,351 @@
+{
+    "Header": {
+        "home": "Inicio",
+        "products": "Productos",
+        "commitment": "Compromiso",
+        "about": "Sobre Organic Bio",
+        "contact": "Contacto"
+    },
+    "Footer": {
+        "description": "Exportando las mejores hortalizas ecológicas de Almería al mundo. Sostenible, ético y siempre fresco.",
+        "menu": "MENÚ",
+        "contact": "CONTACTO",
+        "address": "Calle Alcudia de Monteagud, 04009 Almería, España",
+        "rights": "© 2026 Organic-Bio Agriculture SL. Todos los derechos reservados.",
+        "privacy": "Política de Privacidad",
+        "terms": "Términos de Servicio",
+        "cookies": "Política de Cookies"
+    },
+    "Home": {
+        "hero": {
+            "title": "Saborea la<br></br><span>Naturaleza</span><br></br>Más Pura.",
+            "subtitle": "Exportamos hortalizas ecológicas premium directamente de nuestros campos en Almería hasta tu mesa.",
+            "cta": "Ver productos",
+            "about": "Conócenos"
+        },
+        "introQuote": "\"Producción ecológica <green>certificada</green>, trazabilidad garantizada y suministro <green>internacional</green>.\"",
+        "proofs": {
+            "eco": {
+                "title": "Producción ecológica certificada",
+                "desc": "Cumplimos estrictamente con la normativa EU Bio y estándares internacionales de agricultura orgánica para asegurar la pureza de cada producto.",
+                "footer": "Sello EU Bio"
+            },
+            "control": {
+                "title": "Control directo del origen",
+                "desc": "Operamos en fincas propias que aseguran la máxima calidad, frescura y una trazabilidad total desde la semilla hasta el destino final.",
+                "footer": "Fincas Propias"
+            },
+            "export": {
+                "title": "Exportación internacional",
+                "desc": "Suministro eficiente y logística optimizada hacia los principales mercados europeos, garantizando frescura y puntualidad comercial.",
+                "footer": "Mercado Europeo"
+            }
+        },
+        "products": {
+            "title": "Nuestros Productos Ecológicos",
+            "subtitle": "Producimos hortalizas de máxima calidad bajo estrictos estándares orgánicos.",
+            "tomate": {
+                "name": "Tomate",
+                "desc": "Variedades ecológicas de sabor intenso y alta conservación."
+            },
+            "pimiento": {
+                "name": "Pimiento",
+                "desc": "Pimientos orgánicos cultivados con las mejores prácticas."
+            },
+            "calabacin": {
+                "name": "Calabacín",
+                "desc": "Producción continua de calabacines frescos y tiernos."
+            },
+            "cta": "Ver detalle"
+        },
+        "calendar": {
+            "title": "Calendario de Campaña",
+            "placeholder": "[Gráfico visual del calendario anual por meses]"
+        },
+        "certifications": {
+            "title": "Nuestras Certificaciones"
+        },
+        "commitment": {
+            "title": "Compromiso real con la agricultura sostenible",
+            "desc": "Cultivamos nuestras hortalizas siguiendo prácticas agrícolas responsables que protegen el suelo, optimizan el uso del agua y reducen el impacto ambiental.",
+            "cta": "Nuestro compromiso"
+        },
+        "location": {
+            "title": "Ubicación Estratégica",
+            "subtitle": "Almería, España",
+            "caption": "La Huerta de Europa",
+            "desc": "Nuestras fincas se encuentran en el corazón de Almería, conocida como 'La Huerta de Europa'. El microclima único nos permite producir hortalizas ecológicas de alta calidad durante todo el año.",
+            "features": {
+                "logistics": {
+                    "title": "Logística Rápida",
+                    "desc": "Entrega en 48 horas a los principales mercados europeos."
+                },
+                "quality": {
+                    "title": "Control de Calidad Premium",
+                    "desc": "Rigurosos controles desde la cosecha hasta el envasado."
+                }
+            }
+        }
+    },
+    "Productos": {
+        "categories": {
+            "Todas": "Todas",
+            "Hortalizas": "Hortalizas",
+            "Frutas": "Frutas"
+        },
+        "search": "Buscar producto...",
+        "noResults": {
+            "title": "No se encontraron productos.",
+            "desc": "Prueba con otra búsqueda o selecciona otra categoría."
+        },
+        "items": {
+            "tomate-rama": {
+                "name": "Tomate Rama",
+                "desc": "Tomate ecológico en rama, madurado al sol con un sabor intenso y auténtico."
+            },
+            "tomate-cherry": {
+                "name": "Tomate Cherry",
+                "desc": "Pequeños, dulces y crujientes. Perfectos para ensaladas y snacks saludables."
+            },
+            "calabacin": {
+                "name": "Calabacín",
+                "desc": "Calabacín verde cilíndrico, de textura tierna y piel brillante libre de imperfecciones."
+            },
+            "pepino": {
+                "name": "Pepino",
+                "desc": "Pepino tipo holandés, de color verde oscuro, excelente frescura y alta hidratación."
+            },
+            "pimiento-california-rojo": {
+                "name": "Pimiento California Rojo",
+                "desc": "Pimiento orgánico carnoso y dulce, con un color rojo brillante e intenso."
+            },
+            "pimiento-california-verde": {
+                "name": "Pimiento California Verde",
+                "desc": "Pimiento verde orgánico muy crujiente, ideal para cocinar o consumir en crudo."
+            },
+            "pimiento-california-amarillo": {
+                "name": "Pimiento California Amarillo",
+                "desc": "Pimiento orgánico jugoso y de sabor suave, con un vibrante color amarillo."
+            }
+        },
+        "viewDetails": "Ver ficha",
+        "photo": "Foto"
+    },
+    "Contacto": {
+        "title": "Datos de Contacto",
+        "cards": {
+            "hq": {
+                "title": "Sede Central",
+                "address": "Calle Alcudia de Monteagud, 04009 Almería, España"
+            },
+            "email": {
+                "title": "Email Directo",
+                "desc": "Atención comercial B2B"
+            },
+            "phone": {
+                "title": "Teléfono",
+                "hours": "Lun - Vie: 08:00 - 18:00"
+            },
+            "whatsapp": {
+                "title": "WhatsApp",
+                "desc": "Soporte rápido exportación"
+            }
+        },
+        "features": {
+            "support": {
+                "title": "Soporte 24/7",
+                "desc": "Atención continua para incidencias logísticas internacionales y seguimiento de pedidos."
+            },
+            "advice": {
+                "title": "Asesoría Técnica",
+                "desc": "Expertos en calidad agrícola para asegurar que el producto cumple sus estándares exactos."
+            },
+            "logistics": {
+                "title": "Gestión Logística",
+                "desc": "Optimización de rutas y cadena de frío para exportaciones a toda Europa y Reino Unido."
+            }
+        }
+    },
+    "SobreOrganicBio": {
+        "intro": {
+            "title": "Sobre OrganicBio",
+            "desc": "Organic-Bio Agriculture SL es una empresa dedicada en cuerpo y alma a la producción y comercialización de hortalizas ecológicas. Operamos desde Almería, la huerta de Europa, llevando nuestros productos saludables a los mercados internacionales más exigentes."
+        },
+        "history": {
+            "title": "Nuestra Historia y Misión",
+            "p1": "Nacimos con una visión clara: cultivar el futuro. Hemos crecido creyendo firmemente que la agricultura orgánica es el único camino sostenible para proporcionar alimentos saludables sin comprometer los recursos de las próximas generaciones.",
+            "p2": "Nuestra misión es suministrar a empresas y distribuidores hortofrutícolas de primer nivel productos ecológicos reales, trazables, y de la máxima frescura."
+        },
+        "stats": {
+            "production": "Producción Propia",
+            "countries": "Países Exportados"
+        },
+        "infrastructure": {
+            "title": "Infraestructura",
+            "desc": "Controlamos el proceso completo. Desde nuestras fincas propias en Almería, donde la luz del sol hace magia durante todo el año, hasta nuestras instalaciones de manipulado.",
+            "list": {
+                "item1": "Fincas con tecnología de riego inteligente.",
+                "item2": "Almacén climatizado para romper la cadena de calor.",
+                "item3": "Líneas de confección certificadas para orgánico.",
+                "item4": "Alianzas logísticas de transporte rápido internacional."
+            }
+        },
+        "markets": {
+            "title": "Nuestros Mercados",
+            "desc": "Nuestro principal volumen de negocio es la exportación B2B, enviando el sabor y la salud de la agricultura ecológica española a toda Europa.",
+            "countries": [
+                "Alemania",
+                "Reino Unido",
+                "Francia",
+                "Holanda",
+                "Suiza",
+                "Países Nórdicos"
+            ]
+        },
+        "imageLabel": "Imagen Instalaciones / Campo"
+    },
+    "Compromiso": {
+        "hero": {
+            "title": "Agricultura Responsable y Transparente",
+            "desc": "En Organic Bio Agriculture SL, nos dedicamos a una agricultura responsable y transparente, respetando los ciclos de la naturaleza para ofrecer productos de la más alta calidad internacional. Nuestra misión trasciende la exportación; es un compromiso con el futuro del planeta."
+        },
+        "ecoProduction": {
+            "subtitle": "EXCELENCIA AGRÍCOLA",
+            "title": "Producción Ecológica",
+            "desc": "Nuestros métodos preservan el ecosistema y garantizan productos libres de químicos sintéticos, manteniendo la pureza original del fruto.",
+            "card1": {
+                "title": "Salud del Suelo",
+                "desc": "Rotación de cultivos y abonos orgánicos para mantener la vitalidad de la tierra y su biodiversidad microbiológica."
+            },
+            "card2": {
+                "title": "Cero Pesticidas",
+                "desc": "Control biológico de plagas mediante enemigos naturales, eliminando por completo el uso de sustancias sintéticas nocivas."
+            },
+            "imageBadge": "100% Certificado bajo normativas internacionales de seguridad alimentaria."
+        },
+        "certifications": {
+            "eu": {
+                "title": "EU Organic",
+                "desc": "Garantiza que nuestros productos cumplen con los estrictos estándares europeos de producción ecológica y sostenibilidad ambiental."
+            },
+            "globalGap": {
+                "title": "Global G.A.P.",
+                "desc": "Certifica nuestras buenas prácticas agrícolas, asegurando la trazabilidad, seguridad alimentaria y el bienestar de nuestros trabajadores."
+            }
+        },
+        "traceability": {
+            "title": "Trazabilidad Total",
+            "subtitle": "Del campo a su destino, cada paso está monitorizado",
+            "steps": {
+                "step1": {
+                    "title": "Cultivo",
+                    "desc": "Control riguroso desde la siembra orgánica."
+                },
+                "step2": {
+                    "title": "Procesado",
+                    "desc": "Empaque cuidadoso preservando la frescura."
+                },
+                "step3": {
+                    "title": "Exportación",
+                    "desc": "Logística global con control térmico."
+                },
+                "step4": {
+                    "title": "Consumidor",
+                    "desc": "Calidad garantizada en su mesa."
+                }
+            }
+        },
+        "quality": {
+            "title": "Calidad y Trazabilidad",
+            "desc": "Contamos con un sistema integrado de control de calidad desde la siembra hasta la expedición.",
+            "steps": {
+                "item1": {
+                    "title": "Control en Finca",
+                    "desc": "Monitoreo constante del crecimiento, optimización de recursos y uso estricto de control biológico."
+                },
+                "item2": {
+                    "title": "Selección y Envasado",
+                    "desc": "Proceso automatizado y supervisión manual para asegurar el calibre, color y frescura óptima del producto."
+                },
+                "item3": {
+                    "title": "Trazabilidad Total",
+                    "desc": "Sistema informatizado que permite conocer el origen exacto (finca, lote, fecha) de cada caja enviada."
+                }
+            },
+            "image": "Imagen Proceso Calidad",
+            "certs": "Certificaciones Acreditadas"
+        },
+        "sustainability": {
+            "title": "Sostenibilidad Real",
+            "desc": "El cultivo orgánico no es solo una etiqueta; es una filosofía de trabajo que busca minimizar la huella medioambiental.",
+            "features": {
+                "water": {
+                    "title": "Gestión Eficiente del Agua",
+                    "desc": "Sistemas de riego por goteo de alta precisión gestionados por sensores de humedad, optimizando cada gota en el entorno árido de Almería."
+                },
+                "soil": {
+                    "title": "Conservación del Suelo",
+                    "desc": "Rotación de cultivos y abono orgánico para mantener la fertilidad natural de la tierra y evitar la degradación."
+                },
+                "biodiversity": {
+                    "title": "Biodiversidad",
+                    "desc": "Uso exclusivo de fauna auxiliar (control biológico) para combatir plagas, fomentando un equilibrio ecológico natural en los invernaderos."
+                },
+                "energy": {
+                    "title": "Reducción Enérgetica",
+                    "desc": "Aprovechamiento de la energía solar pasiva (el 'Milagro de Almería') sin uso de calefacción fósil en los invernaderos."
+                },
+                "waste": {
+                    "title": "Gestión de Residuos",
+                    "desc": "Reciclaje de restos vegetales para compostaje e integración de envases más sostenibles y biodegradables."
+                }
+            }
+        }
+    },
+    "ProductDetail": {
+        "breadcrumb": {
+            "home": "Inicio",
+            "products": "Productos"
+        },
+        "tag": "Bio Certificado",
+        "labels": {
+            "eco": "Certificado Ecológico",
+            "origin": "Origen: Almería, España",
+            "ref": "Ref:"
+        },
+        "description": "Cultivado bajo estrictos estándares ecológicos en nuestras fincas de Almería. Especialmente seleccionado para exportación B2B y mercados internacionales exigentes con la salud y el medio ambiente.",
+        "calendar": {
+            "title": "Disponibilidad Estacional",
+            "months": [
+                "Ene",
+                "Feb",
+                "Mar",
+                "Abr",
+                "May",
+                "Jun",
+                "Jul",
+                "Ago",
+                "Sep",
+                "Oct",
+                "Nov",
+                "Dic"
+            ]
+        },
+        "cta": "Solicitar Presupuesto",
+        "tabs": {
+            "info": "Información del Producto",
+            "specs": "Especificaciones Técnicas",
+            "logistics": "Logística y Envasado",
+            "crop": {
+                "title": "Información del Cultivo",
+                "p1": "Nuestro producto se cultiva en invernaderos solares en la provincia de Almería, aprovechando al máximo la luz natural y utilizando técnicas de control biológico de plagas. No utilizamos pesticidas sintéticos ni fertilizantes químicos, asegurando un producto 100% natural, respetuoso con la biodiversidad y seguro para el consumidor.",
+                "p2": "Cada lote se inspecciona rigurosamente para asegurar que cumpla con los estándares europeos y norteamericanos de calidad para alimentos orgánicos."
+            },
+            "certs": "Certificaciones del Producto"
+        },
+        "related": {
+            "title": "Productos Relacionados",
+            "cta": "Ver producto"
+        }
+    }
+}
