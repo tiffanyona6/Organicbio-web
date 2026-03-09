@@ -1,0 +1,6 @@
+.next/types/validator.ts(42,39): error TS2307: Cannot find module '../../src/app/compromiso/page.js' or its corresponding type declarations.
+.next/types/validator.ts(51,39): error TS2307: Cannot find module '../../src/app/contacto/page.js' or its corresponding type declarations.
+.next/types/validator.ts(60,39): error TS2307: Cannot find module '../../src/app/page.js' or its corresponding type declarations.
+.next/types/validator.ts(69,39): error TS2307: Cannot find module '../../src/app/productos/[id]/page.js' or its corresponding type declarations.
+.next/types/validator.ts(78,39): error TS2307: Cannot find module '../../src/app/productos/page.js' or its corresponding type declarations.
+.next/types/validator.ts(87,39): error TS2307: Cannot find module '../../src/app/sobre-organic-bio/page.js' or its corresponding type declarations.

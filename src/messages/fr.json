@@ -27,17 +27,17 @@
         "proofs": {
             "eco": {
                 "title": "Production écologique certifiée",
-                "desc": "Nous respectons strictement les réglementations EU Bio et les normes internationales de l'agriculture biologique pour garantir la pureté de chaque produit.",
+                "desc": "Certification écologique européenne et normes internationales garantissant la pureté et la qualité du produit.",
                 "footer": "Label EU Bio"
             },
             "control": {
                 "title": "Contrôle direct de l'origine",
-                "desc": "Nous exploitons nos propres fermes qui garantissent une qualité, une fraîcheur maximales et une traçabilité totale de la graine à la destination finale.",
+                "desc": "Nos propres exploitations garantissant fraîcheur, qualité et traçabilité complète dès le semis.",
                 "footer": "Fermes Propres"
             },
             "export": {
                 "title": "Exportation internationale",
-                "desc": "Approvisionnement efficace et logistique optimisée vers les principaux marchés européens, garantissant fraîcheur et ponctualité commerciale.",
+                "desc": "Logistique efficace vers les principaux marchés européens avec une fraîcheur maximale.",
                 "footer": "Marché Européen"
             }
         },
@@ -206,8 +206,8 @@
     },
     "Compromiso": {
         "hero": {
-            "title": "Agriculture Responsable et Transparente",
-            "desc": "Chez Organic Bio Agriculture SL, nous nous consacrons à une agriculture responsable et transparente, en respectant les cycles de la nature pour offrir des produits de la plus haute qualité internationale. Notre mission va au-delà de l'exportation ; c'est un engagement envers l'avenir de la planète."
+            "title": "Nous cultivons avec responsabilité et transparence,",
+            "desc": "en respectant les cycles naturels pour offrir des produits de haute qualité et un modèle agricole durable."
         },
         "ecoProduction": {
             "subtitle": "EXCELLENCE AGRICOLE",

@@ -1,19 +1,34 @@
+import Image from "next/image";
 import { Link } from "@/i18n/routing";
 import { Button } from "@/components/ui/Button";
 import { getTranslations } from "next-intl/server";
 
 export default async function ProductDetail({ params }: { params: Promise<{ id: string, locale: string }> }) {
     const resolvedParams = await params;
+    const { id } = resolvedParams;
 
     // next-intl in async Server Components must use getTranslations
     const t = await getTranslations('ProductDetail');
     const tProd = await getTranslations('Productos');
 
+    // Image mapping
+    const productImages: Record<string, string> = {
+        "tomate-rama": "/tomate-rama-organicbio.webp",
+        "tomate-cherry": "/tomate-organicbio.webp",
+        "calabacin": "/calabacin-organicbio.webp",
+        "pepino": "/tomate-organicbio.webp",
+        "pimiento-california-rojo": "/pimiento-california-rojo-organicbio.webp",
+        "pimiento-california-verde": "/pimientos-organicbio.webp",
+        "pimiento-california-amarillo": "/pimiento-california-amarillo-organicbio.webp",
+    };
+
+    const productImage = productImages[id] || "/tomate-organicbio.webp";
+
     // Use actual translated name if exists, fallback to ID formatted
-    const translationKey = `items.${resolvedParams.id}.name`;
+    const translationKey = `items.${id}.name`;
     const productName = tProd.has(translationKey)
         ? tProd(translationKey)
-        : resolvedParams.id.split('-').map((word: string) => word.charAt(0).toUpperCase() + word.slice(1)).join(' ');
+        : id.split('-').map((word: string) => word.charAt(0).toUpperCase() + word.slice(1)).join(' ');
 
     return (
         <div className="py-8 pb-20">
@@ -34,9 +49,13 @@ export default async function ProductDetail({ params }: { params: Promise<{ id: 
                         <div className="absolute top-6 left-6 z-10 rounded-full bg-green-org px-4 py-1.5 text-sm font-bold text-white shadow-sm">
                             {t('tag')}
                         </div>
-                        <div className="absolute inset-0 flex items-center justify-center text-gray-400 text-lg">
-                            Image {productName}
-                        </div>
+                        <Image
+                            src={productImage}
+                            alt={productName}
+                            fill
+                            className="object-cover"
+                            priority
+                        />
                     </div>
 
                     {/* Right: Info block */}

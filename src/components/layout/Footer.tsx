@@ -9,7 +9,7 @@ export function Footer() {
     const headerT = useTranslations('Header');
 
     return (
-        <div className="pt-8 mt-auto w-full">
+        <div className="mt-auto w-full">
             <footer className="bg-green-org text-white rounded-t-[40px] w-full">
                 <div className="container-global py-12 lg:py-16">
                     {/* Main Footer Content */}

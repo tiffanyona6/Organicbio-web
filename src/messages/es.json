@@ -27,17 +27,17 @@
         "proofs": {
             "eco": {
                 "title": "Producción ecológica certificada",
-                "desc": "Cumplimos estrictamente con la normativa EU Bio y estándares internacionales de agricultura orgánica para asegurar la pureza de cada producto.",
+                "desc": "Certificación ecológica europea y estándares internacionales que garantizan la pureza y calidad del producto.",
                 "footer": "Sello EU Bio"
             },
             "control": {
                 "title": "Control directo del origen",
-                "desc": "Operamos en fincas propias que aseguran la máxima calidad, frescura y una trazabilidad total desde la semilla hasta el destino final.",
+                "desc": "Fincas propias que aseguran frescura, calidad y trazabilidad completa desde la siembra.",
                 "footer": "Fincas Propias"
             },
             "export": {
                 "title": "Exportación internacional",
-                "desc": "Suministro eficiente y logística optimizada hacia los principales mercados europeos, garantizando frescura y puntualidad comercial.",
+                "desc": "Logística eficiente hacia los principales mercados europeos con máxima frescura.",
                 "footer": "Mercado Europeo"
             }
         },
@@ -100,7 +100,7 @@
         },
         "items": {
             "tomate-rama": {
-                "name": "Tomate Rama",
+                "name": "Tomate en Rama",
                 "desc": "Tomate ecológico en rama, madurado al sol con un sabor intenso y auténtico."
             },
             "tomate-cherry": {
@@ -206,8 +206,8 @@
     },
     "Compromiso": {
         "hero": {
-            "title": "Agricultura Responsable y Transparente",
-            "desc": "En Organic Bio Agriculture SL, nos dedicamos a una agricultura responsable y transparente, respetando los ciclos de la naturaleza para ofrecer productos de la más alta calidad internacional. Nuestra misión trasciende la exportación; es un compromiso con el futuro del planeta."
+            "title": "Cultivamos con responsabilidad y transparencia,",
+            "desc": "respetando los ciclos naturales para ofrecer productos de alta calidad y un modelo agrícola sostenible."
         },
         "ecoProduction": {
             "subtitle": "EXCELENCIA AGRÍCOLA",

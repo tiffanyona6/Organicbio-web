@@ -27,17 +27,17 @@
         "proofs": {
             "eco": {
                 "title": "Zertifizierte ökologische Produktion",
-                "desc": "Wir erfüllen strikt die EU-Bio-Richtlinien und internationale Standards für den ökologischen Landbau, um die Reinheit jedes Produkts zu gewährleisten.",
+                "desc": "Strenge EU-Bio-Konformität und internationale Standards für garantierte Produktreinheit und -qualität.",
                 "footer": "EU-Bio-Siegel"
             },
             "control": {
                 "title": "Direkte Kontrolle der Herkunft",
-                "desc": "Wir betreiben eigene Farmen, die höchste Qualität, Frische und vollständige Rückverfolgbarkeit vom Samen bis zum endgültigen Bestimmungsort gewährleisten.",
+                "desc": "Eigene Anbaubetriebe für maximale Frische, Qualität und lückenlose Rückverfolgbarkeit ab der Aussaat.",
                 "footer": "Eigene Farmen"
             },
             "export": {
                 "title": "Internationaler Export",
-                "desc": "Effiziente Lieferung und optimierte Logistik in die wichtigsten europäischen Märkte, um Frische und kaufmännische Pünktlichkeit zu garantieren.",
+                "desc": "Effiziente Logistik in die europäischen Hauptmärkte für garantierte Frische.",
                 "footer": "Europäischer Markt"
             }
         },
@@ -206,8 +206,8 @@
     },
     "Compromiso": {
         "hero": {
-            "title": "Verantwortungsvolle und Transparente Landwirtschaft",
-            "desc": "Bei Organic Bio Agriculture SL widmen wir uns einer verantwortungsvollen und transparenten Landwirtschaft und respektieren die Kreisläufe der Natur, um Produkte von höchster internationaler Qualität anzubieten. Unsere Mission geht über den Export hinaus; sie ist ein Engagement für die Zukunft des Planeten."
+            "title": "Wir kultivieren mit Verantwortung und Transparenz",
+            "desc": "und respektieren die natürlichen Kreisläufe, um qualitativ hochwertige Produkte und ein nachhaltiges landwirtschaftliches Modell anzubieten."
         },
         "ecoProduction": {
             "subtitle": "LANDWIRTSCHAFTLICHE EXZELLENZ",

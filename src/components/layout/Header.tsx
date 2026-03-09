@@ -20,7 +20,7 @@ export function Header() {
     };
 
     return (
-        <header className="sticky top-0 z-40 w-full bg-white shadow-sm">
+        <header className="sticky top-0 z-40 w-full bg-white">
             <div className="container-global flex h-20 items-center justify-between">
                 <Link href="/" className="flex items-center gap-2">
                     <Image

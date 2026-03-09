@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+
 import Image from "next/image";
 import { Link } from "@/i18n/routing";
 import { Button } from "@/components/ui/Button";
@@ -12,13 +13,13 @@ export default function Productos() {
     const [searchQuery, setSearchQuery] = useState("");
 
     const products = [
-        { id: "tomate-rama", category: "Hortalizas", cert: "Bio", ref: "ORG-001" },
-        { id: "tomate-cherry", category: "Hortalizas", cert: "Bio", ref: "ORG-002" },
-        { id: "calabacin", category: "Hortalizas", cert: "Bio", ref: "ORG-003" },
-        { id: "pepino", category: "Hortalizas", cert: "Bio", ref: "ORG-004" },
-        { id: "pimiento-california-rojo", category: "Hortalizas", cert: "Bio", ref: "ORG-005" },
-        { id: "pimiento-california-verde", category: "Hortalizas", cert: "Bio", ref: "ORG-006" },
-        { id: "pimiento-california-amarillo", category: "Hortalizas", cert: "Bio", ref: "ORG-007" },
+        { id: "tomate-rama", category: "Hortalizas", cert: "Bio", ref: "ORG-001", image: "/tomate-rama-organicbio.webp" },
+        { id: "tomate-cherry", category: "Hortalizas", cert: "Bio", ref: "ORG-002", image: "/tomate-organicbio.webp" },
+        { id: "calabacin", category: "Hortalizas", cert: "Bio", ref: "ORG-003", image: "/calabacin-organicbio.webp" },
+        { id: "pepino", category: "Hortalizas", cert: "Bio", ref: "ORG-004", image: "/tomate-organicbio.webp" },
+        { id: "pimiento-california-rojo", category: "Hortalizas", cert: "Bio", ref: "ORG-005", image: "/pimiento-california-rojo-organicbio.webp" },
+        { id: "pimiento-california-verde", category: "Hortalizas", cert: "Bio", ref: "ORG-006", image: "/pimientos-organicbio.webp" },
+        { id: "pimiento-california-amarillo", category: "Hortalizas", cert: "Bio", ref: "ORG-007", image: "/pimiento-california-amarillo-organicbio.webp" },
     ];
 
     const filteredProducts = products.filter(product => {
@@ -72,13 +73,15 @@ export default function Productos() {
                     <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
                         {filteredProducts.map((product) => (
                             <div key={product.id} className="group flex flex-col overflow-hidden rounded-2xl bg-white shadow-sm border border-gray-100 transition-all hover:shadow-md hover:border-green-org/30">
-                                <Link href={`/productos/${product.id}`} className="block relative aspect-square bg-gray-100 overflow-hidden">
-                                    {/* Image Placeholder */}
-                                    <div className="absolute inset-0 flex items-center justify-center text-gray-400 group-hover:scale-105 transition-transform duration-300">
-                                        {t('photo')} {t(`items.${product.id}.name`)}
-                                    </div>
+                                <Link href={`/productos/${product.id}`} className="block relative aspect-[3/2] bg-gray-50 overflow-hidden">
+                                    <Image
+                                        src={product.image}
+                                        alt={t(`items.${product.id}.name`)}
+                                        fill
+                                        className="object-cover group-hover:scale-105 transition-transform duration-700 ease-in-out"
+                                    />
                                     {/* Tag */}
-                                    <div className="absolute top-4 left-4 rounded-full bg-green-org px-3 py-1 text-xs font-bold text-white shadow-sm">
+                                    <div className="absolute top-4 left-4 rounded-full bg-green-org/90 backdrop-blur-sm px-3 py-1 text-xs font-bold text-white shadow-sm z-10">
                                         {product.cert}
                                     </div>
                                 </Link>
