@@ -1,5 +1,6 @@
 import { useTranslations } from "next-intl";
 import Image from "next/image";
+import TimelineItem from "@/components/ui/TimelineItem";
 
 export default function Compromiso() {
     const t = useTranslations('Compromiso');
@@ -172,45 +173,39 @@ export default function Compromiso() {
                         {/* Connecting Line (Desktop) */}
                         <div className="hidden md:block absolute top-[44px] left-[12%] right-[12%] h-[1px] bg-[#E2E8F0] z-0"></div>
 
-                        {/* Mobile Vertical Line */}
-                        <div className="block md:hidden absolute top-[10%] bottom-[10%] left-[50%] ml-[-0.5px] w-[1px] bg-[#E2E8F0] z-0"></div>
-
                         <div className="grid grid-cols-1 md:grid-cols-4 gap-12 md:gap-4 relative z-10">
                             {/* Step 1 */}
-                            <div className="flex flex-col items-center text-center">
-                                <div className="w-[88px] h-[88px] rounded-full bg-[#7a9d34] flex items-center justify-center text-white shadow-md mb-6 ring-[10px] ring-white">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"><path d="m10 11 11 .9c.6 0 .9.5.8 1.1l-.8 5h-1" /><path d="M16 18h-5" /><path d="M18 5a1 1 0 0 0-1 1v5.573" /><path d="M3 4h9l1 7.246" /><path d="M4 11V4" /><path d="M7 15h.01" /><path d="M8 10.1V4" /><circle cx="18" cy="18" r="2" /><circle cx="7" cy="15" r="5" /></svg>
-                                </div>
-                                <h3 className="text-[18px] font-bold text-[#0f172a] mb-2">{t('traceability.steps.step1.title')}</h3>
-                                <p className="text-[15px] text-[#64748b] px-2 leading-relaxed">{t('traceability.steps.step1.desc')}</p>
-                            </div>
+                            <TimelineItem
+                                icon={<svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"><path d="m10 11 11 .9c.6 0 .9.5.8 1.1l-.8 5h-1" /><path d="M16 18h-5" /><path d="M18 5a1 1 0 0 0-1 1v5.573" /><path d="M3 4h9l1 7.246" /><path d="M4 11V4" /><path d="M7 15h.01" /><path d="M8 10.1V4" /><circle cx="18" cy="18" r="2" /><circle cx="7" cy="15" r="5" /></svg>}
+                                title={t('traceability.steps.step1.title')}
+                                description={t('traceability.steps.step1.desc')}
+                                delay={100}
+                            />
 
                             {/* Step 2 */}
-                            <div className="flex flex-col items-center text-center">
-                                <div className="w-[88px] h-[88px] rounded-full bg-[#7a9d34] flex items-center justify-center text-white shadow-md mb-6 ring-[10px] ring-white">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"><rect width="20" height="5" x="2" y="3" rx="1" /><path d="M4 8v11a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8" /><path d="M10 12h4" /></svg>
-                                </div>
-                                <h3 className="text-[18px] font-bold text-[#0f172a] mb-2">{t('traceability.steps.step2.title')}</h3>
-                                <p className="text-[15px] text-[#64748b] px-2 leading-relaxed">{t('traceability.steps.step2.desc')}</p>
-                            </div>
+                            <TimelineItem
+                                icon={<svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"><rect width="20" height="5" x="2" y="3" rx="1" /><path d="M4 8v11a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8" /><path d="M10 12h4" /></svg>}
+                                title={t('traceability.steps.step2.title')}
+                                description={t('traceability.steps.step2.desc')}
+                                delay={200}
+                            />
 
                             {/* Step 3 */}
-                            <div className="flex flex-col items-center text-center">
-                                <div className="w-[88px] h-[88px] rounded-full bg-[#7a9d34] flex items-center justify-center text-white shadow-md mb-6 ring-[10px] ring-white">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"><path d="M14 18V6a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2v11a1 1 0 0 0 1 1h2" /><path d="M15 18H9" /><path d="M19 18h2a1 1 0 0 0 1-1v-3.65a1 1 0 0 0-.22-.624l-3.48-4.35A1 1 0 0 0 17.52 8H14" /><circle cx="17" cy="18" r="2" /><circle cx="7" cy="18" r="2" /></svg>
-                                </div>
-                                <h3 className="text-[18px] font-bold text-[#0f172a] mb-2">{t('traceability.steps.step3.title')}</h3>
-                                <p className="text-[15px] text-[#64748b] px-2 leading-relaxed">{t('traceability.steps.step3.desc')}</p>
-                            </div>
+                            <TimelineItem
+                                icon={<svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"><path d="M14 18V6a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2v11a1 1 0 0 0 1 1h2" /><path d="M15 18H9" /><path d="M19 18h2a1 1 0 0 0 1-1v-3.65a1 1 0 0 0-.22-.624l-3.48-4.35A1 1 0 0 0 17.52 8H14" /><circle cx="17" cy="18" r="2" /><circle cx="7" cy="18" r="2" /></svg>}
+                                title={t('traceability.steps.step3.title')}
+                                description={t('traceability.steps.step3.desc')}
+                                delay={300}
+                            />
 
                             {/* Step 4 */}
-                            <div className="flex flex-col items-center text-center">
-                                <div className="w-[88px] h-[88px] rounded-full bg-[#7a9d34] flex items-center justify-center text-white shadow-md mb-6 ring-[10px] ring-white">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"><path d="M3 2v7c0 1.1.9 2 2 2h4a2 2 0 0 0 2-2V2" /><path d="M7 2v20" /><path d="M21 15V2a5 5 0 0 0-5 5v6c0 1.1.9 2 2 2h3Zm0 0v7" /></svg>
-                                </div>
-                                <h3 className="text-[18px] font-bold text-[#0f172a] mb-2">{t('traceability.steps.step4.title')}</h3>
-                                <p className="text-[15px] text-[#64748b] px-2 leading-relaxed">{t('traceability.steps.step4.desc')}</p>
-                            </div>
+                            <TimelineItem
+                                icon={<svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.25" strokeLinecap="round" strokeLinejoin="round"><path d="M3 2v7c0 1.1.9 2 2 2h4a2 2 0 0 0 2-2V2" /><path d="M7 2v20" /><path d="M21 15V2a5 5 0 0 0-5 5v6c0 1.1.9 2 2 2h3Zm0 0v7" /></svg>}
+                                title={t('traceability.steps.step4.title')}
+                                description={t('traceability.steps.step4.desc')}
+                                delay={400}
+                                isLast
+                            />
                         </div>
                     </div>
                 </div>

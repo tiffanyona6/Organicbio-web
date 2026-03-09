@@ -4,19 +4,31 @@ import { Link, useRouter, usePathname } from '@/i18n/routing';
 import Image from 'next/image';
 import { useState } from 'react';
 import { useTranslations, useLocale } from 'next-intl';
+import { cn } from '@/lib/utils';
+
+const languages = [
+    { code: 'es', label: 'Español', flag: 'es' },
+    { code: 'en', label: 'English', flag: 'gb' },
+    { code: 'de', label: 'Deutsch', flag: 'de' },
+    { code: 'fr', label: 'Français', flag: 'fr' },
+];
 
 export function Header() {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
+    const [isLangOpen, setIsLangOpen] = useState(false);
     const t = useTranslations('Header');
     const locale = useLocale();
     const router = useRouter();
     const pathname = usePathname();
 
-    const closeMenu = () => setIsMenuOpen(false);
+    const closeMenu = () => {
+        setIsMenuOpen(false);
+        setIsLangOpen(false);
+    };
 
-    const handleLanguageChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
-        const newLocale = e.target.value;
-        router.replace(pathname, { locale: newLocale });
+    const isActive = (path: string) => {
+        if (path === '/') return pathname === '/';
+        return pathname.startsWith(path);
     };
 
     return (
@@ -34,24 +46,71 @@ export function Header() {
                 </Link>
 
                 <nav className="hidden md:flex items-center gap-8">
-                    <Link href="/" className="text-gray-org-dark hover:text-green-org transition-colors text-[15px] font-medium">{t('home')}</Link>
-                    <Link href="/productos" className="text-gray-org-dark hover:text-green-org transition-colors text-[15px] font-medium">{t('products')}</Link>
-                    <Link href="/compromiso" className="text-gray-org-dark hover:text-green-org transition-colors text-[15px] font-medium">{t('commitment')}</Link>
-                    <Link href="/sobre-organic-bio" className="text-gray-org-dark hover:text-green-org transition-colors text-[15px] font-medium">{t('about')}</Link>
-                    <Link href="/contacto" className="text-gray-org-dark hover:text-green-org transition-colors text-[15px] font-medium">{t('contact')}</Link>
+                    <Link href="/" className={cn("text-[15px] font-medium transition-colors hover:text-green-org", isActive('/') ? "text-green-org" : "text-gray-org-dark")}>{t('home')}</Link>
+                    <Link href="/productos" className={cn("text-[15px] font-medium transition-colors hover:text-green-org", isActive('/productos') ? "text-green-org" : "text-gray-org-dark")}>{t('products')}</Link>
+                    <Link href="/compromiso" className={cn("text-[15px] font-medium transition-colors hover:text-green-org", isActive('/compromiso') ? "text-green-org" : "text-gray-org-dark")}>{t('commitment')}</Link>
+                    <Link href="/sobre-organic-bio" className={cn("text-[15px] font-medium transition-colors hover:text-green-org", isActive('/sobre-organic-bio') ? "text-green-org" : "text-gray-org-dark")}>{t('about')}</Link>
+                    <Link href="/contacto" className={cn("text-[15px] font-medium transition-colors hover:text-green-org", isActive('/contacto') ? "text-green-org" : "text-gray-org-dark")}>{t('contact')}</Link>
                 </nav>
 
                 <div className="flex items-center gap-4">
-                    <select
-                        value={locale}
-                        onChange={handleLanguageChange}
-                        className="bg-transparent text-sm font-medium text-gray-org-dark outline-none cursor-pointer hover:text-green-org transition-colors"
-                    >
-                        <option value="es">ES</option>
-                        <option value="en">EN</option>
-                        <option value="de">DE</option>
-                        <option value="fr">FR</option>
-                    </select>
+                    {/* Custom Language Selector */}
+                    <div className="relative">
+                        <button
+                            onClick={() => setIsLangOpen(!isLangOpen)}
+                            className="flex items-center gap-2 bg-transparent text-sm font-bold text-gray-org-dark outline-none cursor-pointer hover:text-green-org transition-colors uppercase py-1"
+                        >
+                            <img
+                                src={`https://flagcdn.com/w40/${languages.find(l => l.code === locale)?.flag}.png`}
+                                alt=""
+                                className="w-5 h-auto rounded-[2px] shadow-sm border border-gray-100"
+                            />
+                            <span className="hidden sm:inline">{locale}</span>
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="14" height="14"
+                                viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" strokeWidth="3"
+                                strokeLinecap="round" strokeLinejoin="round"
+                                className={cn("transition-transform duration-200", isLangOpen ? "rotate-180" : "")}
+                            >
+                                <path d="m6 9 6 6 6-6" />
+                            </svg>
+                        </button>
+
+                        {isLangOpen && (
+                            <>
+                                {/* Click outside overlay */}
+                                <div
+                                    className="fixed inset-0 z-10"
+                                    onClick={() => setIsLangOpen(false)}
+                                ></div>
+
+                                <div className="absolute right-0 mt-2 w-40 bg-white rounded-2xl shadow-xl border border-gray-100 overflow-hidden z-20 animate-fade-in py-1">
+                                    {languages.map((lang) => (
+                                        <button
+                                            key={lang.code}
+                                            onClick={() => {
+                                                router.replace(pathname, { locale: lang.code });
+                                                setIsLangOpen(false);
+                                            }}
+                                            className={cn(
+                                                "w-full flex items-center gap-3 px-4 py-3 text-sm transition-colors hover:bg-gray-50",
+                                                locale === lang.code ? "text-green-org font-bold bg-green-org/5" : "text-gray-org-dark font-medium"
+                                            )}
+                                        >
+                                            <img
+                                                src={`https://flagcdn.com/w40/${lang.flag}.png`}
+                                                alt=""
+                                                className="w-5 h-auto rounded-[2px] shadow-sm border border-gray-100"
+                                            />
+                                            <span>{lang.label}</span>
+                                        </button>
+                                    ))}
+                                </div>
+                            </>
+                        )}
+                    </div>
 
                     <button
                         className="md:hidden text-gray-org-dark hover:text-green-org transition-colors"

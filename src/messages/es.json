@@ -3,14 +3,14 @@
         "home": "Inicio",
         "products": "Productos",
         "commitment": "Compromiso",
-        "about": "Sobre Organic Bio",
+        "about": "Conócenos",
         "contact": "Contacto"
     },
     "Footer": {
         "description": "Exportando las mejores hortalizas ecológicas de Almería al mundo. Sostenible, ético y siempre fresco.",
         "menu": "MENÚ",
         "contact": "CONTACTO",
-        "address": "Calle Alcudia de Monteagud, 04009 Almería, España",
+        "address": "Calle Alcudia de Monteagud 23, 04009 Almería, España",
         "rights": "© 2026 Organic-Bio Agriculture SL. Todos los derechos reservados.",
         "privacy": "Política de Privacidad",
         "terms": "Términos de Servicio",
@@ -42,21 +42,23 @@
             }
         },
         "products": {
-            "title": "Nuestros Productos Ecológicos",
-            "subtitle": "Producimos hortalizas de máxima calidad bajo estrictos estándares orgánicos.",
+            "label": "EXCELENCIA AGRÍCOLA",
+            "title": "Nuestros Productos",
+            "subtitle": "Seleccionamos las mejores variedades de cultivo sostenible para garantizar un sabor auténtico y una calidad nutricional superior.",
             "tomate": {
                 "name": "Tomate",
-                "desc": "Variedades ecológicas de sabor intenso y alta conservación."
+                "desc": "Variedades seleccionadas por su intenso aroma y textura carnosa. Cultivados bajo el sol del mediterráneo."
             },
             "pimiento": {
                 "name": "Pimiento",
-                "desc": "Pimientos orgánicos cultivados con las mejores prácticas."
+                "desc": "Frescura garantizada desde la cosecha hasta su entrega. Disponibilidad en gamas roja, verde y amarilla."
             },
             "calabacin": {
                 "name": "Calabacín",
-                "desc": "Producción continua de calabacines frescos y tiernos."
+                "desc": "Cultivo respetuoso con el medio ambiente, resultando en un producto tierno y de piel fina."
             },
-            "cta": "Ver detalle"
+            "catalogBtn": "Ver catálogo completo",
+            "fichaBtn": "Ficha técnica"
         },
         "calendar": {
             "title": "Calendario de Campaña",
@@ -71,18 +73,18 @@
             "cta": "Nuestro compromiso"
         },
         "location": {
-            "title": "Ubicación Estratégica",
+            "title": "Ubicación estratégica",
             "subtitle": "Almería, España",
-            "caption": "La Huerta de Europa",
-            "desc": "Nuestras fincas se encuentran en el corazón de Almería, conocida como 'La Huerta de Europa'. El microclima único nos permite producir hortalizas ecológicas de alta calidad durante todo el año.",
+            "caption": "Sede Central",
+            "desc": "Nuestra empresa tiene su sede en Almería, uno de los principales centros logísticos de exportación hortofrutícola de Europa. Desde aquí coordinamos la distribución de nuestros productos hacia los principales mercados europeos.\n\nLa producción se realiza en fincas propias situadas en Marruecos, donde el clima permite cultivar hortalizas ecológicas de alta calidad durante todo el año.",
             "features": {
                 "logistics": {
-                    "title": "Logística Rápida",
-                    "desc": "Entrega en 48 horas a los principales mercados europeos."
+                    "title": "Logística eficiente",
+                    "desc": "Distribución rápida hacia los principales mercados europeos gracias a una cadena logística optimizada."
                 },
                 "quality": {
-                    "title": "Control de Calidad Premium",
-                    "desc": "Rigurosos controles desde la cosecha hasta el envasado."
+                    "title": "Control directo del origen",
+                    "desc": "Producción en fincas propias que garantiza trazabilidad, calidad constante y control desde el cultivo hasta la comercialización."
                 }
             }
         }
@@ -136,7 +138,7 @@
         "cards": {
             "hq": {
                 "title": "Sede Central",
-                "address": "Calle Alcudia de Monteagud, 04009 Almería, España"
+                "address": "Organic Bio Agriculture SL, Calle Alcudia de Monteagud 23, 04009 Almería, España"
             },
             "email": {
                 "title": "Email Directo",
@@ -153,16 +155,16 @@
         },
         "features": {
             "support": {
-                "title": "Soporte 24/7",
-                "desc": "Atención continua para incidencias logísticas internacionales y seguimiento de pedidos."
+                "title": "Atención comercial",
+                "desc": "Seguimiento de pedidos y coordinación con clientes internacionales."
             },
             "advice": {
-                "title": "Asesoría Técnica",
-                "desc": "Expertos en calidad agrícola para asegurar que el producto cumple sus estándares exactos."
+                "title": "Control de calidad",
+                "desc": "Supervision del producto desde el cultivo hasta la entrega."
             },
             "logistics": {
-                "title": "Gestión Logística",
-                "desc": "Optimización de rutas y cadena de frío para exportaciones a toda Europa y Reino Unido."
+                "title": "Gestión logística",
+                "desc": "Organización de exportaciones hacia los principales mercados europeos."
             }
         }
     },

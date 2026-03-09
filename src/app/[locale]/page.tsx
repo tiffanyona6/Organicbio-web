@@ -96,7 +96,7 @@ export default function Home() {
                 <div className="absolute -inset-4 rounded-full border border-dashed border-[#EFBC3D]/20 group-hover:rotate-45 transition-transform duration-1000"></div>
                 <div className="relative h-full w-full overflow-hidden rounded-full shadow-lg border-2 border-white group-hover:shadow-2xl transition-all duration-500">
                   <Image
-                    src="/compromiso-organicbio.webp"
+                    src="/control-organicbio.webp"
                     alt={t('proofs.control.title')}
                     fill
                     className="object-cover group-hover:scale-110 transition-transform duration-700"
@@ -153,46 +153,72 @@ export default function Home() {
       </section>
 
       {/* Product Categories */}
-      <section className="container-global">
+      <section className="container-global pt-10 pb-20">
         <div className="mb-12 flex flex-col md:flex-row md:items-end justify-between gap-6 border-b border-transparent">
           <div className="max-w-3xl text-left">
-            <h2 className="mb-3 text-[32px] md:text-[40px] font-bold text-[#1a202c] tracking-tight">{t('products.title')}</h2>
+            <span className="text-sm font-bold text-[#7a9d34] tracking-[0.1em] uppercase mb-2 block">{t('products.label')}</span>
+            <h2 className="mb-4 text-[32px] md:text-[44px] font-bold text-[#7a9d34] tracking-tight">{t('products.title')}</h2>
             <p className="text-[17px] text-[#64748b] leading-relaxed max-w-[85%]">{t('products.subtitle')}</p>
           </div>
-          <Link href="/productos" className="group flex items-center gap-2 text-[15px] font-bold text-[#5c8b2a] hover:text-[#42661c] transition-colors md:pb-2">
-            {t('hero.cta')} <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" className="transition-transform group-hover:translate-x-1"><path d="M5 12h14" /><path d="m12 5 7 7-7 7" /></svg>
+          <Link href="/productos" className="md:pb-2">
+            <Button variant="primary" className="flex items-center gap-2 h-[48px] px-8 rounded-xl shadow-md hover:shadow-lg transition-all bg-[#7a9d34] hover:bg-[#688a2b] border-none">
+              {t('products.catalogBtn')} <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" className="transition-transform group-hover:translate-x-1"><path d="M5 12h14" /><path d="m12 5 7 7-7 7" /></svg>
+            </Button>
           </Link>
         </div>
 
-        <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
+        <div className="grid grid-cols-1 gap-8 md:grid-cols-3">
           {[
+            {
+              id: "tomate-rama",
+              image: "/tomate-rama-organicbio.webp",
+              name: t('products.tomate.name'),
+              desc: t('products.tomate.desc')
+            },
             {
               id: "pimiento-california-rojo",
               image: "/variedad-pimientos-organicbio.webp",
-              customName: tProd('items.pimiento-california-rojo.name') === "Pimiento California Rojo" ? "Variedad de Pimientos" : tProd('items.pimiento-california-rojo.name'),
-              customHref: "/productos"
+              name: t('products.pimiento.name'),
+              desc: t('products.pimiento.desc')
             },
-            { id: "calabacin", image: "/calabacin-organicbio.webp" },
-            { id: "tomate-rama", image: "/tomate-rama-organicbio.webp" }
+            {
+              id: "calabacin",
+              image: "/calabacin-organicbio.webp",
+              name: t('products.calabacin.name'),
+              desc: t('products.calabacin.desc')
+            }
           ].map((product) => (
-            <div key={product.id} className="group relative flex flex-col cursor-pointer overflow-hidden rounded-[24px]">
-              <Link href={product.customHref || `/productos/${product.id}`} className="block relative aspect-[4/3] w-full overflow-hidden">
+            <div key={product.id} className="group flex flex-col bg-white rounded-2xl border border-gray-200 shadow-[0_4px_20px_rgb(0,0,0,0.03)] hover:shadow-xl transition-shadow duration-300 overflow-hidden h-full">
+              {/* Top Image */}
+              <Link href={`/productos/${product.id}`} className="block relative aspect-[4/3] w-full overflow-hidden">
                 <Image
                   src={product.image}
-                  alt={product.customName || tProd(`items.${product.id}.name`)}
+                  alt={product.name}
                   fill
-                  className="object-cover group-hover:scale-110 transition-transform duration-1000 ease-in-out"
+                  className="object-cover group-hover:scale-105 transition-transform duration-700 ease-in-out"
                 />
-                {/* Gradient Overlay */}
-                <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-90 group-hover:opacity-100 transition-opacity duration-500" />
-
-                {/* Content inside image */}
-                <div className="absolute bottom-6 left-6 right-6 z-10">
-                  <h3 className="text-2xl md:text-[26px] font-medium text-white tracking-tight leading-tight transition-transform duration-500 group-hover:-translate-y-1">
-                    {product.customName || tProd(`items.${product.id}.name`)}
-                  </h3>
-                </div>
               </Link>
+
+              {/* Card Content & Footer */}
+              <div className="flex flex-col flex-1 p-6 md:p-8">
+                {/* Text Content */}
+                <div className="flex-1">
+                  <h3 className="text-[28px] font-bold text-[#0f172a] mb-3 tracking-tight font-serif">
+                    {product.name}
+                  </h3>
+                  <p className="text-[16px] text-[#64748b] leading-relaxed mb-8">
+                    {product.desc}
+                  </p>
+                </div>
+
+                {/* Button (Ficha Técnica) */}
+                <Link href={`/productos/${product.id}`} className="mt-auto block">
+                  <Button variant="secondary" className="w-full flex items-center justify-center gap-2 h-[48px] rounded-xl text-[15px] font-bold border-2 border-[#7a9d34] text-[#7a9d34] hover:bg-[#7a9d34] hover:text-white transition-colors">
+                    {t('products.fichaBtn')}
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" /><polyline points="14 2 14 8 20 8" /><line x1="16" y1="13" x2="8" y2="13" /><line x1="16" y1="17" x2="8" y2="17" /><polyline points="10 9 9 9 8 9" /></svg>
+                  </Button>
+                </Link>
+              </div>
             </div>
           ))}
         </div>

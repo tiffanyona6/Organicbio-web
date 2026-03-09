@@ -3,14 +3,14 @@
         "home": "Accueil",
         "products": "Produits",
         "commitment": "Engagement",
-        "about": "À propos d'Organic Bio",
+        "about": "À propos de nous",
         "contact": "Contact"
     },
     "Footer": {
         "description": "Exportation des meilleurs légumes biologiques d'Almería à travers le monde. Durable, éthique et toujours frais.",
         "menu": "MENU",
         "contact": "CONTACT",
-        "address": "Calle Alcudia de Monteagud, 04009 Almería, Espagne",
+        "address": "Calle Alcudia de Monteagud 23, 04009 Almería, Espagne",
         "rights": "© 2026 Organic-Bio Agriculture SL. Tous droits réservés.",
         "privacy": "Politique de confidentialité",
         "terms": "Conditions d'utilisation",
@@ -42,21 +42,23 @@
             }
         },
         "products": {
-            "title": "Nos Produits Biologiques",
-            "subtitle": "Nous produisons des légumes de qualité supérieure selon des normes biologiques strictes.",
+            "label": "EXCELLENCE AGRICOLE",
+            "title": "Nos Produits",
+            "subtitle": "Nous sélectionnons les meilleures variétés cultivées de manière durable pour garantir une saveur authentique et une qualité nutritionnelle supérieure.",
             "tomate": {
                 "name": "Tomate",
-                "desc": "Variétés biologiques au goût intense et à longue conservation."
+                "desc": "Variétés sélectionnées pour leur arôme intense et leur texture charnue. Cultivées sous le soleil de la Méditerranée."
             },
             "pimiento": {
                 "name": "Poivron",
-                "desc": "Poivrons biologiques cultivés avec les meilleures pratiques."
+                "desc": "Fraîcheur garantie de la récolte à la livraison. Disponible dans les variétés rouges, vertes et jaunes."
             },
             "calabacin": {
                 "name": "Courgette",
-                "desc": "Production continue de courgettes fraîches et tendres."
+                "desc": "Culture respectueuse de l'environnement, offrant un produit tendre à peau fine."
             },
-            "cta": "Voir les détails"
+            "catalogBtn": "Voir le catalogue complet",
+            "fichaBtn": "Fiche technique"
         },
         "calendar": {
             "title": "Calendrier de Campagne",
@@ -71,18 +73,18 @@
             "cta": "Notre engagement"
         },
         "location": {
-            "title": "Emplacement Stratégique",
+            "title": "Emplacement stratégique",
             "subtitle": "Almería, Espagne",
-            "caption": "Le Potager de l'Europe",
-            "desc": "Nos fermes sont situées au cœur d'Almería, connue comme 'Le Potager de l'Europe'. Le microclima unique nous permet de produire des légumes biologiques de haute qualité toute l'année.",
+            "caption": "Siège Social",
+            "desc": "Notre entreprise a son siège à Almería, l'un des principaux centres logistiques d'exportation de fruits et légumes en Europe. De là, nous coordonnons la distribution de nos produits vers les principaux marchés européens.\n\nLa production est réalisée dans nos propres fermes situées au Maroc, où le climat permet de cultiver des légumes biologiques de haute qualité tout au long de l'année.",
             "features": {
                 "logistics": {
-                    "title": "Logistique Rapide",
-                    "desc": "Livraison en 48 heures vers les principaux marchés européens."
+                    "title": "Logistique efficace",
+                    "desc": "Distribution rapide vers les principaux marchés européens grâce à une chaîne logistique optimisée."
                 },
                 "quality": {
-                    "title": "Contrôle Qualité Premium",
-                    "desc": "Contrôles rigoureux de la récolte à l'emballage."
+                    "title": "Contrôle direct de l'origine",
+                    "desc": "Production dans nos propres fermes qui garantit la traçabilité, une qualité constante et un contrôle de la culture jusqu'à la commercialisation."
                 }
             }
         }
@@ -136,7 +138,7 @@
         "cards": {
             "hq": {
                 "title": "Siège Social",
-                "address": "Calle Alcudia de Monteagud, 04009 Almería, Espagne"
+                "address": "Organic Bio Agriculture SL, Calle Alcudia de Monteagud 23, 04009 Almería, Espagne"
             },
             "email": {
                 "title": "Email Direct",
@@ -153,16 +155,16 @@
         },
         "features": {
             "support": {
-                "title": "Support 24/7",
-                "desc": "Attention continue pour les incidents logistiques internationaux et le suivi des commandes."
+                "title": "Service commercial",
+                "desc": "Suivi des commandes et coordination avec les clients internationaux."
             },
             "advice": {
-                "title": "Conseil Technique",
-                "desc": "Experts en qualité agricole pour garantir que le produit répond à vos normes exactas."
+                "title": "Contrôle qualité",
+                "desc": "Supervision du produit de la culture à la livraison."
             },
             "logistics": {
-                "title": "Gestion Logistique",
-                "desc": "Optimisation des itinéraires et de la chaîne du froid pour les exportations dans toute l'Europe et au Royaume-Uni."
+                "title": "Gestion logistique",
+                "desc": "Organisation des exportations vers les principaux marchés européens."
             }
         }
     },

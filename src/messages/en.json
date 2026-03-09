@@ -3,14 +3,14 @@
         "home": "Home",
         "products": "Products",
         "commitment": "Commitment",
-        "about": "About Organic Bio",
+        "about": "About Us",
         "contact": "Contact"
     },
     "Footer": {
         "description": "Exporting the best organic vegetables from Almería to the world. Sustainable, ethical and always fresh.",
         "menu": "MENU",
         "contact": "CONTACT",
-        "address": "Calle Alcudia de Monteagud, 04009 Almería, Spain",
+        "address": "Calle Alcudia de Monteagud 23, 04009 Almería, Spain",
         "rights": "© 2026 Organic-Bio Agriculture SL. All rights reserved.",
         "privacy": "Privacy Policy",
         "terms": "Terms of Service",
@@ -42,21 +42,23 @@
             }
         },
         "products": {
-            "title": "Our Organic Products",
-            "subtitle": "We produce high-quality vegetables under strict organic standards.",
+            "label": "AGRICULTURAL EXCELLENCE",
+            "title": "Our Products",
+            "subtitle": "We select the best sustainably grown varieties to guarantee authentic flavor and superior nutritional quality.",
             "tomate": {
                 "name": "Tomato",
-                "desc": "Organic varieties with intense flavor and high shelf life."
+                "desc": "Varieties selected for their intense aroma and fleshy texture. Grown under the Mediterranean sun."
             },
             "pimiento": {
                 "name": "Pepper",
-                "desc": "Organic peppers grown with the best practices."
+                "desc": "Freshness guaranteed from harvest to delivery. Available in red, green, and yellow varieties."
             },
             "calabacin": {
                 "name": "Zucchini",
-                "desc": "Continuous production of fresh and tender zucchini."
+                "desc": "Environmentally friendly cultivation, resulting in a tender product with thin skin."
             },
-            "cta": "View details"
+            "catalogBtn": "View full catalog",
+            "fichaBtn": "Technical data sheet"
         },
         "calendar": {
             "title": "Campaign Calendar",
@@ -71,18 +73,18 @@
             "cta": "Our commitment"
         },
         "location": {
-            "title": "Strategic Location",
+            "title": "Strategic location",
             "subtitle": "Almería, Spain",
-            "caption": "The Garden of Europe",
-            "desc": "Our farms are located in the heart of Almería, known as 'The Garden of Europe'. The unique microclimate allows us to produce high-quality organic vegetables year-round.",
+            "caption": "Headquarters",
+            "desc": "Our company is headquartered in Almería, one of Europe's main logistical centers for fruit and vegetable exports. From here we coordinate the distribution of our products to the main European markets.\n\nThe production is carried out in our own farms located in Morocco, where the climate allows us to grow high-quality organic vegetables all year round.",
             "features": {
                 "logistics": {
-                    "title": "Fast Logistics",
-                    "desc": "Delivery within 48 hours to major European markets."
+                    "title": "Efficient logistics",
+                    "desc": "Fast distribution to the main European markets thanks to an optimized logistics chain."
                 },
                 "quality": {
-                    "title": "Premium Quality Control",
-                    "desc": "Rigorous controls from harvest to packaging."
+                    "title": "Direct control of origin",
+                    "desc": "Production on our own farms that guarantees traceability, constant quality, and control from cultivation to marketing."
                 }
             }
         }
@@ -136,7 +138,7 @@
         "cards": {
             "hq": {
                 "title": "Headquarters",
-                "address": "Calle Alcudia de Monteagud, 04009 Almería, Spain"
+                "address": "Organic Bio Agriculture SL, Calle Alcudia de Monteagud 23, 04009 Almería, Spain"
             },
             "email": {
                 "title": "Direct Email",
@@ -153,16 +155,16 @@
         },
         "features": {
             "support": {
-                "title": "24/7 Support",
-                "desc": "Continuous attention for international logistical incidents and order tracking."
+                "title": "Commercial support",
+                "desc": "Order tracking and coordination with international clients."
             },
             "advice": {
-                "title": "Technical Advice",
-                "desc": "Agricultural quality experts to ensure the product meets your exact standards."
+                "title": "Quality control",
+                "desc": "Product supervision from cultivation to delivery."
             },
             "logistics": {
-                "title": "Logistics Management",
-                "desc": "Optimization of routes and cold chain for exports across Europe and the UK."
+                "title": "Logistics management",
+                "desc": "Organization of exports to the main European markets."
             }
         }
     },

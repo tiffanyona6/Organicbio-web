@@ -71,7 +71,7 @@ export default function SobreOrganicBio() {
                             <div className="flex flex-wrap gap-3 mt-8">
                                 {['Alemania', 'Reino Unido', 'Francia', 'Holanda', 'Suiza', 'Países Nórdicos'].map((country, index) => (
                                     <span key={index} className="px-4 py-2 rounded-full bg-green-org/10 text-green-org font-medium text-sm">
-                                        {t(`markets.list.${index}`)}
+                                        {t(`markets.countries.${index}`)}
                                     </span>
                                 ))}
                             </div>
