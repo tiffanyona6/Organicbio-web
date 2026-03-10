@@ -21,7 +21,7 @@
             "title": "Genießen Sie die<br></br><span>reinste</span><br></br>Natur.",
             "subtitle": "Wir exportieren erstklassiges Bio-Gemüse direkt von unseren Feldern in Almería auf Ihren Tisch.",
             "cta": "Produkte ansehen",
-            "about": "Über uns"
+            "contact": "Kontaktieren"
         },
         "introQuote": "\"Zertifizierte ökologische <green>Produktion</green>, garantierte Rückverfolgbarkeit und <green>internationale</green> Lieferung.\"",
         "proofs": {
@@ -58,7 +58,7 @@
                 "desc": "Umweltfreundlicher Anbau, der zu einem zarten Produkt mit feiner Schale führt."
             },
             "catalogBtn": "Vollständigen Katalog ansehen",
-            "fichaBtn": "Technisches Datenblatt"
+            "fichaBtn": "Produkt ansehen"
         },
         "calendar": {
             "title": "Kampagnenkalender",
@@ -73,19 +73,19 @@
             "cta": "Unser Engagement"
         },
         "location": {
-            "title": "Strategischer Standort",
-            "subtitle": "Almería, Spanien",
-            "caption": "Hauptsitz",
-            "desc": "Unser Unternehmen hat seinen Hauptsitz in Almería, einem der wichtigsten Logistikzentren für den Export von Obst und Gemüse in Europa. Von hier aus koordinieren wir den Vertrieb unserer Produkte in die wichtigsten europäischen Märkte.\n\nDie Produktion erfolgt auf eigenen Farmen in Marokko, wo das Klima den ganzjährigen Anbau von hochwertigem Bio-Gemüse ermöglicht.",
-            "features": {
-                "logistics": {
-                    "title": "Effiziente Logistik",
-                    "desc": "Schnelle Verteilung in die wichtigsten europäischen Märkte dank einer optimierten Logistikkette."
-                },
-                "quality": {
-                    "title": "Direkte Herkunftskontrolle",
-                    "desc": "Produktion auf eigenen Farmen, die Rückverfolgbarkeit, konstante Qualität und Kontrolle vom Anbau bis zur Vermarktung garantiert."
-                }
+            "title": "Herkunft unserer Produktion",
+            "subtitle": "Unsere Tätigkeit erstreckt sich zwischen Almería und Marokko, zwei strategischen Gebieten für den Gemüseanbau.",
+            "sede": {
+                "title": "Hauptsitz · Almería",
+                "desc": "Koordinationszentrum des Unternehmens und wichtiger Logistikpunkt für den Obst- und Gemüsesektor."
+            },
+            "nijar": {
+                "title": "Farm · Níjar (Almería)",
+                "desc": "Landwirtschaftliches Gebiet, das für seine Gartenbautradition und Anbauqualität bekannt ist."
+            },
+            "marruecos": {
+                "title": "Farmen · Marokko",
+                "desc": "Produktion unserer Hauptgemüsesorten unter optimalen klimatischen Bedingungen."
             }
         }
     },

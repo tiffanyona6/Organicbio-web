@@ -1,18 +1,42 @@
 import { useTranslations } from "next-intl";
+import Image from "next/image";
 
 export default function Contacto() {
     const t = useTranslations('Contacto');
 
     return (
-        <div className="py-16 lg:py-24 bg-white min-h-screen">
-            <div className="container-global">
+        <div className="bg-white min-h-screen">
 
-                {/* Title Section */}
-                <div className="mb-16 text-center">
-                    <h1 className="mb-4 text-4xl md:text-[44px] font-bold text-gray-org-dark font-sans tracking-tight">
-                        {t('title')}
-                    </h1>
-                    <div className="w-16 h-1 bg-[#EFBC3D] mx-auto rounded-full"></div>
+            {/* Hero Banner */}
+            <section className="relative w-full aspect-[2.2/1] md:aspect-[4.5/1] lg:aspect-[5.5/1] xl:aspect-[6.5/1] max-h-[320px] overflow-hidden flex items-center justify-center">
+                <Image
+                    src="/hero-image-organicbio.webp"
+                    alt="Contacto - Organic Bio"
+                    fill
+                    className="object-cover object-[center_35%]"
+                    priority
+                />
+                <div className="absolute inset-0 bg-black/40"></div>
+                <h1 className="relative z-10 text-4xl md:text-5xl font-bold text-white tracking-tight uppercase mt-8 md:mt-12">
+                    {t('title')}
+                </h1>
+            </section>
+
+            {/* Green accent line */}
+            <div className="pt-10 md:pt-16">
+                <div className="mx-auto w-12 h-1 bg-green-org rounded-full"></div>
+            </div>
+
+            <div className="container-global py-16 lg:py-24">
+
+                {/* Contact Banner Image */}
+                <div className="relative w-full aspect-[21/9] md:aspect-[25/7] mb-12 md:mb-16 rounded-[32px] overflow-hidden shadow-sm border border-gray-100">
+                    <Image
+                        src="/card-contacto-organicbio.webp"
+                        alt="Contact Organic Bio"
+                        fill
+                        className="object-cover"
+                    />
                 </div>
 
                 {/* Top Grid: 4 Cards */}

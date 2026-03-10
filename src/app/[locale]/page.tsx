@@ -1,5 +1,6 @@
 "use client";
 
+import React, { useState } from "react";
 import Image from "next/image";
 import { Link } from "@/i18n/routing";
 import { Button } from "@/components/ui/Button";
@@ -8,149 +9,157 @@ import { useTranslations } from "next-intl";
 export default function Home() {
   const t = useTranslations('Home');
   const tProd = useTranslations('Productos');
+  const [hoveredLoc, setHoveredLoc] = useState<string | null>(null);
 
   return (
     <div className="flex flex-col gap-12 pb-16">
-      {/* Hero Section */}
-      <section
-        className="relative flex min-h-[85vh] md:min-h-screen items-center justify-center bg-cover bg-center overflow-hidden px-4"
-        style={{
-          backgroundImage: "linear-gradient(rgba(0,0,0,0.60), rgba(0,0,0,0.55)), url('/image-hero-organicbio.webp')"
-        }}
-      >
-        <div className="container-global relative z-20 max-w-5xl text-center md:text-left">
-          <h1 className="hero-title mb-6 text-white drop-shadow-2xl animate-fade-in-up">
-            {t.rich('hero.title', {
-              br: () => <br />,
-              span: (chunks) => <span className="italic font-normal brightness-125 text-green-org">{chunks}</span>
-            })}
-          </h1>
-          <p className="mb-10 text-xl md:text-2xl text-gray-200 max-w-3xl font-light tracking-wide drop-shadow-md animate-fade-in-up animation-delay-200">
-            {t('hero.subtitle')}
-          </p>
-          <div className="flex flex-col gap-4 sm:flex-row animate-fade-in-up animation-delay-400">
-            <Link href="/productos">
-              <Button className="w-full sm:w-auto h-14 px-8 text-base font-semibold shadow-lg hover:shadow-xl transition-all">{t('hero.cta')}</Button>
-            </Link>
-            <Link href="/sobre-organic-bio">
-              <Button variant="secondary" className="w-full sm:w-auto h-14 px-8 text-base font-semibold bg-white/10 text-white border-white/20 backdrop-blur-md hover:bg-white/20 transition-all">{t('hero.about')}</Button>
-            </Link>
+      {/* Hero + Green Section Wrapper */}
+      <div className="bg-[#739831]">
+        {/* Hero Section */}
+        <section
+          className="relative flex min-h-[85vh] md:min-h-screen items-center justify-center bg-cover bg-center overflow-hidden px-4"
+          style={{
+            backgroundImage: "linear-gradient(rgba(0,0,0,0.60), rgba(0,0,0,0.55)), url('/image-hero-organicbio.webp')"
+          }}
+        >
+          <div className="container-global relative z-20 max-w-5xl text-center md:text-left">
+            <h1 className="hero-title mb-6 text-white drop-shadow-2xl animate-fade-in-up">
+              {t.rich('hero.title', {
+                br: () => <br />,
+                span: (chunks) => <span className="italic font-normal brightness-125 text-green-org">{chunks}</span>
+              })}
+            </h1>
+            <p className="mb-10 text-xl md:text-2xl text-gray-200 max-w-3xl font-light tracking-wide drop-shadow-md animate-fade-in-up animation-delay-200">
+              {t('hero.subtitle')}
+            </p>
+            <div className="flex flex-col gap-4 sm:flex-row animate-fade-in-up animation-delay-400">
+              <Link href="/productos">
+                <Button className="w-full sm:w-auto h-14 px-8 text-base font-semibold shadow-lg hover:shadow-xl transition-all">{t('hero.cta')}</Button>
+              </Link>
+              <Link href="/contacto">
+                <Button variant="secondary" className="w-full sm:w-auto h-14 px-8 text-base font-semibold bg-white/10 text-white border-white/20 backdrop-blur-md hover:bg-white/20 transition-all">{t('hero.contact')}</Button>
+              </Link>
+            </div>
           </div>
-        </div>
 
-        {/* Subtle bottom fade to transition into next section */}
-        <div className="absolute bottom-0 left-0 w-full h-32 bg-gradient-to-t from-bg-org to-transparent z-10" />
-      </section>
+          {/* Bottom fade into green */}
+          <div className="absolute bottom-0 left-0 w-full h-48 bg-gradient-to-t from-[#739831] via-[#739831]/50 to-transparent z-10" />
+        </section>
 
-      {/* Intro Quote Section */}
-      <section className="bg-[#FAF9F6] py-10 md:py-14">
-        <div className="container-global text-center max-w-4xl mx-auto">
-          <div className="mx-auto mb-4 flex h-14 w-14 items-center justify-center rounded-full bg-green-org/10 text-green-org">
-            <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" /><path d="m9 12 2 2 4-4" /></svg>
-          </div>
-          <h2 className="text-3xl md:text-4xl lg:text-[40px] font-bold text-gray-org-dark leading-tight tracking-tight">
-            {t.rich('introQuote', {
-              green: (chunks) => <span className="text-green-org">{chunks}</span>
-            })}
-          </h2>
-          <div className="mt-6 mx-auto w-16 h-1 bg-[#EFBC3D] rounded-full"></div>
-        </div>
-      </section>
+        {/* Unified Quote + Proofs Section */}
+        <section className="bg-gradient-to-b from-[#739831] to-[#5a7a26] pt-16 md:pt-20 pb-16 md:pb-24">
+          <div className="container-global">
 
-      <section className="bg-white py-20 md:py-28">
-        <div className="container-global">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-16 lg:gap-20">
-
-            {/* Card 1: Producción Ecológica */}
-            <div className="group flex flex-col items-center text-center">
-              <div className="relative mb-10 h-[200px] w-[200px] lg:h-[250px] lg:w-[250px]">
-                {/* Decorative border circle */}
-                <div className="absolute -inset-4 rounded-full border border-dashed border-[#EFBC3D]/20 group-hover:rotate-45 transition-transform duration-1000"></div>
-                {/* Main image circle */}
-                <div className="relative h-full w-full overflow-hidden rounded-full shadow-lg border-2 border-white group-hover:shadow-2xl transition-all duration-500">
-                  <Image
-                    src="/control-produccion-ecologica-organicbio.webp"
-                    alt={t('proofs.eco.title')}
-                    fill
-                    className="object-cover group-hover:scale-110 transition-transform duration-700"
-                  />
-                  <div className="absolute inset-0 bg-black/5 group-hover:bg-transparent transition-colors duration-500"></div>
-                </div>
-                {/* Floating Icon Badge */}
-                <div className="absolute -bottom-1 -right-1 h-11 w-11 rounded-full bg-[#EFBC3D] text-white flex items-center justify-center shadow-md transform group-hover:scale-110 transition-transform duration-500 z-10">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><path d="M3.85 8.62a4 4 0 0 1 4.78-4.77 4 4 0 0 1 6.74 0 4 4 0 0 1 4.78 4.78 4 4 0 0 1 0 6.74 4 4 0 0 1-4.77 4.78 4 4 0 0 1-6.75 0 4 4 0 0 1-4.78-4.77 4 4 0 0 1 0-6.76Z" /><path d="m9 12 2 2 4-4" /></svg>
-                </div>
-              </div>
-              <h3 className="mb-4 text-[22px] lg:text-[24px] font-bold text-gray-org-dark tracking-tight leading-tight">{t('proofs.eco.title')}</h3>
-              <p className="text-[15px] lg:text-[16px] leading-[1.5] text-slate-500 max-w-[280px] mb-8">
-                {t('proofs.eco.desc')}
-              </p>
-              <div className="text-[11px] font-bold text-[#EFBC3D] uppercase tracking-[0.2em] border-b border-[#EFBC3D]/10 pb-1.5 group-hover:border-[#EFBC3D] group-hover:text-[#d4a32d] transition-all duration-300">
-                {t('proofs.eco.footer')}
-              </div>
+            {/* Icon */}
+            <div className="mx-auto mb-6 flex h-14 w-14 items-center justify-center rounded-full bg-white/15 text-white backdrop-blur-sm">
+              <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" /><path d="m9 12 2 2 4-4" /></svg>
             </div>
 
-            {/* Card 2: Control de Origen */}
-            <div className="group flex flex-col items-center text-center">
-              <div className="relative mb-10 h-[200px] w-[200px] lg:h-[250px] lg:w-[250px]">
-                <div className="absolute -inset-4 rounded-full border border-dashed border-[#EFBC3D]/20 group-hover:rotate-45 transition-transform duration-1000"></div>
-                <div className="relative h-full w-full overflow-hidden rounded-full shadow-lg border-2 border-white group-hover:shadow-2xl transition-all duration-500">
-                  <Image
-                    src="/control-organicbio.webp"
-                    alt={t('proofs.control.title')}
-                    fill
-                    className="object-cover group-hover:scale-110 transition-transform duration-700"
-                  />
-                  <div className="absolute inset-0 bg-black/5 group-hover:bg-transparent transition-colors duration-500"></div>
-                </div>
-                <div className="absolute -bottom-1 -right-1 h-11 w-11 rounded-full bg-[#EFBC3D] text-white flex items-center justify-center shadow-md transform group-hover:scale-110 transition-transform duration-500 z-10">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
-                    <path d="M10 17h4" />
-                    <path d="M3 10V6a2 2 0 0 1 2-2h7a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-7" />
-                    <path d="M14 7h3l4 4v7a2 2 0 0 1-2 2h-1" />
-                    <circle cx="7.5" cy="17.5" r="2.5" />
-                    <circle cx="17.5" cy="17.5" r="2.5" />
-                  </svg>
-                </div>
-              </div>
-              <h3 className="mb-4 text-[22px] lg:text-[24px] font-bold text-gray-org-dark tracking-tight leading-tight">{t('proofs.control.title')}</h3>
-              <p className="text-[15px] lg:text-[16px] leading-[1.5] text-slate-500 max-w-[280px] mb-8">
-                {t('proofs.control.desc')}
-              </p>
-              <div className="text-[11px] font-bold text-[#EFBC3D] uppercase tracking-[0.2em] border-b border-[#EFBC3D]/10 pb-1.5 group-hover:border-[#EFBC3D] group-hover:text-[#d4a32d] transition-all duration-300">
-                {t('proofs.control.footer')}
-              </div>
+            {/* Main Quote */}
+            <div className="text-center max-w-4xl mx-auto">
+              <h2 className="text-3xl md:text-4xl lg:text-[40px] font-bold text-white leading-tight tracking-tight">
+                {t.rich('introQuote', {
+                  green: (chunks) => <span className="text-[#EFBC3D]">{chunks}</span>
+                })}
+              </h2>
             </div>
 
-            {/* Card 3: Exportación Internacional */}
-            <div className="group flex flex-col items-center text-center">
-              <div className="relative mb-10 h-[200px] w-[200px] lg:h-[250px] lg:w-[250px]">
-                <div className="absolute -inset-4 rounded-full border border-dashed border-[#EFBC3D]/20 group-hover:rotate-45 transition-transform duration-1000"></div>
-                <div className="relative h-full w-full overflow-hidden rounded-full shadow-lg border-2 border-white group-hover:shadow-2xl transition-all duration-500">
-                  <Image
-                    src="/exportacion-organicbio.webp"
-                    alt={t('proofs.export.title')}
-                    fill
-                    className="object-cover group-hover:scale-110 transition-transform duration-700"
-                  />
-                  <div className="absolute inset-0 bg-black/5 group-hover:bg-transparent transition-colors duration-500"></div>
+            {/* Decorative Line */}
+            <div className="mt-8 mx-auto w-16 h-1 bg-[#EFBC3D] rounded-full"></div>
+
+            {/* Three Circles */}
+            <div className="mt-16 md:mt-20 grid grid-cols-1 md:grid-cols-3 gap-16 lg:gap-20">
+
+              {/* Card 1: Producción Ecológica */}
+              <div className="group flex flex-col items-center text-center">
+                <div className="relative mb-10 h-[200px] w-[200px] lg:h-[250px] lg:w-[250px]">
+                  {/* Decorative border circle */}
+                  <div className="absolute -inset-4 rounded-full border border-dashed border-white/20 group-hover:rotate-45 transition-transform duration-1000"></div>
+                  {/* Main image circle */}
+                  <div className="relative h-full w-full overflow-hidden rounded-full shadow-xl border-3 border-white group-hover:shadow-2xl transition-all duration-500">
+                    <Image
+                      src="/control-produccion-ecologica-organicbio.webp"
+                      alt={t('proofs.eco.title')}
+                      fill
+                      className="object-cover group-hover:scale-110 transition-transform duration-700"
+                    />
+                    <div className="absolute inset-0 bg-black/5 group-hover:bg-transparent transition-colors duration-500"></div>
+                  </div>
+                  {/* Floating Icon Badge */}
+                  <div className="absolute -bottom-1 -right-1 h-11 w-11 rounded-full bg-[#EFBC3D] text-white flex items-center justify-center shadow-md transform group-hover:scale-110 transition-transform duration-500 z-10">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><path d="M3.85 8.62a4 4 0 0 1 4.78-4.77 4 4 0 0 1 6.74 0 4 4 0 0 1 4.78 4.78 4 4 0 0 1 0 6.74 4 4 0 0 1-4.77 4.78 4 4 0 0 1-6.75 0 4 4 0 0 1-4.78-4.77 4 4 0 0 1 0-6.76Z" /><path d="m9 12 2 2 4-4" /></svg>
+                  </div>
                 </div>
-                <div className="absolute -bottom-1 -right-1 h-11 w-11 rounded-full bg-[#EFBC3D] text-white flex items-center justify-center shadow-md transform group-hover:scale-110 transition-transform duration-500 z-10">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="12" r="10" /><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20" /><path d="M2 12h20" /></svg>
+                <h3 className="mb-4 text-[22px] lg:text-[24px] font-bold text-white tracking-tight leading-tight">{t('proofs.eco.title')}</h3>
+                <p className="text-[15px] lg:text-[16px] leading-[1.5] text-white/70 max-w-[280px] mb-8">
+                  {t('proofs.eco.desc')}
+                </p>
+                <div className="text-[11px] font-bold text-[#EFBC3D] uppercase tracking-[0.2em] border-b border-[#EFBC3D]/20 pb-1.5 group-hover:border-[#EFBC3D] transition-all duration-300">
+                  {t('proofs.eco.footer')}
                 </div>
               </div>
-              <h3 className="mb-4 text-[22px] lg:text-[24px] font-bold text-gray-org-dark tracking-tight leading-tight">{t('proofs.export.title')}</h3>
-              <p className="text-[15px] lg:text-[16px] leading-[1.5] text-slate-500 max-w-[280px] mb-8">
-                {t('proofs.export.desc')}
-              </p>
-              <div className="text-[11px] font-bold text-[#EFBC3D] uppercase tracking-[0.2em] border-b border-[#EFBC3D]/10 pb-1.5 group-hover:border-[#EFBC3D] group-hover:text-[#d4a32d] transition-all duration-300">
-                {t('proofs.export.footer')}
+
+              {/* Card 2: Control de Origen */}
+              <div className="group flex flex-col items-center text-center">
+                <div className="relative mb-10 h-[200px] w-[200px] lg:h-[250px] lg:w-[250px]">
+                  <div className="absolute -inset-4 rounded-full border border-dashed border-white/20 group-hover:rotate-45 transition-transform duration-1000"></div>
+                  <div className="relative h-full w-full overflow-hidden rounded-full shadow-xl border-3 border-white group-hover:shadow-2xl transition-all duration-500">
+                    <Image
+                      src="/control-organicbio.webp"
+                      alt={t('proofs.control.title')}
+                      fill
+                      className="object-cover group-hover:scale-110 transition-transform duration-700"
+                    />
+                    <div className="absolute inset-0 bg-black/5 group-hover:bg-transparent transition-colors duration-500"></div>
+                  </div>
+                  <div className="absolute -bottom-1 -right-1 h-11 w-11 rounded-full bg-[#EFBC3D] text-white flex items-center justify-center shadow-md transform group-hover:scale-110 transition-transform duration-500 z-10">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
+                      <path d="M10 17h4" />
+                      <path d="M3 10V6a2 2 0 0 1 2-2h7a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-7" />
+                      <path d="M14 7h3l4 4v7a2 2 0 0 1-2 2h-1" />
+                      <circle cx="7.5" cy="17.5" r="2.5" />
+                      <circle cx="17.5" cy="17.5" r="2.5" />
+                    </svg>
+                  </div>
+                </div>
+                <h3 className="mb-4 text-[22px] lg:text-[24px] font-bold text-white tracking-tight leading-tight">{t('proofs.control.title')}</h3>
+                <p className="text-[15px] lg:text-[16px] leading-[1.5] text-white/70 max-w-[280px] mb-8">
+                  {t('proofs.control.desc')}
+                </p>
+                <div className="text-[11px] font-bold text-[#EFBC3D] uppercase tracking-[0.2em] border-b border-[#EFBC3D]/20 pb-1.5 group-hover:border-[#EFBC3D] transition-all duration-300">
+                  {t('proofs.control.footer')}
+                </div>
+              </div>
+
+              {/* Card 3: Exportación Internacional */}
+              <div className="group flex flex-col items-center text-center">
+                <div className="relative mb-10 h-[200px] w-[200px] lg:h-[250px] lg:w-[250px]">
+                  <div className="absolute -inset-4 rounded-full border border-dashed border-white/20 group-hover:rotate-45 transition-transform duration-1000"></div>
+                  <div className="relative h-full w-full overflow-hidden rounded-full shadow-xl border-3 border-white group-hover:shadow-2xl transition-all duration-500">
+                    <Image
+                      src="/exportacion-organicbio.webp"
+                      alt={t('proofs.export.title')}
+                      fill
+                      className="object-cover group-hover:scale-110 transition-transform duration-700"
+                    />
+                    <div className="absolute inset-0 bg-black/5 group-hover:bg-transparent transition-colors duration-500"></div>
+                  </div>
+                  <div className="absolute -bottom-1 -right-1 h-11 w-11 rounded-full bg-[#EFBC3D] text-white flex items-center justify-center shadow-md transform group-hover:scale-110 transition-transform duration-500 z-10">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="12" r="10" /><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20" /><path d="M2 12h20" /></svg>
+                  </div>
+                </div>
+                <h3 className="mb-4 text-[22px] lg:text-[24px] font-bold text-white tracking-tight leading-tight">{t('proofs.export.title')}</h3>
+                <p className="text-[15px] lg:text-[16px] leading-[1.5] text-white/70 max-w-[280px] mb-8">
+                  {t('proofs.export.desc')}
+                </p>
+                <div className="text-[11px] font-bold text-[#EFBC3D] uppercase tracking-[0.2em] border-b border-[#EFBC3D]/20 pb-1.5 group-hover:border-[#EFBC3D] transition-all duration-300">
+                  {t('proofs.export.footer')}
+                </div>
               </div>
             </div>
-
           </div>
-        </div>
-      </section>
+        </section>
+      </div>
 
       {/* Product Categories */}
       <section className="container-global pt-10 pb-20">
@@ -203,7 +212,7 @@ export default function Home() {
               <div className="flex flex-col flex-1 p-6 md:p-8">
                 {/* Text Content */}
                 <div className="flex-1">
-                  <h3 className="text-[28px] font-bold text-[#0f172a] mb-3 tracking-tight font-serif">
+                  <h3 className="text-[28px] font-bold text-[#0f172a] mb-3 tracking-tight font-playfair">
                     {product.name}
                   </h3>
                   <p className="text-[16px] text-[#64748b] leading-relaxed mb-8">
@@ -215,7 +224,6 @@ export default function Home() {
                 <Link href={`/productos/${product.id}`} className="mt-auto block">
                   <Button variant="secondary" className="w-full flex items-center justify-center gap-2 h-[48px] rounded-xl text-[15px] font-bold border-2 border-[#7a9d34] text-[#7a9d34] hover:bg-[#7a9d34] hover:text-white transition-colors">
                     {t('products.fichaBtn')}
-                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" /><polyline points="14 2 14 8 20 8" /><line x1="16" y1="13" x2="8" y2="13" /><line x1="16" y1="17" x2="8" y2="17" /><polyline points="10 9 9 9 8 9" /></svg>
                   </Button>
                 </Link>
               </div>
@@ -224,134 +232,161 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Strategic Location */}
-      <section className="bg-gray-50 py-24 px-4 border-t border-gray-100 mt-10">
+      {/* Origen de nuestra producción - Header Only */}
+      <section className="bg-white pt-24 pb-12 overflow-hidden">
         <div className="container-global">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
-            {/* Desktop Image Column (Hidden on mobile) */}
-            <div className="hidden lg:block relative w-full aspect-square md:aspect-[4/3] lg:aspect-auto lg:h-[600px] rounded-3xl overflow-hidden shadow-2xl">
+          <div className="max-w-3xl mx-auto text-center">
+            <span className="text-sm font-bold text-[#7a9d34] tracking-[0.2em] uppercase mb-4 block animate-fade-in">
+              Operativa Global
+            </span>
+            <h2 className="text-4xl md:text-5xl font-bold text-[#0f172a] mb-6 tracking-tight font-playfair">
+              {t('location.title')}
+            </h2>
+            <p className="text-[#64748b] text-lg md:text-xl leading-relaxed">
+              {t('location.subtitle')}
+            </p>
+          </div>
+
+          {/* New Production Image with Interactive Markers */}
+          <div className="relative max-w-5xl mx-auto mt-16 md:mt-24">
+            <div className="relative aspect-[16/9] md:aspect-[21/9] w-full rounded-[40px] overflow-hidden shadow-2xl border border-gray-100 group shadow-[#7a9d34]/5">
               <Image
-                src="/hero-image-organicbio.webp"
-                alt={t('location.subtitle')}
+                src="/mapa-origen-produccion-organicbio.webp"
+                alt="Origen de nuestra producción"
                 fill
-                className="object-cover"
+                className="object-cover transition-transform duration-1000 group-hover:scale-105"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent" />
-              <div className="absolute bottom-10 left-10 text-white">
-                <div className="flex items-center gap-3 mb-1">
-                  <div className="text-yellow-org">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="currentColor" stroke="none"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z" /></svg>
-                  </div>
-                  <h3 className="text-3xl font-bold font-sans tracking-tight">{t('location.subtitle')}</h3>
-                </div>
-                <p className="text-gray-300 text-xl ml-[44px]">{t('location.caption')}</p>
-              </div>
-            </div>
+              <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent pointer-events-none" />
 
-            {/* Right Content Column */}
-            <div className="flex flex-col justify-center">
-              <h2 className="text-4xl lg:text-[46px] font-bold text-gray-900 mb-8 leading-tight">
-                {t.rich('location.title', {
-                  span: (chunks) => (
-                    <span className="relative whitespace-nowrap z-10 inline-block">
-                      {chunks}
-                      <span className="absolute -bottom-2 left-0 w-full h-[3px] bg-yellow-org"></span>
-                    </span>
-                  )
-                })}
-              </h2>
-              <p className="text-gray-600 text-lg md:text-xl leading-relaxed mb-10 lg:mb-12">
-                {t('location.desc')}
-              </p>
+              {/* --- Interactive Area (Animated Markers) --- */}
 
-              {/* Mobile Image: Shown only on mobile between text and features */}
-              <div className="lg:hidden relative w-full aspect-square md:aspect-[4/3] rounded-3xl overflow-hidden shadow-2xl mb-12">
-                <Image
-                  src="/hero-image-organicbio.webp"
-                  alt={t('location.subtitle')}
-                  fill
-                  className="object-cover"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent" />
-                <div className="absolute bottom-8 left-8 text-white">
-                  <div className="flex items-center gap-3 mb-1">
-                    <div className="text-yellow-org">
-                      <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="currentColor" stroke="none"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z" /></svg>
-                    </div>
-                    <h3 className="text-2xl font-bold font-sans tracking-tight">{t('location.subtitle')}</h3>
-                  </div>
-                  <p className="text-gray-300 text-lg ml-[40px]">{t('location.caption')}</p>
-                </div>
+              {/* Marker 1: Sede Almería */}
+              <div
+                onMouseEnter={() => setHoveredLoc('sede')}
+                onMouseLeave={() => setHoveredLoc(null)}
+                className={`absolute left-[67%] md:left-[69.1%] top-[29.9%] -translate-x-1/2 -translate-y-1/2 flex items-center justify-center transition-all duration-500 z-30 cursor-pointer ${hoveredLoc === 'sede' ? 'scale-150' : 'scale-100'}`}
+              >
+                {/* Expand Ring Animation */}
+                <div className={`absolute h-12 w-12 rounded-full bg-yellow-400/30 animate-ping duration-1000 ${hoveredLoc === 'sede' ? 'block' : 'hidden'}`} />
+                <div className={`absolute h-8 w-8 rounded-full bg-yellow-400/20 blur-md transition-opacity duration-300 ${hoveredLoc === 'sede' ? 'opacity-100' : 'opacity-0'}`} />
+                {/* The Point Dot */}
+                <div className={`h-3 w-3 rounded-full border border-white shadow-md transition-all duration-300 ${hoveredLoc === 'sede' ? 'bg-yellow-400 scale-110' : 'bg-yellow-400/50'}`} />
               </div>
 
-              <div className="flex flex-col gap-6">
-                {/* Feature 1 */}
-                <div className="flex items-start gap-6 p-8 bg-white rounded-2xl shadow-[0_8px_30px_rgb(0,0,0,0.06)] border border-gray-100 hover:-translate-y-1 transition-transform duration-300">
-                  <div className="text-yellow-org mt-1 flex-shrink-0">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" fill="currentColor" stroke="none"><path d="M20 8h-3V4H3v13h2c0 1.66 1.34 3 3 3s3-1.34 3-3h6c0 1.66 1.34 3 3 3s3-1.34 3-3h2v-5l-3-4zM8 18c-.55 0-1-.45-1-1s.45-1 1-1 1 .45 1 1-.45 1-1 1zm10 0c-.55 0-1-.45-1-1s.45-1 1-1 1 .45 1 1-.45 1-1 1zm1-5h-3V9h2.5l2 3v1h-1.5z" /></svg>
-                  </div>
-                  <div>
-                    <h4 className="font-bold text-gray-900 text-xl mb-1.5">{t('location.features.logistics.title')}</h4>
-                    <p className="text-gray-500 text-lg">{t('location.features.logistics.desc')}</p>
-                  </div>
-                </div>
+              {/* Marker 2: Níjar (Finca) */}
+              <div
+                onMouseEnter={() => setHoveredLoc('nijar')}
+                onMouseLeave={() => setHoveredLoc(null)}
+                className={`absolute left-[73%] md:left-[70.7%] top-[29.9%] -translate-x-1/2 -translate-y-1/2 flex items-center justify-center transition-all duration-500 z-30 cursor-pointer ${hoveredLoc === 'nijar' ? 'scale-150' : 'scale-100'}`}
+              >
+                <div className={`absolute h-12 w-12 rounded-full bg-[#7a9d34]/30 animate-ping duration-1000 ${hoveredLoc === 'nijar' ? 'block' : 'hidden'}`} />
+                <div className={`absolute h-8 w-8 rounded-full bg-[#7a9d34]/20 blur-md transition-opacity duration-300 ${hoveredLoc === 'nijar' ? 'opacity-100' : 'opacity-0'}`} />
+                <div className={`h-3 w-3 rounded-full border border-white shadow-md transition-all duration-300 ${hoveredLoc === 'nijar' ? 'bg-[#7a9d34] scale-110' : 'bg-[#7a9d34]/50'}`} />
+              </div>
 
-                {/* Feature 2 */}
-                <div className="flex items-start gap-6 p-8 bg-white rounded-2xl shadow-[0_8px_30px_rgb(0,0,0,0.06)] border border-gray-100 hover:-translate-y-1 transition-transform duration-300">
-                  <div className="text-yellow-org mt-1 flex-shrink-0">
-                    {/* Award Icon Custom Fill */}
-                    <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" fill="currentColor" stroke="none"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm4.59-12.42L10 14.17l-2.59-2.58L6 13l4 4 8-8z" /></svg>
-                  </div>
-                  <div>
-                    <h4 className="font-bold text-gray-900 text-xl mb-1.5">{t('location.features.quality.title')}</h4>
-                    <p className="text-gray-500 text-lg">{t('location.features.quality.desc')}</p>
-                  </div>
-                </div>
+              {/* Marker 3: Marruecos (Fincas) */}
+              <div
+                onMouseEnter={() => setHoveredLoc('marruecos')}
+                onMouseLeave={() => setHoveredLoc(null)}
+                className={`absolute left-[47.0%] top-[63.8%] -translate-x-1/2 -translate-y-1/2 flex items-center justify-center transition-all duration-500 z-30 cursor-pointer ${hoveredLoc === 'marruecos' ? 'scale-150' : 'scale-100'}`}
+              >
+                <div className={`absolute h-16 w-16 rounded-full bg-[#7a9d34]/30 animate-ping duration-1000 ${hoveredLoc === 'marruecos' ? 'block' : 'hidden'}`} />
+                <div className={`absolute h-10 w-10 rounded-full bg-[#7a9d34]/20 blur-md transition-opacity duration-300 ${hoveredLoc === 'marruecos' ? 'opacity-100' : 'opacity-0'}`} />
+                <div className={`h-4 w-4 rounded-full border border-white shadow-md transition-all duration-300 ${hoveredLoc === 'marruecos' ? 'bg-[#7a9d34] scale-110' : 'bg-[#7a9d34]/50'}`} />
               </div>
 
             </div>
           </div>
+
+          {/* Location Cards Grid */}
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-12 md:mt-16 max-w-5xl mx-auto">
+            <div
+              onMouseEnter={() => setHoveredLoc('sede')}
+              onMouseLeave={() => setHoveredLoc(null)}
+              className={`bg-white rounded-[32px] p-8 border transition-all duration-300 flex flex-col items-center text-center group/card cursor-default ${hoveredLoc === 'sede' ? 'border-[#EFBC3D] shadow-xl translate-y-[-4px]' : 'border-gray-100 shadow-[0_10px_40px_-15px_rgba(0,0,0,0.05)]'}`}
+            >
+              <div className={`h-3 w-3 rounded-full bg-[#EFBC3D] mb-5 shadow-[0_0_15px_rgba(239,188,61,0.5)] ${hoveredLoc === 'sede' ? 'animate-pulse scale-125' : ''}`} />
+              <h4 className={`text-[20px] font-bold text-[#0f172a] mb-3 font-playfair transition-colors duration-300 ${hoveredLoc === 'sede' ? 'text-[#7a9d34]' : ''}`}>
+                {t('location.sede.title')}
+              </h4>
+              <p className="text-[#64748b] leading-relaxed text-[15px]">
+                {t('location.sede.desc')}
+              </p>
+            </div>
+
+            <div
+              onMouseEnter={() => setHoveredLoc('nijar')}
+              onMouseLeave={() => setHoveredLoc(null)}
+              className={`bg-white rounded-[32px] p-8 border transition-all duration-300 flex flex-col items-center text-center group/card cursor-default ${hoveredLoc === 'nijar' ? 'border-[#7a9d34] shadow-xl translate-y-[-4px]' : 'border-gray-100 shadow-[0_10px_40px_-15px_rgba(0,0,0,0.05)]'}`}
+            >
+              <div className={`h-3 w-3 rounded-full bg-[#7a9d34] mb-5 shadow-[0_0_15px_rgba(122,157,52,0.5)] ${hoveredLoc === 'nijar' ? 'animate-bounce scale-125' : ''}`} />
+              <h4 className={`text-[20px] font-bold text-[#0f172a] mb-3 font-playfair transition-colors duration-300 ${hoveredLoc === 'nijar' ? 'text-[#7a9d34]' : ''}`}>
+                {t('location.nijar.title')}
+              </h4>
+              <p className="text-[#64748b] leading-relaxed text-[15px]">
+                {t('location.nijar.desc')}
+              </p>
+            </div>
+
+            <div
+              onMouseEnter={() => setHoveredLoc('marruecos')}
+              onMouseLeave={() => setHoveredLoc(null)}
+              className={`bg-white rounded-[32px] p-8 border transition-all duration-300 flex flex-col items-center text-center group/card cursor-default ${hoveredLoc === 'marruecos' ? 'border-[#7a9d34] shadow-xl translate-y-[-4px]' : 'border-gray-100 shadow-[0_10px_40px_-15px_rgba(0,0,0,0.05)]'}`}
+            >
+              <div className={`h-3 w-3 rounded-full bg-[#7a9d34] mb-5 shadow-[0_0_15px_rgba(122,157,52,0.5)] ${hoveredLoc === 'marruecos' ? 'scale-125' : ''}`} />
+              <h4 className={`text-[20px] font-bold text-[#0f172a] mb-3 font-playfair transition-colors duration-300 ${hoveredLoc === 'marruecos' ? 'text-[#7a9d34]' : ''}`}>
+                {t('location.marruecos.title')}
+              </h4>
+              <p className="text-[#64748b] leading-relaxed text-[15px]">
+                {t('location.marruecos.desc')}
+              </p>
+            </div>
+          </div>
+
         </div>
       </section>
 
+
       {/* CTA Commitment Block */}
-      <section className="container-global mt-16 mb-10">
-        <div className="bg-green-org rounded-[32px] overflow-hidden shadow-xl flex flex-col md:flex-row relative">
+      <section className="bg-gradient-to-br from-[#f0f5e8] via-[#f5f8ef] to-[#eef3e4] py-16 md:py-20">
+        <div className="container-global">
+          <div className="bg-white rounded-[32px] overflow-hidden shadow-xl border border-gray-100 flex flex-col md:flex-row relative">
 
-          {/* Subtle Star Pattern Background */}
-          <div
-            className="absolute inset-0 pointer-events-none opacity-[0.15] z-0 hidden md:block"
-            style={{ backgroundImage: `url("data:image/svg+xml,%3Csvg width='48' height='48' viewBox='0 0 48 48' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M24 16v16M16 24h16' stroke='%23EFBC3D' stroke-width='1.5' stroke-linecap='round'/%3E%3C/svg%3E")`, backgroundSize: '64px 64px' }}
-          />
-
-          {/* Left Content */}
-          <div className="w-full md:w-[45%] p-10 md:py-12 lg:py-14 md:px-12 lg:px-16 flex flex-col justify-center relative z-10">
-            <h2 className="text-3xl font-bold text-white mb-5 leading-tight">
-              {t.rich('commitment.title', {
-                br: () => <br />
-              })}
-            </h2>
-            <p className="text-white/80 text-[16px] md:text-[17px] leading-relaxed mb-8 max-w-lg relative z-10">
-              {t('commitment.desc')}
-            </p>
-            <div className="relative z-10">
-              <Link href="/compromiso">
-                <Button className="bg-white text-green-org hover:bg-gray-50 h-12 px-8 text-[15px] font-bold shadow-md transition-all rounded-full border-none">
-                  {t('commitment.cta')}
-                </Button>
-              </Link>
-            </div>
-          </div>
-
-          {/* Right Image */}
-          <div className="w-full md:w-[55%] relative min-h-[300px] md:min-h-[auto] flex-shrink-0">
-            <div className="absolute inset-0 bg-gradient-to-b md:bg-gradient-to-r from-green-org via-green-org/70 to-transparent pointer-events-none z-10 md:w-full" />
-            <Image
-              src="/compromiso-organicbio.webp"
-              alt={t('commitment.title')}
-              fill
-              className="object-cover relative z-0"
+            {/* Subtle Star Pattern Background */}
+            <div
+              className="absolute inset-0 pointer-events-none opacity-[0.06] z-0 hidden md:block"
+              style={{ backgroundImage: `url("data:image/svg+xml,%3Csvg width='48' height='48' viewBox='0 0 48 48' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M24 16v16M16 24h16' stroke='%23739831' stroke-width='1.5' stroke-linecap='round'/%3E%3C/svg%3E")`, backgroundSize: '64px 64px' }}
             />
+
+            {/* Left Content */}
+            <div className="w-full md:w-[45%] p-10 md:py-12 lg:py-14 md:px-12 lg:px-16 flex flex-col justify-center relative z-10">
+              <h2 className="text-3xl font-bold text-green-org mb-5 leading-tight">
+                {t.rich('commitment.title', {
+                  br: () => <br />
+                })}
+              </h2>
+              <p className="text-[#475569] text-[16px] md:text-[17px] leading-relaxed mb-8 max-w-lg relative z-10">
+                {t('commitment.desc')}
+              </p>
+              <div className="relative z-10">
+                <Link href="/compromiso">
+                  <Button className="bg-green-org text-white hover:bg-[#5a7a26] h-12 px-8 text-[15px] font-bold shadow-md transition-all rounded-full border-none">
+                    {t('commitment.cta')}
+                  </Button>
+                </Link>
+              </div>
+            </div>
+
+            {/* Right Image */}
+            <div className="w-full md:w-[55%] relative min-h-[300px] md:min-h-[auto] flex-shrink-0">
+              <div className="absolute inset-0 bg-gradient-to-b md:bg-gradient-to-r from-white via-white/70 to-transparent pointer-events-none z-10 md:w-full" />
+              <Image
+                src="/card-compromiso-organicbio.webp"
+                alt={t('commitment.title')}
+                fill
+                className="object-cover object-right relative z-0"
+              />
+            </div>
           </div>
         </div>
       </section>

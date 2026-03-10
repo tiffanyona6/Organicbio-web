@@ -21,7 +21,7 @@
             "title": "Savor the<br></br><span>Purest</span><br></br>Nature.",
             "subtitle": "We export premium organic vegetables directly from our fields in Almería to your table.",
             "cta": "View products",
-            "about": "Get to know us"
+            "contact": "Contact us"
         },
         "introQuote": "\"Certified organic <green>production</green>, guaranteed traceability, and <green>international</green> supply.\"",
         "proofs": {
@@ -58,7 +58,7 @@
                 "desc": "Environmentally friendly cultivation, resulting in a tender product with thin skin."
             },
             "catalogBtn": "View full catalog",
-            "fichaBtn": "Technical data sheet"
+            "fichaBtn": "View product"
         },
         "calendar": {
             "title": "Campaign Calendar",
@@ -73,19 +73,19 @@
             "cta": "Our commitment"
         },
         "location": {
-            "title": "Strategic location",
-            "subtitle": "Almería, Spain",
-            "caption": "Headquarters",
-            "desc": "Our company is headquartered in Almería, one of Europe's main logistical centers for fruit and vegetable exports. From here we coordinate the distribution of our products to the main European markets.\n\nThe production is carried out in our own farms located in Morocco, where the climate allows us to grow high-quality organic vegetables all year round.",
-            "features": {
-                "logistics": {
-                    "title": "Efficient logistics",
-                    "desc": "Fast distribution to the main European markets thanks to an optimized logistics chain."
-                },
-                "quality": {
-                    "title": "Direct control of origin",
-                    "desc": "Production on our own farms that guarantees traceability, constant quality, and control from cultivation to marketing."
-                }
+            "title": "Origin of our production",
+            "subtitle": "Our activity is developed between Almería and Morocco, two strategic areas for vegetable cultivation.",
+            "sede": {
+                "title": "Headquarters · Almería",
+                "desc": "Company coordination center and key logistical point for the fruit and vegetable sector."
+            },
+            "nijar": {
+                "title": "Farm · Níjar (Almería)",
+                "desc": "Agricultural area recognized for its horticultural tradition and cultivation quality."
+            },
+            "marruecos": {
+                "title": "Farms · Morocco",
+                "desc": "Production of our main vegetables under optimal climatic conditions."
             }
         }
     },
@@ -169,42 +169,22 @@
         }
     },
     "SobreOrganicBio": {
-        "intro": {
-            "title": "About OrganicBio",
-            "desc": "Organic-Bio Agriculture SL is a company dedicated heart and soul to the production and marketing of organic vegetables. We operate from Almería, the garden of Europe, taking our healthy products to the most demanding international markets."
+        "title": "About Us",
+        "intro": "Organic Bio Agriculture SL is a company specialized in the production and marketing of organic vegetables for the international market.",
+        "description": {
+            "p1": "The company coordinates its activity from Almería, one of Europe's main logistical fruit and vegetable centers, while production takes place on its own farms located in Morocco.",
+            "p2": "This own production model allows us to guarantee direct control of the origin, constant quality, and a stable supply to the main European markets."
         },
-        "history": {
-            "title": "Our History and Mission",
-            "p1": "We were born with a clear vision: to cultivate the future. We have grown firmly believing that organic agriculture is the only sustainable way to provide healthy food without compromising the resources of next generations.",
-            "p2": "Our mission is to supply top-tier fruit and vegetable companies and distributors with real, traceable organic products of maximum freshness."
-        },
-        "stats": {
-            "production": "Own Production",
-            "countries": "Exported Countries"
-        },
-        "infrastructure": {
-            "title": "Infrastructure",
-            "desc": "We control the complete process. From our own farms in Almería, where the sunlight works magic throughout the year, to our handling facilities.",
-            "list": {
-                "item1": "Farms with smart irrigation technology.",
-                "item2": "Climate-controlled warehouse to maintain the cold chain.",
-                "item3": "Organic certified packaging lines.",
-                "item4": "Logistics alliances for fast international transport."
-            }
+        "vision": {
+            "title": "Our Vision",
+            "p1": "Our goal is to offer European importers and distributors high-quality organic products, grown responsibly and with full traceability from the origin.",
+            "p2": "We work with a model based on own production, direct control of the crop, and compliance with international quality standards, allowing us to offer reliable products adapted to the requirements of the European market."
         },
         "markets": {
             "title": "Our Markets",
-            "desc": "Our main business volume is B2B export, sending the flavor and health of Spanish organic agriculture across Europe.",
-            "countries": [
-                "Germany",
-                "United Kingdom",
-                "France",
-                "Netherlands",
-                "Switzerland",
-                "Nordic Countries"
-            ]
-        },
-        "imageLabel": "Facility / Field Image"
+            "p1": "Our activity focuses on the supply of organic vegetables to importers and supermarket chains in Europe.",
+            "p2": "Currently we export to more than five European countries, working mainly with clients in Germany and other markets that demand certified organic products and reliable suppliers."
+        }
     },
     "Compromiso": {
         "hero": {
@@ -337,6 +317,7 @@
         "tabs": {
             "info": "Product Info",
             "specs": "Technical Specs",
+            "fichaBtn": "ANSEHEN",
             "logistics": "Logistics & Packaging",
             "crop": {
                 "title": "Crop Information",

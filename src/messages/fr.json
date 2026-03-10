@@ -21,7 +21,7 @@
             "title": "Savourez la<br></br><span>Nature</span><br></br>la Plus Pure.",
             "subtitle": "Nous exportons des légumes biologiques de première qualité directement de nos champs d'Almería à votre table.",
             "cta": "Voir les produits",
-            "about": "Faites notre connaissance"
+            "contact": "Nous contacter"
         },
         "introQuote": "\"Production écologique <green>certifiée</green>, traçabilité garantie et approvisionnement <green>international</green>.\"",
         "proofs": {
@@ -58,7 +58,7 @@
                 "desc": "Culture respectueuse de l'environnement, offrant un produit tendre à peau fine."
             },
             "catalogBtn": "Voir le catalogue complet",
-            "fichaBtn": "Fiche technique"
+            "fichaBtn": "Voir le produit"
         },
         "calendar": {
             "title": "Calendrier de Campagne",
@@ -73,19 +73,19 @@
             "cta": "Notre engagement"
         },
         "location": {
-            "title": "Emplacement stratégique",
-            "subtitle": "Almería, Espagne",
-            "caption": "Siège Social",
-            "desc": "Notre entreprise a son siège à Almería, l'un des principaux centres logistiques d'exportation de fruits et légumes en Europe. De là, nous coordonnons la distribution de nos produits vers les principaux marchés européens.\n\nLa production est réalisée dans nos propres fermes situées au Maroc, où le climat permet de cultiver des légumes biologiques de haute qualité tout au long de l'année.",
-            "features": {
-                "logistics": {
-                    "title": "Logistique efficace",
-                    "desc": "Distribution rapide vers les principaux marchés européens grâce à une chaîne logistique optimisée."
-                },
-                "quality": {
-                    "title": "Contrôle direct de l'origine",
-                    "desc": "Production dans nos propres fermes qui garantit la traçabilité, une qualité constante et un contrôle de la culture jusqu'à la commercialisation."
-                }
+            "title": "Origine de notre production",
+            "subtitle": "Notre activité se développe entre Almería et le Maroc, deux zones stratégiques pour la culture maraîchère.",
+            "sede": {
+                "title": "Siège · Almería",
+                "desc": "Centre de coordination de l'entreprise et point logistique clé du secteur des fruits et légumes."
+            },
+            "nijar": {
+                "title": "Ferme · Níjar (Almería)",
+                "desc": "Zone agricole reconnue pour sa tradition horticole et sa qualité de culture."
+            },
+            "marruecos": {
+                "title": "Fermes · Maroc",
+                "desc": "Production de nos principaux légumes dans des conditions climatiques optimales."
             }
         }
     },

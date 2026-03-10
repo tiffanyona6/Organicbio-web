@@ -21,44 +21,44 @@
             "title": "Saborea la<br></br><span>Naturaleza</span><br></br>Más Pura.",
             "subtitle": "Exportamos hortalizas ecológicas premium directamente de nuestros campos en Almería hasta tu mesa.",
             "cta": "Ver productos",
-            "about": "Conócenos"
+            "contact": "Contactar"
         },
-        "introQuote": "\"Producción ecológica <green>certificada</green>, trazabilidad garantizada y suministro <green>internacional</green>.\"",
+        "introQuote": "\"Producción ecológica <green>certificada</green>, control directo del origen y suministro para mercados nacionales e <green>internacionales</green>.\"",
         "proofs": {
             "eco": {
                 "title": "Producción ecológica certificada",
-                "desc": "Certificación ecológica europea y estándares internacionales que garantizan la pureza y calidad del producto.",
+                "desc": "Cultivos bajo certificación ecológica europea.",
                 "footer": "Sello EU Bio"
             },
             "control": {
                 "title": "Control directo del origen",
-                "desc": "Fincas propias que aseguran frescura, calidad y trazabilidad completa desde la siembra.",
+                "desc": "Producción propia que garantiza trazabilidad y calidad constante.",
                 "footer": "Fincas Propias"
             },
             "export": {
                 "title": "Exportación internacional",
-                "desc": "Logística eficiente hacia los principales mercados europeos con máxima frescura.",
+                "desc": "Distribución hacia los principales mercados europeos.",
                 "footer": "Mercado Europeo"
             }
         },
         "products": {
             "label": "EXCELENCIA AGRÍCOLA",
-            "title": "Nuestros Productos",
-            "subtitle": "Seleccionamos las mejores variedades de cultivo sostenible para garantizar un sabor auténtico y una calidad nutricional superior.",
+            "title": "Nuestra selección",
+            "subtitle": "Trabajamos con variedades seleccionadas por su sabor, textura y calidad, ofreciendo hortalizas frescas que responden a las exigencias del mercado actual.",
             "tomate": {
                 "name": "Tomate",
-                "desc": "Variedades seleccionadas por su intenso aroma y textura carnosa. Cultivados bajo el sol del mediterráneo."
+                "desc": "Tomates de sabor equilibrado y textura firme, apreciados por su intensidad aromática y su versatilidad en cocina."
             },
             "pimiento": {
                 "name": "Pimiento",
-                "desc": "Frescura garantizada desde la cosecha hasta su entrega. Disponibilidad en gamas roja, verde y amarilla."
+                "desc": "Pimientos de pulpa firme y jugosa, reconocidos por su color intenso y sabor equilibrado."
             },
             "calabacin": {
                 "name": "Calabacín",
-                "desc": "Cultivo respetuoso con el medio ambiente, resultando en un producto tierno y de piel fina."
+                "desc": "Calabacines de piel fina y textura tierna, con un sabor suave que los convierte en un ingrediente esencial en múltiples preparaciones."
             },
             "catalogBtn": "Ver catálogo completo",
-            "fichaBtn": "Ficha técnica"
+            "fichaBtn": "Ver producto"
         },
         "calendar": {
             "title": "Calendario de Campaña",
@@ -73,19 +73,19 @@
             "cta": "Nuestro compromiso"
         },
         "location": {
-            "title": "Ubicación estratégica",
-            "subtitle": "Almería, España",
-            "caption": "Sede Central",
-            "desc": "Nuestra empresa tiene su sede en Almería, uno de los principales centros logísticos de exportación hortofrutícola de Europa. Desde aquí coordinamos la distribución de nuestros productos hacia los principales mercados europeos.\n\nLa producción se realiza en fincas propias situadas en Marruecos, donde el clima permite cultivar hortalizas ecológicas de alta calidad durante todo el año.",
-            "features": {
-                "logistics": {
-                    "title": "Logística eficiente",
-                    "desc": "Distribución rápida hacia los principales mercados europeos gracias a una cadena logística optimizada."
-                },
-                "quality": {
-                    "title": "Control directo del origen",
-                    "desc": "Producción en fincas propias que garantiza trazabilidad, calidad constante y control desde el cultivo hasta la comercialización."
-                }
+            "title": "Origen de nuestra producción",
+            "subtitle": "Nuestra actividad se desarrolla entre Almería y Marruecos, dos zonas estratégicas para el cultivo de hortalizas.",
+            "sede": {
+                "title": "Sede · Almería",
+                "desc": "Centro de coordinación de la empresa y punto logístico clave del sector hortofrutícola."
+            },
+            "nijar": {
+                "title": "Finca · Níjar (Almería)",
+                "desc": "Zona agrícola reconocida por su tradición hortícola y calidad de cultivo."
+            },
+            "marruecos": {
+                "title": "Fincas · Marruecos",
+                "desc": "Producción de nuestras principales hortalizas en condiciones climáticas óptimas."
             }
         }
     },
@@ -169,93 +169,84 @@
         }
     },
     "SobreOrganicBio": {
-        "intro": {
-            "title": "Sobre OrganicBio",
-            "desc": "Organic-Bio Agriculture SL es una empresa dedicada en cuerpo y alma a la producción y comercialización de hortalizas ecológicas. Operamos desde Almería, la huerta de Europa, llevando nuestros productos saludables a los mercados internacionales más exigentes."
+        "title": "Conócenos",
+        "intro": "Organic Bio Agriculture SL es una empresa especializada en la producción y comercialización de hortalizas ecológicas destinadas al mercado internacional.",
+        "description": {
+            "p1": "La empresa coordina su actividad desde Almería, uno de los principales centros logísticos hortofrutícolas de Europa, mientras que la producción se desarrolla en fincas propias situadas en Marruecos.",
+            "p2": "Este modelo de producción propia permite garantizar control directo del origen, calidad constante y un suministro estable hacia los principales mercados europeos."
         },
-        "history": {
-            "title": "Nuestra Historia y Misión",
-            "p1": "Nacimos con una visión clara: cultivar el futuro. Hemos crecido creyendo firmemente que la agricultura orgánica es el único camino sostenible para proporcionar alimentos saludables sin comprometer los recursos de las próximas generaciones.",
-            "p2": "Nuestra misión es suministrar a empresas y distribuidores hortofrutícolas de primer nivel productos ecológicos reales, trazables, y de la máxima frescura."
-        },
-        "stats": {
-            "production": "Producción Propia",
-            "countries": "Países Exportados"
-        },
-        "infrastructure": {
-            "title": "Infraestructura",
-            "desc": "Controlamos el proceso completo. Desde nuestras fincas propias en Almería, donde la luz del sol hace magia durante todo el año, hasta nuestras instalaciones de manipulado.",
-            "list": {
-                "item1": "Fincas con tecnología de riego inteligente.",
-                "item2": "Almacén climatizado para romper la cadena de calor.",
-                "item3": "Líneas de confección certificadas para orgánico.",
-                "item4": "Alianzas logísticas de transporte rápido internacional."
-            }
+        "vision": {
+            "title": "Nuestra visión",
+            "p1": "Nuestro objetivo es ofrecer a importadores y distribuidores europeos productos ecológicos de alta calidad, cultivados de forma responsable y con total trazabilidad desde el origen.",
+            "p2": "Trabajamos con un modelo basado en producción propia, control directo del cultivo y cumplimiento de estándares internacionales de calidad, lo que nos permite ofrecer productos fiables y adaptados a las exigencias del mercado europeo."
         },
         "markets": {
-            "title": "Nuestros Mercados",
-            "desc": "Nuestro principal volumen de negocio es la exportación B2B, enviando el sabor y la salud de la agricultura ecológica española a toda Europa.",
-            "countries": [
-                "Alemania",
-                "Reino Unido",
-                "Francia",
-                "Holanda",
-                "Suiza",
-                "Países Nórdicos"
-            ]
-        },
-        "imageLabel": "Imagen Instalaciones / Campo"
+            "title": "Nuestros mercados",
+            "p1": "Nuestra actividad se centra en el suministro de hortalizas ecológicas a importadores y cadenas de supermercados en Europa.",
+            "p2": "Actualmente exportamos a más de cinco países europeos, trabajando principalmente con clientes en Alemania y otros mercados que demandan productos ecológicos certificados y proveedores fiables."
+        }
     },
     "Compromiso": {
         "hero": {
-            "title": "Cultivamos con responsabilidad y transparencia,",
-            "desc": "respetando los ciclos naturales para ofrecer productos de alta calidad y un modelo agrícola sostenible."
+            "title": "Compromiso",
+            "intro": "Trabajamos con un modelo de producción responsable basado en la calidad del cultivo, el respeto por el entorno y el control del producto desde el origen."
         },
         "ecoProduction": {
             "subtitle": "EXCELENCIA AGRÍCOLA",
-            "title": "Producción Ecológica",
-            "desc": "Nuestros métodos preservan el ecosistema y garantizan productos libres de químicos sintéticos, manteniendo la pureza original del fruto.",
+            "title": "Producción responsable",
+            "desc": "Aplicamos prácticas de cultivo orientadas a preservar la calidad del suelo, respetar los ciclos naturales y obtener productos frescos con un control riguroso desde el campo.",
             "card1": {
-                "title": "Salud del Suelo",
-                "desc": "Rotación de cultivos y abonos orgánicos para mantener la vitalidad de la tierra y su biodiversidad microbiológica."
+                "title": "Salud del suelo",
+                "desc": "Rotación de cultivos y manejo responsable para conservar la fertilidad de la tierra."
             },
             "card2": {
-                "title": "Cero Pesticidas",
-                "desc": "Control biológico de plagas mediante enemigos naturales, eliminando por completo el uso de sustancias sintéticas nocivas."
+                "title": "Control biológico",
+                "desc": "Métodos de prevención y control orientados a reducir al mínimo el uso de sustancias no deseadas."
+            },
+            "card3": {
+                "title": "Uso responsable del agua",
+                "desc": "Gestión eficiente de los recursos hídricos para un cultivo más equilibrado."
             },
             "imageBadge": "100% Certificado bajo normativas internacionales de seguridad alimentaria."
         },
         "certifications": {
+            "title": "Certificaciones y estándares",
+            "desc": "Nuestras certificaciones respaldan el cumplimiento de estándares reconocidos en producción, buenas prácticas agrícolas y seguridad alimentaria.",
             "eu": {
                 "title": "EU Organic",
-                "desc": "Garantiza que nuestros productos cumplen con los estrictos estándares europeos de producción ecológica y sostenibilidad ambiental."
+                "desc": "Acredita el cumplimiento de la normativa europea de producción ecológica."
             },
             "globalGap": {
                 "title": "Global G.A.P.",
-                "desc": "Certifica nuestras buenas prácticas agrícolas, asegurando la trazabilidad, seguridad alimentaria y el bienestar de nuestros trabajadores."
+                "desc": "Certifica buenas prácticas agrícolas, trazabilidad y control del proceso productivo."
             }
         },
         "traceability": {
-            "title": "Trazabilidad Total",
-            "subtitle": "Del campo a su destino, cada paso está monitorizado",
+            "title": "Trazabilidad del producto",
+            "subtitle": "Seguimiento del producto en cada etapa del proceso.",
             "steps": {
                 "step1": {
                     "title": "Cultivo",
-                    "desc": "Control riguroso desde la siembra orgánica."
+                    "desc": "Supervisión del producto desde su desarrollo en campo."
                 },
                 "step2": {
-                    "title": "Procesado",
-                    "desc": "Empaque cuidadoso preservando la frescura."
+                    "title": "Selección y preparación",
+                    "desc": "Control del producto antes de su expedición."
                 },
                 "step3": {
-                    "title": "Exportación",
-                    "desc": "Logística global con control térmico."
+                    "title": "Expedición",
+                    "desc": "Organización de la salida del producto hacia destino."
                 },
                 "step4": {
-                    "title": "Consumidor",
-                    "desc": "Calidad garantizada en su mesa."
+                    "title": "Entrega al cliente",
+                    "desc": "Seguimiento orientado a mantener la calidad y la continuidad del suministro."
                 }
             }
+        },
+        "footer": {
+            "title": "Compromiso que se traduce en confianza",
+            "desc": "Trabajamos para ofrecer un producto cultivado con responsabilidad, respaldado por certificaciones reconocidas y controlado en cada etapa del proceso.",
+            "cta": "Contactar"
         },
         "quality": {
             "title": "Calidad y Trazabilidad",
