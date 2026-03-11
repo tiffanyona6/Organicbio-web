@@ -7,11 +7,11 @@
         "contact": "Kontakt"
     },
     "Footer": {
-        "description": "Export feinsten ökologischen Gemüses aus Almería in die Welt. Nachhaltig, ethisch und immer frisch.",
+        "description": "Ökologische Produktion und Export aus Almería und Marokko in die ganze Welt.\nSuchen Sie einen zuverlässigen Gemüselieferanten?",
         "menu": "MENÜ",
         "contact": "KONTAKT",
         "address": "Calle Alcudia de Monteagud 23, 04009 Almería, Spanien",
-        "rights": "© 2026 Organic-Bio Agriculture SL. Alle Rechte vorbehalten.",
+        "rights": "© 2026 OrganicBio Agriculture SL. Alle Rechte vorbehalten.",
         "privacy": "Datenschutzerklärung",
         "terms": "Nutzungsbedingungen",
         "cookies": "Cookie-Richtlinie"
@@ -46,12 +46,12 @@
             "title": "Unsere Produkte",
             "subtitle": "Wir wählen die besten nachhaltig angebauten Sorten aus, um einen authentischen Geschmack und eine überlegene Nährwertqualität zu garantieren.",
             "tomate": {
-                "name": "Tomate",
-                "desc": "Sorten, die wegen ihres intensiven Aromas und ihrer fleischigen Textur ausgewählt wurden. Unter der mediterranen Sonne angebaut."
+                "name": "Cherrytomate",
+                "desc": "Klein, süß und knackig. Perfekt für Salate und gesunde Snacks."
             },
             "pimiento": {
-                "name": "Paprika",
-                "desc": "Frische garantiert von der Ernte bis zur Lieferung. Erhältlich in roten, grünen und gelben Sorten."
+                "name": "Gelber California Paprika",
+                "desc": "Saftiger und mild schmeckender Bio-Paprika mit leuchtend gelber Farbe."
             },
             "calabacin": {
                 "name": "Zucchini",
@@ -138,19 +138,19 @@
         "cards": {
             "hq": {
                 "title": "Hauptsitz",
-                "address": "Organic Bio Agriculture SL, Calle Alcudia de Monteagud 23, 04009 Almería, Spanien"
+                "address": "OrganicBio Agriculture SL, Calle Alcudia de Monteagud 23, 04009 Almería, Spanien"
             },
             "email": {
                 "title": "Direkte E-Mail",
-                "desc": "B2B-Handelsunterstützung"
+                "desc": "Verkaufsunterstützung"
             },
             "phone": {
                 "title": "Telefon",
-                "hours": "Mo - Fr: 08:00 - 18:00"
+                "hours": "Mo - Fr: 08:00 - 15:00"
             },
             "whatsapp": {
                 "title": "WhatsApp",
-                "desc": "Schnelle Exportunterstützung"
+                "desc": "Schnelle Unterstützung"
             }
         },
         "features": {
@@ -169,42 +169,41 @@
         }
     },
     "SobreOrganicBio": {
-        "intro": {
-            "title": "Über OrganicBio",
-            "desc": "Organic-Bio Agriculture SL ist ein Unternehmen, das sich mit Leib und Seele der Produktion und Vermarktung von Bio-Gemüse widmet. Wir agieren von Almería aus, dem Garten Europas, und bringen unsere gesunden Produkte auf die anspruchsvollsten internationalen Märkte."
+        "title": "Über uns",
+        "intro": "Gegründet im Jahr 2023, ist Organic Bio Agriculture SL ein Unternehmen, das auf die Produktion und Vermarktung von Bio-Gemüse für den nationalen und internationalen Markt spezialisiert ist.",
+        "description": {
+            "p1": "Das Unternehmen koordiniert seine Aktivitäten von Almería aus, einem der wichtigsten Logistikzentren für Obst und Gemüse in Europa, während die Produktion auf eigenen Farmen in Almería und Marokko erfolgt.",
+            "p2": "Dieses Eigenproduktionsmodell ermöglicht es uns, eine direkte Kontrolle der Herkunft, konstante Qualität und eine stabile Versorgung der wichtigsten europäischen Märkte zu gewährleisten."
         },
-        "history": {
-            "title": "Unsere Geschichte und Mission",
-            "p1": "Wir wurden mit einer klaren Vision geboren: die Zukunft zu kultivieren. Wir sind mit der festen Überzeugung gewachsen, dass der ökologische Landbau der einzige nachhaltige Weg ist, gesunde Lebensmittel bereitzustellen, ohne die Ressourcen der nächsten Generationen zu gefährden.",
-            "p2": "Unsere Mission ist es, erstklassige Obst- und Gemüseunternehmen sowie Händler mit echten, rückverfolgbaren Bio-Produkten von maximaler Frische zu beliefern."
-        },
-        "stats": {
-            "production": "Eigene Produktion",
-            "countries": "Exportländer"
-        },
-        "infrastructure": {
-            "title": "Infrastruktur",
-            "desc": "Wir kontrollieren den kompletten Prozess. Von unseren eigenen Farmen in Almería, wo das Sonnenlicht das ganze Jahr über Magie bewirkt, bis hin zu unseren Verarbeitungsanlagen.",
-            "list": {
-                "item1": "Farmen mit intelligenter Bewässerungstechnologie.",
-                "item2": "Klimatisiertes Lager zur Aufrechterhaltung der Kühlkette.",
-                "item3": "Bio-zertifizierte Verpackungslinien.",
-                "item4": "Logistikallianzen für schnellen internationalen Transport."
-            }
+        "vision": {
+            "title": "Unsere Vision",
+            "p1": "Unser Ziel ist es, stabile Beziehungen zu europäischen Importeuren aufzubauen, indem wir ökologisches Gemüse anbieten, das unter direkter Kontrolle vom Ursprung an angebaut wird.",
+            "p2": "Wir kombinieren Eigenproduktion, lückenlose Rückverfolgbarkeit und internationale Qualitätsstandards, um eine zuverlässige Versorgung über die gesamte Saison zu gewährleisten."
         },
         "markets": {
             "title": "Unsere Märkte",
-            "desc": "Unser Hauptgeschäftsvolumen ist der B2B-Export, bei dem wir den Geschmack und die Gesundheit des spanischen Bio-Anbaus nach ganz Europa versenden.",
-            "countries": [
-                "Deutschland",
-                "Großbritannien",
-                "Frankreich",
-                "Niederlande",
-                "Schweiz",
-                "Nordische Länder"
-            ]
+            "p1": "Unsere Tätigkeit konzentriert sich auf die Lieferung von Bio-Gemüse an Importeure und Supermarktketten in Europa.",
+            "p2": "Derzeit exportieren wir in mehr als fünf europäische Länder und arbeiten hauptsächlich mit Kunden in Deutschland und anderen Märkten zusammen, die zertifizierte Bio-Produkte und zuverlässige Lieferanten verlangen.",
+            "countries": {
+                "germany": "Deutschland",
+                "netherlands": "Niederlande",
+                "spain": "Spanien"
+            }
         },
-        "imageLabel": "Bild der Einrichtung / des Feldes"
+        "stats": {
+            "production": {
+                "value": "100%",
+                "label": "Eigene Produktion"
+            },
+            "markets": {
+                "value": "+3",
+                "label": "Hauptmärkte"
+            },
+            "export": {
+                "value": "Europa",
+                "label": "Aktiv Export"
+            }
+        }
     },
     "Compromiso": {
         "hero": {
@@ -333,7 +332,7 @@
                 "Dez"
             ]
         },
-        "cta": "Angebot anfordern",
+        "cta": "Mehr Informationen",
         "tabs": {
             "info": "Produktinfo",
             "specs": "Technische Daten",

@@ -12,7 +12,7 @@ export default function SobreOrganicBio() {
             {/* === HERO: Compact image banner (same as Compromiso) === */}
             <section className="relative w-full aspect-[2.2/1] md:aspect-[4.5/1] lg:aspect-[5.5/1] xl:aspect-[6.5/1] max-h-[320px] overflow-hidden flex items-center justify-center">
                 <Image
-                    src="/hero-image-organicbio.webp"
+                    src="/hero-conocenos-organicbio.webp"
                     alt="Conócenos - Organic Bio"
                     fill
                     className="object-cover object-[center_35%]"
@@ -42,7 +42,7 @@ export default function SobreOrganicBio() {
                     <div className="grid grid-cols-1 md:grid-cols-12 gap-5 md:gap-6 auto-rows-auto">
 
                         {/* Large text card — spans 7 cols */}
-                        <div className="md:col-span-7 bg-white rounded-[28px] p-10 md:p-14 border border-gray-100 shadow-[0_2px_20px_-4px_rgba(0,0,0,0.04)] flex flex-col justify-center">
+                        <div className="md:col-span-7 order-2 md:order-1 bg-white rounded-[28px] p-10 md:p-14 border border-gray-100 shadow-[0_2px_20px_-4px_rgba(0,0,0,0.04)] flex flex-col justify-center">
                             <div className="flex items-center gap-3 mb-6">
                                 <span className="w-2 h-2 rounded-full bg-[#739831]"></span>
                                 <span className="text-[12px] font-bold text-[#739831] uppercase tracking-[0.2em]">Operativa</span>
@@ -58,50 +58,51 @@ export default function SobreOrganicBio() {
                         </div>
 
                         {/* Image card — spans 5 cols */}
-                        <div className="md:col-span-5 relative min-h-[320px] md:min-h-[auto] rounded-[28px] overflow-hidden shadow-lg">
+                        <div className="md:col-span-5 order-1 md:order-2 relative min-h-[320px] md:min-h-[auto] rounded-[28px] overflow-hidden shadow-lg">
                             <Image
-                                src="/control-organicbio.webp"
+                                src="/conocenos-organicbio.webp"
                                 alt="Control de calidad OrganicBio"
                                 fill
                                 className="object-cover"
                             />
                             {/* Location pill */}
-                            <div className="absolute top-6 left-6 py-2.5 px-5 bg-white/90 backdrop-blur-sm rounded-full shadow-md flex items-center gap-2.5">
+                            <div className="absolute bottom-6 left-6 py-2.5 px-5 bg-white/90 backdrop-blur-sm rounded-full shadow-md flex items-center gap-2.5">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#739831" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0" /><circle cx="12" cy="10" r="3" /></svg>
                                 <span className="text-[13px] font-bold text-[#334155]">Almería, España</span>
                             </div>
                         </div>
 
                         {/* Stat card 1 — spans 4 cols */}
-                        <div className="md:col-span-4 bg-[#739831] rounded-[28px] p-9 md:p-10 text-white flex flex-col justify-between min-h-[200px]">
-                            <div className="flex items-center justify-center w-12 h-12 rounded-2xl bg-white/15 mb-auto">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" /><path d="m9 12 2 2 4-4" /></svg>
+                        <div className="md:col-span-4 order-3 bg-white border border-[#739831]/20 rounded-[28px] p-6 md:p-8 flex flex-col items-center md:items-start justify-center md:justify-between text-center md:text-left min-h-[130px] md:min-h-[190px] shadow-sm transition-transform hover:scale-[1.02] duration-300">
+                            <div className="flex items-center justify-center w-9 h-9 md:w-10 md:h-10 rounded-xl bg-[#739831]/10 mb-3 md:mb-auto shrink-0">
+                                <svg xmlns="http://www.w3.org/2000/svg" className="w-[18px] h-[18px] md:w-5 md:h-5 text-[#739831]" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" /><path d="m9 12 2 2 4-4" /></svg>
                             </div>
-                            <div className="mt-6">
-                                <p className="text-[42px] md:text-[50px] font-bold leading-none tracking-tight">100%</p>
-                                <p className="text-[14px] text-white/70 font-semibold uppercase tracking-wider mt-2">Producción propia</p>
+                            <div>
+                                <p className="text-[28px] md:text-[38px] font-medium leading-none tracking-tight text-[#739831]">{t('stats.production.value')}</p>
+                                <p className="text-[14px] md:text-[15px] text-[#739831]/70 font-medium mt-1.5">{t('stats.production.label')}</p>
                             </div>
                         </div>
 
                         {/* Stat card 2 — spans 4 cols */}
-                        <div className="md:col-span-4 bg-[#EFBC3D] rounded-[28px] p-9 md:p-10 text-white flex flex-col justify-between min-h-[200px]">
-                            <div className="flex items-center justify-center w-12 h-12 rounded-2xl bg-white/20 mb-auto">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="12" r="10" /><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20" /><path d="M2 12h20" /></svg>
+                        <div className="md:col-span-4 order-4 bg-white border border-[#EFBC3D]/30 rounded-[28px] p-6 md:p-8 flex flex-col items-center md:items-start justify-center md:justify-between text-center md:text-left min-h-[130px] md:min-h-[190px] shadow-sm transition-transform hover:scale-[1.02] duration-300">
+                            <div className="flex items-center justify-center w-9 h-9 md:w-10 md:h-10 rounded-xl bg-[#EFBC3D]/15 mb-3 md:mb-auto shrink-0">
+                                <svg xmlns="http://www.w3.org/2000/svg" className="w-[18px] h-[18px] md:w-5 md:h-5 text-[#d4a017]" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="12" r="10" /><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20" /><path d="M2 12h20" /></svg>
                             </div>
-                            <div className="mt-6">
-                                <p className="text-[42px] md:text-[50px] font-bold leading-none tracking-tight">+5</p>
-                                <p className="text-[14px] text-white/70 font-semibold uppercase tracking-wider mt-2">Países europeos</p>
+                            <div>
+                                <p className="text-[28px] md:text-[38px] font-medium leading-none tracking-tight text-[#d4a017]">{t('stats.markets.value')}</p>
+                                <p className="text-[14px] md:text-[15px] text-[#d4a017]/70 font-medium mt-1.5">{t('stats.markets.label')}</p>
                             </div>
                         </div>
 
-                        {/* Second image card — spans 4 cols */}
-                        <div className="md:col-span-4 relative min-h-[200px] md:min-h-[auto] rounded-[28px] overflow-hidden shadow-lg">
-                            <Image
-                                src="/exportacion-organicbio.webp"
-                                alt="Exportación OrganicBio"
-                                fill
-                                className="object-cover"
-                            />
+                        {/* Stat card 3 — spans 4 cols */}
+                        <div className="md:col-span-4 order-5 bg-white border border-[#5a7a26]/20 rounded-[28px] p-6 md:p-8 flex flex-col items-center md:items-start justify-center md:justify-between text-center md:text-left min-h-[130px] md:min-h-[190px] shadow-sm transition-transform hover:scale-[1.02] duration-300">
+                            <div className="flex items-center justify-center w-9 h-9 md:w-10 md:h-10 rounded-xl bg-[#5a7a26]/10 mb-3 md:mb-auto shrink-0">
+                                <svg xmlns="http://www.w3.org/2000/svg" className="w-[18px] h-[18px] md:w-5 md:h-5 text-[#5a7a26]" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0" /><circle cx="12" cy="10" r="3" /></svg>
+                            </div>
+                            <div>
+                                <p className="text-[28px] md:text-[38px] font-medium leading-none tracking-tight text-[#5a7a26]">{t('stats.export.value')}</p>
+                                <p className="text-[14px] md:text-[15px] text-[#5a7a26]/70 font-medium mt-1.5">{t('stats.export.label')}</p>
+                            </div>
                         </div>
 
                     </div>
@@ -116,7 +117,7 @@ export default function SobreOrganicBio() {
                         {/* Image side */}
                         <div className="relative aspect-[4/3] rounded-[28px] overflow-hidden shadow-xl group">
                             <Image
-                                src="/compromiso-produce.webp"
+                                src="/vision-organicbio.webp"
                                 alt="Visión OrganicBio"
                                 fill
                                 className="object-cover group-hover:scale-105 transition-transform duration-700"
@@ -128,7 +129,7 @@ export default function SobreOrganicBio() {
                         <div>
                             <div className="flex items-center gap-4 mb-8">
                                 <span className="w-1 h-14 bg-[#739831] rounded-full"></span>
-                                <h2 className="text-[32px] md:text-[40px] font-bold text-[#0f172a] tracking-tight leading-[1.15]">
+                                <h2 className="text-[32px] md:text-[40px] font-bold text-gray-600 tracking-tight leading-[1.15]">
                                     {t('vision.title')}
                                 </h2>
                             </div>
@@ -153,7 +154,7 @@ export default function SobreOrganicBio() {
             </section>
 
             {/* === MERCADOS: Light section coherent with brand === */}
-            <section className="relative bg-[#FAF9F6] py-24 md:py-32 overflow-hidden">
+            <section className="relative bg-gradient-to-br from-[#f0f5e8] via-[#f5f8ef] to-[#eef3e4] py-24 md:py-32 overflow-hidden">
                 <div className="container-global relative z-10">
                     <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-24 items-center">
 
@@ -161,9 +162,9 @@ export default function SobreOrganicBio() {
                         <div>
                             <div className="flex items-center gap-3 mb-6">
                                 <span className="w-2 h-2 rounded-full bg-[#EFBC3D]"></span>
-                                <span className="text-[12px] font-bold text-[#739831] uppercase tracking-[0.2em]">Exportación B2B</span>
+                                <span className="text-[12px] font-bold text-[#739831] uppercase tracking-[0.2em]">Exportación</span>
                             </div>
-                            <h2 className="text-[32px] md:text-[42px] font-bold text-[#0f172a] tracking-tight leading-[1.15] mb-8">
+                            <h2 className="text-[32px] md:text-[42px] font-bold text-gray-600 tracking-tight leading-[1.15] mb-8">
                                 {t('markets.title')}
                             </h2>
                             <p className="text-[18px] md:text-[19px] leading-[1.8] text-[#334155] mb-6">
@@ -175,9 +176,9 @@ export default function SobreOrganicBio() {
 
                             {/* Country badges */}
                             <div className="mt-12 flex flex-wrap gap-3">
-                                {["Alemania", "Francia", "Países Bajos", "Suiza", "Reino Unido"].map((country) => (
-                                    <span key={country} className="px-5 py-2.5 rounded-full border border-[#739831]/15 bg-[#F4F7EB] text-[#739831] text-[13px] font-semibold tracking-wide hover:bg-[#739831] hover:text-white transition-colors cursor-default">
-                                        {country}
+                                {["germany", "netherlands", "spain"].map((key) => (
+                                    <span key={key} className="px-5 py-2.5 rounded-full border border-[#739831]/15 bg-white text-[#739831] text-[13px] font-semibold tracking-wide hover:bg-[#739831] hover:text-white transition-colors cursor-default">
+                                        {t(`markets.countries.${key}`)}
                                     </span>
                                 ))}
                             </div>
@@ -187,25 +188,11 @@ export default function SobreOrganicBio() {
                         <div className="relative">
                             <div className="relative aspect-square md:aspect-[4/3] rounded-[28px] overflow-hidden shadow-xl group">
                                 <Image
-                                    src="/control-produccion-ecologica-organicbio.webp"
+                                    src="/nuestro-mercado-organicbio.webp"
                                     alt="Mercados europeos"
                                     fill
                                     className="object-cover group-hover:scale-105 transition-transform duration-700"
                                 />
-                                <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
-
-                                {/* Floating stat */}
-                                <div className="absolute bottom-8 left-8 right-8 bg-white/90 backdrop-blur-md border border-gray-200 rounded-2xl p-7 shadow-lg">
-                                    <div className="flex items-center gap-5">
-                                        <div className="text-[48px] font-bold text-[#739831] leading-none tracking-tighter">
-                                            +5
-                                        </div>
-                                        <div className="border-l border-gray-200 pl-5">
-                                            <p className="text-[#0f172a] font-bold text-[16px]">Países europeos</p>
-                                            <p className="text-[#64748b] text-[14px]">Exportación activa</p>
-                                        </div>
-                                    </div>
-                                </div>
                             </div>
                         </div>
                     </div>

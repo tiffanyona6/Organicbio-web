@@ -7,20 +7,12 @@ import { Link } from "@/i18n/routing";
 import { Button } from "@/components/ui/Button";
 import { useTranslations } from "next-intl";
 
+import { PRODUCTS as products } from "@/lib/products";
+
 export default function Productos() {
     const t = useTranslations('Productos');
     const [activeCategory, setActiveCategory] = useState("Todas");
     const [searchQuery, setSearchQuery] = useState("");
-
-    const products = [
-        { id: "tomate-rama", category: "Hortalizas", cert: "Bio", ref: "ORG-001", image: "/tomate-rama-organicbio.webp" },
-        { id: "tomate-cherry", category: "Hortalizas", cert: "Bio", ref: "ORG-002", image: "/tomate-organicbio.webp" },
-        { id: "calabacin", category: "Hortalizas", cert: "Bio", ref: "ORG-003", image: "/calabacin-organicbio.webp" },
-        { id: "pepino", category: "Hortalizas", cert: "Bio", ref: "ORG-004", image: "/tomate-organicbio.webp" },
-        { id: "pimiento-california-rojo", category: "Hortalizas", cert: "Bio", ref: "ORG-005", image: "/pimiento-california-rojo-organicbio.webp" },
-        { id: "pimiento-california-verde", category: "Hortalizas", cert: "Bio", ref: "ORG-006", image: "/pimientos-organicbio.webp" },
-        { id: "pimiento-california-amarillo", category: "Hortalizas", cert: "Bio", ref: "ORG-007", image: "/pimiento-california-amarillo-organicbio.webp" },
-    ];
 
     const filteredProducts = products.filter(product => {
         const matchesCategory = activeCategory === "Todas" || product.category === activeCategory;
@@ -80,16 +72,12 @@ export default function Productos() {
                                         fill
                                         className="object-cover group-hover:scale-105 transition-transform duration-700 ease-in-out"
                                     />
-                                    {/* Tag */}
-                                    <div className="absolute top-4 left-4 rounded-full bg-green-org/90 backdrop-blur-sm px-3 py-1 text-xs font-bold text-white shadow-sm z-10">
-                                        {product.cert}
-                                    </div>
                                 </Link>
                                 <div className="flex flex-1 flex-col p-6">
                                     <h3 className="mb-2 text-xl font-bold text-gray-org-dark line-clamp-1">{t(`items.${product.id}.name`)}</h3>
                                     <p className="mb-6 flex-1 text-sm text-gray-500 line-clamp-2">{t(`items.${product.id}.desc`)}</p>
                                     <Link href={`/productos/${product.id}`} className="w-full">
-                                        <Button variant="secondary" className="w-full">{t('viewDetails')}</Button>
+                                        <Button variant="primary" className="w-full">{t('viewDetails')}</Button>
                                     </Link>
                                 </div>
                             </div>

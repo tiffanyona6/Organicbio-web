@@ -7,11 +7,11 @@
         "contact": "Contacto"
     },
     "Footer": {
-        "description": "Exportando las mejores hortalizas ecológicas de Almería al mundo. Sostenible, ético y siempre fresco.",
+        "description": "Producción y exportación ecológica desde Almería y Marruecos para todo el mundo.\n¿Buscas un proveedor de hortalizas de confianza?",
         "menu": "MENÚ",
         "contact": "CONTACTO",
         "address": "Calle Alcudia de Monteagud 23, 04009 Almería, España",
-        "rights": "© 2026 Organic-Bio Agriculture SL. Todos los derechos reservados.",
+        "rights": "© 2026 OrganicBio Agriculture SL. Todos los derechos reservados.",
         "privacy": "Política de Privacidad",
         "terms": "Términos de Servicio",
         "cookies": "Política de Cookies"
@@ -46,12 +46,12 @@
             "title": "Nuestra selección",
             "subtitle": "Trabajamos con variedades seleccionadas por su sabor, textura y calidad, ofreciendo hortalizas frescas que responden a las exigencias del mercado actual.",
             "tomate": {
-                "name": "Tomate",
-                "desc": "Tomates de sabor equilibrado y textura firme, apreciados por su intensidad aromática y su versatilidad en cocina."
+                "name": "Tomate Cherry",
+                "desc": "Pequeños, dulces y crujientes. Perfectos para ensaladas y snacks saludables."
             },
             "pimiento": {
-                "name": "Pimiento",
-                "desc": "Pimientos de pulpa firme y jugosa, reconocidos por su color intenso y sabor equilibrado."
+                "name": "Pimiento California Amarillo",
+                "desc": "Pimiento orgánico jugoso y de sabor suave, con un vibrante color amarillo."
             },
             "calabacin": {
                 "name": "Calabacín",
@@ -138,19 +138,19 @@
         "cards": {
             "hq": {
                 "title": "Sede Central",
-                "address": "Organic Bio Agriculture SL, Calle Alcudia de Monteagud 23, 04009 Almería, España"
+                "address": "OrganicBio Agriculture SL, Calle Alcudia de Monteagud 23, 04009 Almería, España"
             },
             "email": {
                 "title": "Email Directo",
-                "desc": "Atención comercial B2B"
+                "desc": "Atención comercial"
             },
             "phone": {
                 "title": "Teléfono",
-                "hours": "Lun - Vie: 08:00 - 18:00"
+                "hours": "Lun - Vie: 08:00 - 15:00"
             },
             "whatsapp": {
                 "title": "WhatsApp",
-                "desc": "Soporte rápido exportación"
+                "desc": "Soporte rápido"
             }
         },
         "features": {
@@ -170,20 +170,39 @@
     },
     "SobreOrganicBio": {
         "title": "Conócenos",
-        "intro": "Organic Bio Agriculture SL es una empresa especializada en la producción y comercialización de hortalizas ecológicas destinadas al mercado internacional.",
+        "intro": "Fundada en 2023, Organic Bio Agriculture SL es una empresa especializada en la producción y comercialización de hortalizas ecológicas destinadas al mercado nacional e internacional.",
         "description": {
-            "p1": "La empresa coordina su actividad desde Almería, uno de los principales centros logísticos hortofrutícolas de Europa, mientras que la producción se desarrolla en fincas propias situadas en Marruecos.",
+            "p1": "La empresa coordina su actividad desde Almería, uno de los principales centros logísticos hortofrutícolas de Europa, mientras que la producción se desarrolla en fincas propias situadas en Almería y Marruecos.",
             "p2": "Este modelo de producción propia permite garantizar control directo del origen, calidad constante y un suministro estable hacia los principales mercados europeos."
         },
         "vision": {
             "title": "Nuestra visión",
-            "p1": "Nuestro objetivo es ofrecer a importadores y distribuidores europeos productos ecológicos de alta calidad, cultivados de forma responsable y con total trazabilidad desde el origen.",
-            "p2": "Trabajamos con un modelo basado en producción propia, control directo del cultivo y cumplimiento de estándares internacionales de calidad, lo que nos permite ofrecer productos fiables y adaptados a las exigencias del mercado europeo."
+            "p1": "Nuestro objetivo es construir relaciones estables con importadores europeos ofreciendo hortalizas ecológicas cultivadas bajo control directo desde el origen.",
+            "p2": "Combinamos producción propia, trazabilidad completa y estándares internacionales de calidad para garantizar un suministro fiable durante toda la temporada."
         },
         "markets": {
             "title": "Nuestros mercados",
             "p1": "Nuestra actividad se centra en el suministro de hortalizas ecológicas a importadores y cadenas de supermercados en Europa.",
-            "p2": "Actualmente exportamos a más de cinco países europeos, trabajando principalmente con clientes en Alemania y otros mercados que demandan productos ecológicos certificados y proveedores fiables."
+            "p2": "Actualmente exportamos a más de cinco países europeos, trabajando principalmente con clientes en Alemania y otros mercados que demandan productos ecológicos certificados y proveedores fiables.",
+            "countries": {
+                "germany": "Alemania",
+                "netherlands": "Países Bajos",
+                "spain": "España"
+            }
+        },
+        "stats": {
+            "production": {
+                "value": "100%",
+                "label": "Producción propia"
+            },
+            "markets": {
+                "value": "+3",
+                "label": "Mercados principales"
+            },
+            "export": {
+                "value": "Europa",
+                "label": "Exportación activa"
+            }
         }
     },
     "Compromiso": {
@@ -324,7 +343,7 @@
                 "Dic"
             ]
         },
-        "cta": "Solicitar Presupuesto",
+        "cta": "Más información",
         "tabs": {
             "info": "Información del Producto",
             "specs": "Especificaciones Técnicas",

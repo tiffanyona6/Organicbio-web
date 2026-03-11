@@ -2,33 +2,36 @@ import Image from "next/image";
 import { Link } from "@/i18n/routing";
 import { Button } from "@/components/ui/Button";
 import { getTranslations } from "next-intl/server";
+import { PRODUCTS } from "@/lib/products";
+import RelatedProducts from "@/components/products/RelatedProducts";
 
 export default async function ProductDetail({ params }: { params: Promise<{ id: string, locale: string }> }) {
     const resolvedParams = await params;
     const { id } = resolvedParams;
 
-    // next-intl in async Server Components must use getTranslations
     const t = await getTranslations('ProductDetail');
     const tProd = await getTranslations('Productos');
 
-    // Image mapping
-    const productImages: Record<string, string> = {
-        "tomate-rama": "/tomate-rama-organicbio.webp",
-        "tomate-cherry": "/tomate-organicbio.webp",
-        "calabacin": "/calabacin-organicbio.webp",
-        "pepino": "/tomate-organicbio.webp",
-        "pimiento-california-rojo": "/pimiento-california-rojo-organicbio.webp",
-        "pimiento-california-verde": "/pimientos-organicbio.webp",
-        "pimiento-california-amarillo": "/pimiento-california-amarillo-organicbio.webp",
+    // Find current product in our shared data
+    const currentProductItem = PRODUCTS.find(p => p.id === id);
+    const productImage = currentProductItem?.image || "/tomate-organicbio.webp";
+
+    // Prepare translations for RelatedProducts component
+    const names: Record<string, string> = {};
+    const descs: Record<string, string> = {};
+    PRODUCTS.forEach(p => {
+        names[p.id] = tProd(`items.${p.id}.name`);
+        descs[p.id] = tProd(`items.${p.id}.desc`);
+    });
+
+    const relatedTranslations = {
+        title: t('related.title'),
+        cta: t('related.cta'),
+        names,
+        descs
     };
 
-    const productImage = productImages[id] || "/tomate-organicbio.webp";
-
-    // Use actual translated name if exists, fallback to ID formatted
-    const translationKey = `items.${id}.name`;
-    const productName = tProd.has(translationKey)
-        ? tProd(translationKey)
-        : id.split('-').map((word: string) => word.charAt(0).toUpperCase() + word.slice(1)).join(' ');
+    const productName = tProd(`items.${id}.name`);
 
     return (
         <div className="py-8 pb-20">
@@ -65,11 +68,11 @@ export default async function ProductDetail({ params }: { params: Promise<{ id: 
                         <div className="mb-6 flex flex-wrap items-center gap-x-6 gap-y-2 text-sm font-medium text-gray-500">
                             <span className="flex items-center gap-1.5"><span className="h-2 w-2 rounded-full bg-green-org" /> {t('labels.eco')}</span>
                             <span className="flex items-center gap-1.5"><span className="h-2 w-2 rounded-full bg-yellow-org" /> {t('labels.origin')}</span>
-                            <span className="flex items-center gap-1.5"><span className="h-2 w-2 rounded-full bg-gray-400" /> {t('labels.ref')} ORG-{resolvedParams.id.substring(0, 3).toUpperCase()}</span>
+                            <span className="flex items-center gap-1.5"><span className="h-2 w-2 rounded-full bg-gray-400" /> {t('labels.ref')} {currentProductItem?.ref || `ORG-${id.substring(0, 3).toUpperCase()}`}</span>
                         </div>
 
                         <p className="mb-8 text-lg text-gray-600 leading-relaxed border-l-4 border-green-org pl-4">
-                            {t('description')}
+                            {tProd(`items.${id}.desc`)}
                         </p>
 
                         {/* Campaign Visual Calendar */}
@@ -89,7 +92,9 @@ export default async function ProductDetail({ params }: { params: Promise<{ id: 
                         </div>
 
                         <div className="flex gap-4">
-                            <Button className="w-full sm:w-auto h-14 px-8 text-lg">{t('cta')}</Button>
+                            <Link href="/contacto" className="w-full sm:w-auto mt-auto block">
+                                <Button variant="primary" className="w-full sm:w-auto h-14 px-8 text-lg">{t('cta')}</Button>
+                            </Link>
                         </div>
                     </div>
                 </div>
@@ -122,18 +127,12 @@ export default async function ProductDetail({ params }: { params: Promise<{ id: 
                     </div>
                 </div>
 
-                {/* Related Products Placeholder */}
-                <div>
-                    <h2 className="text-3xl font-bold text-gray-org-dark mb-8">{t('related.title')}</h2>
-                    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-                        <div className="rounded-xl border border-gray-100 p-4 transition-shadow hover:shadow-md">
-                            <div className="w-full aspect-[4/3] bg-gray-100 rounded-lg mb-4 flex items-center justify-center text-gray-400 text-sm">Image</div>
-                            <h3 className="font-bold text-gray-org-dark mb-1">Otro Producto</h3>
-                            <p className="text-sm text-gray-500 mb-4 line-clamp-1">Descripción breve...</p>
-                            <Link href="/productos" className="text-sm font-bold text-green-org hover:underline">{t('related.cta')} →</Link>
-                        </div>
-                    </div>
-                </div>
+                {/* Related Products Section */}
+                <RelatedProducts 
+                    currentId={id} 
+                    allProducts={PRODUCTS} 
+                    translations={relatedTranslations} 
+                />
 
             </div>
         </div>

@@ -7,11 +7,11 @@
         "contact": "Contact"
     },
     "Footer": {
-        "description": "Exporting the best organic vegetables from Almería to the world. Sustainable, ethical and always fresh.",
+        "description": "Organic production and export from Almería and Morocco to the world.\nLooking for a reliable vegetable supplier?",
         "menu": "MENU",
         "contact": "CONTACT",
         "address": "Calle Alcudia de Monteagud 23, 04009 Almería, Spain",
-        "rights": "© 2026 Organic-Bio Agriculture SL. All rights reserved.",
+        "rights": "© 2026 OrganicBio Agriculture SL. All rights reserved.",
         "privacy": "Privacy Policy",
         "terms": "Terms of Service",
         "cookies": "Cookie Policy"
@@ -46,12 +46,12 @@
             "title": "Our Products",
             "subtitle": "We select the best sustainably grown varieties to guarantee authentic flavor and superior nutritional quality.",
             "tomate": {
-                "name": "Tomato",
-                "desc": "Varieties selected for their intense aroma and fleshy texture. Grown under the Mediterranean sun."
+                "name": "Cherry Tomato",
+                "desc": "Small, sweet, and crunchy. Perfect for salads and healthy snacks."
             },
             "pimiento": {
-                "name": "Pepper",
-                "desc": "Freshness guaranteed from harvest to delivery. Available in red, green, and yellow varieties."
+                "name": "Yellow California Pepper",
+                "desc": "Juicy and mild-flavored organic pepper with a vibrant yellow color."
             },
             "calabacin": {
                 "name": "Zucchini",
@@ -138,19 +138,19 @@
         "cards": {
             "hq": {
                 "title": "Headquarters",
-                "address": "Organic Bio Agriculture SL, Calle Alcudia de Monteagud 23, 04009 Almería, Spain"
+                "address": "OrganicBio Agriculture SL, Calle Alcudia de Monteagud 23, 04009 Almería, Spain"
             },
             "email": {
                 "title": "Direct Email",
-                "desc": "B2B commercial support"
+                "desc": "Commercial support"
             },
             "phone": {
                 "title": "Phone",
-                "hours": "Mon - Fri: 08:00 - 18:00"
+                "hours": "Mon - Fri: 08:00 - 15:00"
             },
             "whatsapp": {
                 "title": "WhatsApp",
-                "desc": "Fast export support"
+                "desc": "Fast support"
             }
         },
         "features": {
@@ -170,20 +170,39 @@
     },
     "SobreOrganicBio": {
         "title": "About Us",
-        "intro": "Organic Bio Agriculture SL is a company specialized in the production and marketing of organic vegetables for the international market.",
+        "intro": "Founded in 2023, Organic Bio Agriculture SL is a company specialized in the production and marketing of organic vegetables for both national and international markets.",
         "description": {
-            "p1": "The company coordinates its activity from Almería, one of Europe's main logistical fruit and vegetable centers, while production takes place on its own farms located in Morocco.",
+            "p1": "The company coordinates its activity from Almería, one of Europe's main logistical fruit and vegetable centers, while production takes place on its own farms located in Almería and Morocco.",
             "p2": "This own production model allows us to guarantee direct control of the origin, constant quality, and a stable supply to the main European markets."
         },
         "vision": {
             "title": "Our Vision",
-            "p1": "Our goal is to offer European importers and distributors high-quality organic products, grown responsibly and with full traceability from the origin.",
-            "p2": "We work with a model based on own production, direct control of the crop, and compliance with international quality standards, allowing us to offer reliable products adapted to the requirements of the European market."
+            "p1": "Our goal is to build stable relationships with European importers by offering organic vegetables grown under direct control from the source.",
+            "p2": "We combine our own production, full traceability, and international quality standards to guarantee a reliable supply throughout the season."
         },
         "markets": {
             "title": "Our Markets",
             "p1": "Our activity focuses on the supply of organic vegetables to importers and supermarket chains in Europe.",
-            "p2": "Currently we export to more than five European countries, working mainly with clients in Germany and other markets that demand certified organic products and reliable suppliers."
+            "p2": "Currently we export to more than five European countries, working mainly with clients in Germany and other markets that demand certified organic products and reliable suppliers.",
+            "countries": {
+                "germany": "Germany",
+                "netherlands": "Netherlands",
+                "spain": "Spain"
+            }
+        },
+        "stats": {
+            "production": {
+                "value": "100%",
+                "label": "Own production"
+            },
+            "markets": {
+                "value": "+3",
+                "label": "Main markets"
+            },
+            "export": {
+                "value": "Europe",
+                "label": "Active export"
+            }
         }
     },
     "Compromiso": {
@@ -313,7 +332,7 @@
                 "Dec"
             ]
         },
-        "cta": "Request Quote",
+        "cta": "More Information",
         "tabs": {
             "info": "Product Info",
             "specs": "Technical Specs",

@@ -42,7 +42,7 @@ export default function Compromiso() {
                         </div>
 
                         <div className="mx-auto md:mx-0 max-w-[800px] text-center md:text-left">
-                            <p className="text-[18px] md:text-[21px] leading-[1.6] text-[#475569] font-medium">
+                            <p className="text-[19px] md:text-[22px] leading-[1.8] text-[#334155] font-light">
                                 {t('hero.intro')}
                             </p>
                         </div>
@@ -51,15 +51,27 @@ export default function Compromiso() {
             </section>
 
             {/* Eco Production Section — White */}
-            <section className="bg-white py-20 lg:py-32">
-                <div className="container-global">
+            <section className="bg-white py-20 lg:py-32 relative overflow-hidden">
+                <div className="container-global relative z-10">
                     <div className="grid grid-cols-1 gap-12 lg:grid-cols-2 lg:gap-20 items-center w-full">
-                        {/* Text and Cards */}
-                        <div className="flex flex-col justify-center">
+                        {/* Image Side - Now first on mobile, last on desktop */}
+                        <div className="relative h-[280px] lg:h-full lg:min-h-[500px] w-full lg:ml-6 lg:order-last">
+                            <div className="relative h-full w-full overflow-hidden rounded-[32px] shadow-lg">
+                                <Image
+                                    src="/compromiso-produccion-organicbio.webp"
+                                    alt={t('ecoProduction.title')}
+                                    fill
+                                    className="object-cover"
+                                />
+                            </div>
+                        </div>
+
+                        {/* Text and Cards - Now last on mobile, first on desktop */}
+                        <div className="flex flex-col justify-center lg:order-first">
                             <div className="mb-3 text-[13px] font-bold tracking-[0.2em] text-[#7a9d34] uppercase">
                                 {t('ecoProduction.subtitle')}
                             </div>
-                            <h2 className="mb-6 text-[32px] md:text-[40px] font-bold text-[#0f172a] tracking-tight leading-[1.15]">
+                            <h2 className="mb-6 text-[32px] md:text-[40px] font-bold text-gray-600 tracking-tight leading-[1.15]">
                                 {t('ecoProduction.title')}
                             </h2>
                             <p className="mb-10 text-[17px] leading-relaxed text-[#475569]">
@@ -73,7 +85,7 @@ export default function Compromiso() {
                                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M12 10a6 6 0 0 0-6-6H3v2a6 6 0 0 0 6 6h3" /><path d="M12 10a6 6 0 0 1 6-6h3v2a6 6 0 0 1-6 6h-3" /><path d="M12 22V10" /></svg>
                                     </div>
                                     <div>
-                                        <h3 className="mb-2 text-[19px] font-bold text-[#0f172a]">{t('ecoProduction.card1.title')}</h3>
+                                        <h3 className="mb-2 text-[19px] font-bold text-gray-600">{t('ecoProduction.card1.title')}</h3>
                                         <p className="text-[15px] leading-relaxed text-[#64748b]">
                                             {t('ecoProduction.card1.desc')}
                                         </p>
@@ -86,7 +98,7 @@ export default function Compromiso() {
                                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" /></svg>
                                     </div>
                                     <div>
-                                        <h3 className="mb-2 text-[19px] font-bold text-[#0f172a]">{t('ecoProduction.card2.title')}</h3>
+                                        <h3 className="mb-2 text-[19px] font-bold text-gray-600">{t('ecoProduction.card2.title')}</h3>
                                         <p className="text-[15px] leading-relaxed text-[#64748b]">
                                             {t('ecoProduction.card2.desc')}
                                         </p>
@@ -99,83 +111,13 @@ export default function Compromiso() {
                                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z" /></svg>
                                     </div>
                                     <div>
-                                        <h3 className="mb-2 text-[19px] font-bold text-[#0f172a]">{t('ecoProduction.card3.title')}</h3>
+                                        <h3 className="mb-2 text-[19px] font-bold text-gray-600">{t('ecoProduction.card3.title')}</h3>
                                         <p className="text-[15px] leading-relaxed text-[#64748b]">
                                             {t('ecoProduction.card3.desc')}
                                         </p>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-
-                        {/* Image Side */}
-                        <div className="relative h-full min-h-[500px] w-full mt-6 lg:mt-0 lg:ml-6">
-                            <div className="relative h-full w-full overflow-hidden rounded-[32px] shadow-lg">
-                                <Image
-                                    src="/compromiso-produce.webp"
-                                    alt={t('ecoProduction.title')}
-                                    fill
-                                    className="object-cover"
-                                />
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            {/* Certifications Section — Soft Green Background */}
-            <section className="bg-gradient-to-br from-[#f0f5e8] via-[#f5f8ef] to-[#eef3e4] py-20 lg:py-28 relative overflow-hidden">
-                {/* Decorative blobs */}
-                <div className="absolute top-0 left-0 w-[400px] h-[400px] bg-[#739831]/5 rounded-full blur-3xl -translate-x-1/2 -translate-y-1/2 pointer-events-none"></div>
-                <div className="absolute bottom-0 right-0 w-[300px] h-[300px] bg-[#EFBC3D]/5 rounded-full blur-3xl translate-x-1/3 translate-y-1/3 pointer-events-none"></div>
-
-                <div className="container-global relative z-10">
-                    <div className="text-center mb-16 max-w-3xl mx-auto">
-                        <div className="inline-flex items-center justify-center px-5 py-2 bg-[#739831]/10 rounded-full mb-6">
-                            <span className="text-[13px] font-bold text-[#739831] tracking-[0.15em] uppercase">Estándares de calidad</span>
-                        </div>
-                        <h2 className="text-[32px] md:text-[40px] font-bold text-[#0f172a] tracking-tight mb-4">
-                            {t('certifications.title')}
-                        </h2>
-                        <p className="text-[17px] md:text-[19px] text-[#64748b] leading-relaxed">
-                            {t('certifications.desc')}
-                        </p>
-                    </div>
-                    <div className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12 items-stretch">
-                        {/* EU Organic Card */}
-                        <div className="bg-white rounded-[32px] p-10 md:p-12 text-center flex flex-col items-center justify-center border border-[#739831]/10 shadow-[0_4px_24px_-4px_rgba(115,152,49,0.08)] hover:shadow-[0_8px_32px_-4px_rgba(115,152,49,0.15)] transition-all duration-300 h-full group">
-                            <div className="mb-6 mix-blend-multiply flex items-center justify-center">
-                                <Image
-                                    src="/eu-logo.jpg"
-                                    alt={t('certifications.eu.title')}
-                                    width={120}
-                                    height={120}
-                                    className="object-contain"
-                                />
-                            </div>
-                            <h3 className="mb-3 text-[24px] font-bold text-[#0f172a]">{t('certifications.eu.title')}</h3>
-                            <p className="text-[16px] leading-relaxed text-[#64748b] max-w-[85%] mx-auto">
-                                {t('certifications.eu.desc')}
-                            </p>
-                            <div className="mt-6 w-12 h-1 bg-[#739831] rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-                        </div>
-
-                        {/* Global G.A.P. Card */}
-                        <div className="bg-white rounded-[32px] p-10 md:p-12 text-center flex flex-col items-center justify-center border border-[#739831]/10 shadow-[0_4px_24px_-4px_rgba(115,152,49,0.08)] hover:shadow-[0_8px_32px_-4px_rgba(115,152,49,0.15)] transition-all duration-300 h-full group">
-                            <div className="mb-6 mix-blend-multiply flex items-center justify-center">
-                                <Image
-                                    src="/global-gap-logo.png"
-                                    alt={t('certifications.globalGap.title')}
-                                    width={120}
-                                    height={120}
-                                    className="object-contain"
-                                />
-                            </div>
-                            <h3 className="mb-3 text-[24px] font-bold text-[#0f172a]">{t('certifications.globalGap.title')}</h3>
-                            <p className="text-[16px] leading-relaxed text-[#64748b] max-w-[85%] mx-auto">
-                                {t('certifications.globalGap.desc')}
-                            </p>
-                            <div className="mt-6 w-12 h-1 bg-[#739831] rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                         </div>
                     </div>
                 </div>
@@ -245,16 +187,70 @@ export default function Compromiso() {
                 </div>
             </section>
 
-            {/* CTA Section — Yellow Accent */}
+            {/* Certifications Section — White */}
             <section className="bg-white py-20 lg:py-28 relative overflow-hidden">
-                {/* Decorative elements */}
-                <div className="absolute top-0 right-0 w-[350px] h-[350px] bg-[#EFBC3D]/5 rounded-full blur-3xl translate-x-1/3 -translate-y-1/3 pointer-events-none"></div>
-                <div className="absolute bottom-0 left-0 w-[250px] h-[250px] bg-[#739831]/5 rounded-full blur-3xl -translate-x-1/3 translate-y-1/3 pointer-events-none"></div>
+                <div className="container-global relative z-10">
+                    <div className="text-center mb-16 max-w-3xl mx-auto">
+                        <div className="inline-flex items-center justify-center px-5 py-2 bg-[#739831]/10 rounded-full mb-6">
+                            <span className="text-[13px] font-bold text-[#739831] tracking-[0.15em] uppercase">Estándares de calidad</span>
+                        </div>
+                        <h2 className="text-[32px] md:text-[40px] font-bold text-gray-600 tracking-tight mb-4">
+                            {t('certifications.title')}
+                        </h2>
+                        <p className="text-[17px] md:text-[19px] text-[#64748b] leading-relaxed">
+                            {t('certifications.desc')}
+                        </p>
+                    </div>
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12 items-stretch">
+                        {/* EU Organic Card */}
+                        <div className="bg-white rounded-[32px] p-10 md:p-12 text-center flex flex-col items-center justify-center border border-[#739831]/10 shadow-[0_4px_24px_-4px_rgba(115,152,49,0.08)] hover:shadow-[0_8px_32px_-4px_rgba(115,152,49,0.15)] transition-all duration-300 h-full group">
+                            <div className="mb-6 mix-blend-multiply flex items-center justify-center">
+                                <Image
+                                    src="/eu-logo.jpg"
+                                    alt={t('certifications.eu.title')}
+                                    width={120}
+                                    height={120}
+                                    className="object-contain"
+                                />
+                            </div>
+                            <h3 className="mb-3 text-[24px] font-bold text-gray-600">{t('certifications.eu.title')}</h3>
+                            <p className="text-[16px] leading-relaxed text-[#64748b] max-w-[85%] mx-auto">
+                                {t('certifications.eu.desc')}
+                            </p>
+                            <div className="mt-6 w-12 h-1 bg-[#739831] rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                        </div>
+
+                        {/* Global G.A.P. Card */}
+                        <div className="bg-white rounded-[32px] p-10 md:p-12 text-center flex flex-col items-center justify-center border border-[#739831]/10 shadow-[0_4px_24px_-4px_rgba(115,152,49,0.08)] hover:shadow-[0_8px_32px_-4px_rgba(115,152,49,0.15)] transition-all duration-300 h-full group">
+                            <div className="mb-6 mix-blend-multiply flex items-center justify-center">
+                                <Image
+                                    src="/global-gap-logo.png"
+                                    alt={t('certifications.globalGap.title')}
+                                    width={120}
+                                    height={120}
+                                    className="object-contain"
+                                />
+                            </div>
+                            <h3 className="mb-3 text-[24px] font-bold text-gray-600">{t('certifications.globalGap.title')}</h3>
+                            <p className="text-[16px] leading-relaxed text-[#64748b] max-w-[85%] mx-auto">
+                                {t('certifications.globalGap.desc')}
+                            </p>
+                            <div className="mt-6 w-12 h-1 bg-[#739831] rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            {/* CTA Section — Soft Green Background Background */}
+            <section className="bg-gradient-to-br from-[#f0f5e8] via-[#f5f8ef] to-[#eef3e4] py-20 lg:py-28 relative overflow-hidden">
+                {/* Decorative blobs */}
+                <div className="absolute top-0 left-0 w-[400px] h-[400px] bg-[#739831]/5 rounded-full blur-3xl -translate-x-1/2 -translate-y-1/2 pointer-events-none"></div>
+                <div className="absolute bottom-0 right-0 w-[300px] h-[300px] bg-[#EFBC3D]/5 rounded-full blur-3xl translate-x-1/3 translate-y-1/3 pointer-events-none"></div>
 
                 <div className="container-global text-center relative z-10">
                     {/* Yellow accent line */}
                     <div className="mx-auto w-16 h-1 bg-[#EFBC3D] rounded-full mb-8"></div>
-                    <h2 className="text-[32px] md:text-[40px] font-bold text-[#0f172a] tracking-tight mb-6">
+                    <h2 className="text-[32px] md:text-[40px] font-bold text-gray-600 tracking-tight mb-6">
                         {t('footer.title')}
                     </h2>
                     <p className="text-[18px] md:text-[20px] text-[#475569] max-w-3xl mx-auto mb-10 leading-relaxed">

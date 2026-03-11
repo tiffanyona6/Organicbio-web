@@ -12,7 +12,7 @@ export default function Home() {
   const [hoveredLoc, setHoveredLoc] = useState<string | null>(null);
 
   return (
-    <div className="flex flex-col gap-12 pb-16">
+    <div className="flex flex-col">
       {/* Hero + Green Section Wrapper */}
       <div className="bg-[#739831]">
         {/* Hero Section */}
@@ -162,7 +162,8 @@ export default function Home() {
       </div>
 
       {/* Product Categories */}
-      <section className="container-global pt-10 pb-20">
+      <section className="bg-white pt-10 pb-20">
+        <div className="container-global">
         <div className="mb-12 flex flex-col md:flex-row md:items-end justify-between gap-6 border-b border-transparent">
           <div className="max-w-3xl text-left">
             <span className="text-sm font-bold text-[#7a9d34] tracking-[0.1em] uppercase mb-2 block">{t('products.label')}</span>
@@ -179,20 +180,20 @@ export default function Home() {
         <div className="grid grid-cols-1 gap-8 md:grid-cols-3">
           {[
             {
-              id: "tomate-rama",
-              image: "/tomate-rama-organicbio.webp",
+              id: "tomate-cherry",
+              image: "/tomate-cherry-productos-organicbio.webp",
               name: t('products.tomate.name'),
               desc: t('products.tomate.desc')
             },
             {
-              id: "pimiento-california-rojo",
-              image: "/variedad-pimientos-organicbio.webp",
+              id: "pimiento-california-amarillo",
+              image: "/pimiento-california-amarillo-organicbio.webp",
               name: t('products.pimiento.name'),
               desc: t('products.pimiento.desc')
             },
             {
               id: "calabacin",
-              image: "/calabacin-organicbio.webp",
+              image: "/calabacin-productos-organicbio.png",
               name: t('products.calabacin.name'),
               desc: t('products.calabacin.desc')
             }
@@ -212,7 +213,7 @@ export default function Home() {
               <div className="flex flex-col flex-1 p-6 md:p-8">
                 {/* Text Content */}
                 <div className="flex-1">
-                  <h3 className="text-[28px] font-bold text-[#0f172a] mb-3 tracking-tight font-playfair">
+                  <h3 className="text-[28px] font-bold text-gray-600 mb-3 tracking-tight">
                     {product.name}
                   </h3>
                   <p className="text-[16px] text-[#64748b] leading-relaxed mb-8">
@@ -222,13 +223,14 @@ export default function Home() {
 
                 {/* Button (Ficha Técnica) */}
                 <Link href={`/productos/${product.id}`} className="mt-auto block">
-                  <Button variant="secondary" className="w-full flex items-center justify-center gap-2 h-[48px] rounded-xl text-[15px] font-bold border-2 border-[#7a9d34] text-[#7a9d34] hover:bg-[#7a9d34] hover:text-white transition-colors">
+                  <Button variant="secondary" className="w-full h-[48px] rounded-xl text-[15px] font-bold shadow-md hover:shadow-lg transition-all">
                     {t('products.fichaBtn')}
                   </Button>
                 </Link>
               </div>
             </div>
           ))}
+        </div>
         </div>
       </section>
 
@@ -239,7 +241,7 @@ export default function Home() {
             <span className="text-sm font-bold text-[#7a9d34] tracking-[0.2em] uppercase mb-4 block animate-fade-in">
               Operativa Global
             </span>
-            <h2 className="text-4xl md:text-5xl font-bold text-[#0f172a] mb-6 tracking-tight font-playfair">
+            <h2 className="text-4xl md:text-5xl font-bold text-gray-600 mb-6 tracking-tight">
               {t('location.title')}
             </h2>
             <p className="text-[#64748b] text-lg md:text-xl leading-relaxed">
@@ -306,7 +308,7 @@ export default function Home() {
               className={`bg-white rounded-[32px] p-8 border transition-all duration-300 flex flex-col items-center text-center group/card cursor-default ${hoveredLoc === 'sede' ? 'border-[#EFBC3D] shadow-xl translate-y-[-4px]' : 'border-gray-100 shadow-[0_10px_40px_-15px_rgba(0,0,0,0.05)]'}`}
             >
               <div className={`h-3 w-3 rounded-full bg-[#EFBC3D] mb-5 shadow-[0_0_15px_rgba(239,188,61,0.5)] ${hoveredLoc === 'sede' ? 'animate-pulse scale-125' : ''}`} />
-              <h4 className={`text-[20px] font-bold text-[#0f172a] mb-3 font-playfair transition-colors duration-300 ${hoveredLoc === 'sede' ? 'text-[#7a9d34]' : ''}`}>
+              <h4 className={`text-[20px] font-bold mb-3 transition-colors duration-300 ${hoveredLoc === 'sede' ? 'text-[#d4a017]' : 'text-[#EFBC3D]'}`}>
                 {t('location.sede.title')}
               </h4>
               <p className="text-[#64748b] leading-relaxed text-[15px]">
@@ -320,7 +322,7 @@ export default function Home() {
               className={`bg-white rounded-[32px] p-8 border transition-all duration-300 flex flex-col items-center text-center group/card cursor-default ${hoveredLoc === 'nijar' ? 'border-[#7a9d34] shadow-xl translate-y-[-4px]' : 'border-gray-100 shadow-[0_10px_40px_-15px_rgba(0,0,0,0.05)]'}`}
             >
               <div className={`h-3 w-3 rounded-full bg-[#7a9d34] mb-5 shadow-[0_0_15px_rgba(122,157,52,0.5)] ${hoveredLoc === 'nijar' ? 'animate-bounce scale-125' : ''}`} />
-              <h4 className={`text-[20px] font-bold text-[#0f172a] mb-3 font-playfair transition-colors duration-300 ${hoveredLoc === 'nijar' ? 'text-[#7a9d34]' : ''}`}>
+              <h4 className={`text-[20px] font-bold mb-3 transition-colors duration-300 ${hoveredLoc === 'nijar' ? 'text-[#5a7a26]' : 'text-[#7a9d34]'}`}>
                 {t('location.nijar.title')}
               </h4>
               <p className="text-[#64748b] leading-relaxed text-[15px]">
@@ -334,7 +336,7 @@ export default function Home() {
               className={`bg-white rounded-[32px] p-8 border transition-all duration-300 flex flex-col items-center text-center group/card cursor-default ${hoveredLoc === 'marruecos' ? 'border-[#7a9d34] shadow-xl translate-y-[-4px]' : 'border-gray-100 shadow-[0_10px_40px_-15px_rgba(0,0,0,0.05)]'}`}
             >
               <div className={`h-3 w-3 rounded-full bg-[#7a9d34] mb-5 shadow-[0_0_15px_rgba(122,157,52,0.5)] ${hoveredLoc === 'marruecos' ? 'scale-125' : ''}`} />
-              <h4 className={`text-[20px] font-bold text-[#0f172a] mb-3 font-playfair transition-colors duration-300 ${hoveredLoc === 'marruecos' ? 'text-[#7a9d34]' : ''}`}>
+              <h4 className={`text-[20px] font-bold mb-3 transition-colors duration-300 ${hoveredLoc === 'marruecos' ? 'text-[#5a7a26]' : 'text-[#7a9d34]'}`}>
                 {t('location.marruecos.title')}
               </h4>
               <p className="text-[#64748b] leading-relaxed text-[15px]">
