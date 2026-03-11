@@ -19,7 +19,7 @@ export default function Home() {
         <section
           className="relative flex min-h-[85vh] md:min-h-screen items-center justify-center bg-cover bg-center overflow-hidden px-4"
           style={{
-            backgroundImage: "linear-gradient(rgba(0,0,0,0.60), rgba(0,0,0,0.55)), url('/image-hero-organicbio.webp')"
+            backgroundImage: "linear-gradient(rgba(0,0,0,0.60), rgba(0,0,0,0.55)), url('/Organicbio-web/image-hero-organicbio.webp')"
           }}
         >
           <div className="container-global relative z-20 max-w-5xl text-center md:text-left">

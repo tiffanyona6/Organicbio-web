@@ -1,11 +1,13 @@
-import { useTranslations } from "next-intl";
+import { getTranslations, setRequestLocale } from "next-intl/server";
 import Image from "next/image";
 import TimelineItem from "@/components/ui/TimelineItem";
 import { Link } from "@/i18n/routing";
 import { Button } from "@/components/ui/Button";
 
-export default function Compromiso() {
-    const t = useTranslations('Compromiso');
+export default async function Compromiso({ params }: { params: Promise<{ locale: string }> }) {
+    const { locale } = await params;
+    setRequestLocale(locale);
+    const t = await getTranslations('Compromiso');
 
     return (
         <div className="w-full">
