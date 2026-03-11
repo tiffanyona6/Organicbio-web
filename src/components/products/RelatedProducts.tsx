@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useRef, useEffect } from "react";
+import { useRef, useMemo } from "react";
 import Image from "next/image";
 import { Link } from "@/i18n/routing";
 import { ChevronLeft, ChevronRight, ArrowRight } from "lucide-react";
@@ -26,14 +26,32 @@ export default function RelatedProducts({
     allProducts, 
     translations 
 }: RelatedProductsProps) {
-    const [related, setRelated] = useState<Product[]>([]);
     const scrollRef = useRef<HTMLDivElement>(null);
 
-    // Pick 4 random products excluding current one
-    useEffect(() => {
+    // Pick 4 "seemingly random" but deterministic products based on currentId
+    // This avoids Math.random() in render/memo paths while keeping consistency
+    const related = useMemo(() => {
         const filtered = allProducts.filter(p => p.id !== currentId);
-        const shuffled = [...filtered].sort(() => 0.5 - Math.random());
-        setRelated(shuffled.slice(0, 4));
+        
+        // Simple hash function to create a sorting seed
+        const getSeed = (str: string) => {
+            let hash = 0;
+            for (let i = 0; i < str.length; i++) {
+                hash = ((hash << 5) - hash) + str.charCodeAt(i);
+                hash |= 0;
+            }
+            return hash;
+        };
+
+        const currentSeed = getSeed(currentId);
+
+        return [...filtered]
+            .sort((a, b) => {
+                const seedA = getSeed(a.id + currentSeed);
+                const seedB = getSeed(b.id + currentSeed);
+                return seedA - seedB;
+            })
+            .slice(0, 4);
     }, [currentId, allProducts]);
 
     const scroll = (direction: 'left' | 'right') => {

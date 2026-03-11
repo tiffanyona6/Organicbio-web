@@ -175,6 +175,16 @@
             "p1": "La empresa coordina su actividad desde Almería, uno de los principales centros logísticos hortofrutícolas de Europa, mientras que la producción se desarrolla en fincas propias situadas en Almería y Marruecos.",
             "p2": "Este modelo de producción propia permite garantizar control directo del origen, calidad constante y un suministro estable hacia los principales mercados europeos."
         },
+        "labels": {
+            "operational": "Operativa",
+            "location": "Almería, España",
+            "export": "Exportación"
+        },
+        "tags": [
+            "Producción propia",
+            "Trazabilidad total",
+            "Estándares internacionales"
+        ],
         "vision": {
             "title": "Nuestra visión",
             "p1": "Nuestro objetivo es construir relaciones estables con importadores europeos ofreciendo hortalizas ecológicas cultivadas bajo control directo desde el origen.",

@@ -45,7 +45,7 @@ export default function SobreOrganicBio() {
                         <div className="md:col-span-7 order-2 md:order-1 bg-white rounded-[28px] p-10 md:p-14 border border-gray-100 shadow-[0_2px_20px_-4px_rgba(0,0,0,0.04)] flex flex-col justify-center">
                             <div className="flex items-center gap-3 mb-6">
                                 <span className="w-2 h-2 rounded-full bg-[#739831]"></span>
-                                <span className="text-[12px] font-bold text-[#739831] uppercase tracking-[0.2em]">Operativa</span>
+                                <span className="text-[12px] font-bold text-[#739831] uppercase tracking-[0.2em]">{t('labels.operational')}</span>
                             </div>
                             <p className="text-[18px] md:text-[20px] leading-[1.8] text-[#334155]">
                                 {t('description.p1')}
@@ -68,7 +68,7 @@ export default function SobreOrganicBio() {
                             {/* Location pill */}
                             <div className="absolute bottom-6 left-6 py-2.5 px-5 bg-white/90 backdrop-blur-sm rounded-full shadow-md flex items-center gap-2.5">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#739831" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0" /><circle cx="12" cy="10" r="3" /></svg>
-                                <span className="text-[13px] font-bold text-[#334155]">Almería, España</span>
+                                <span className="text-[13px] font-bold text-[#334155]">{t('labels.location')}</span>
                             </div>
                         </div>
 
@@ -142,11 +142,11 @@ export default function SobreOrganicBio() {
 
                             {/* Visual key points */}
                             <div className="mt-10 flex flex-wrap gap-3">
-                                {["Producción propia", "Trazabilidad total", "Estándares internacionales"].map((tag) => (
-                                    <span key={tag} className="px-5 py-2.5 rounded-full bg-[#F4F7EB] text-[#739831] text-[13px] font-bold tracking-wide border border-[#739831]/10">
-                                        {tag}
-                                    </span>
-                                ))}
+                                {["0", "1", "2"].map((index) => (
+                                     <span key={index} className="px-5 py-2.5 rounded-full bg-[#F4F7EB] text-[#739831] text-[13px] font-bold tracking-wide border border-[#739831]/10">
+                                         {t(`tags.${index}`)}
+                                     </span>
+                                 ))}
                             </div>
                         </div>
                     </div>
@@ -162,7 +162,7 @@ export default function SobreOrganicBio() {
                         <div>
                             <div className="flex items-center gap-3 mb-6">
                                 <span className="w-2 h-2 rounded-full bg-[#EFBC3D]"></span>
-                                <span className="text-[12px] font-bold text-[#739831] uppercase tracking-[0.2em]">Exportación</span>
+                                <span className="text-[12px] font-bold text-[#739831] uppercase tracking-[0.2em]">{t('labels.export')}</span>
                             </div>
                             <h2 className="text-[32px] md:text-[42px] font-bold text-gray-600 tracking-tight leading-[1.15] mb-8">
                                 {t('markets.title')}

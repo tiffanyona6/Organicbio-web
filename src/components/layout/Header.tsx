@@ -60,10 +60,13 @@ export function Header() {
                             onClick={() => setIsLangOpen(!isLangOpen)}
                             className="flex items-center gap-2 bg-transparent text-sm font-bold text-gray-org-dark outline-none cursor-pointer hover:text-green-org transition-colors uppercase py-1"
                         >
-                            <img
+                            <Image
                                 src={`https://flagcdn.com/w40/${languages.find(l => l.code === locale)?.flag}.png`}
                                 alt=""
+                                width={20}
+                                height={15}
                                 className="w-5 h-auto rounded-[2px] shadow-sm border border-gray-100"
+                                unoptimized
                             />
                             <span className="hidden sm:inline">{locale}</span>
                             <svg
@@ -99,10 +102,13 @@ export function Header() {
                                                 locale === lang.code ? "text-green-org font-bold bg-green-org/5" : "text-gray-org-dark font-medium"
                                             )}
                                         >
-                                            <img
+                                            <Image
                                                 src={`https://flagcdn.com/w40/${lang.flag}.png`}
                                                 alt=""
+                                                width={20}
+                                                height={15}
                                                 className="w-5 h-auto rounded-[2px] shadow-sm border border-gray-100"
+                                                unoptimized
                                             />
                                             <span>{lang.label}</span>
                                         </button>

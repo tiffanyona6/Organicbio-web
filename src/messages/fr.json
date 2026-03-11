@@ -175,6 +175,16 @@
             "p1": "L'entreprise coordonne ses activités depuis Almería, l'un des principaux centres logistiques de fruits et légumes d'Europe, tandis que la production est réalisée dans ses propres fermes situées à Almería et au Maroc.",
             "p2": "Ce modèle de production propre nous permet de garantir un contrôle direct de l'origine, une qualité constante et un approvisionnement stable vers les principaux marchés européens."
         },
+        "labels": {
+            "operational": "Opérationnel",
+            "location": "Almería, Espagne",
+            "export": "Exportation"
+        },
+        "tags": [
+            "Production propre",
+            "Traçabilité totale",
+            "Normes internationales"
+        ],
         "vision": {
             "title": "Notre vision",
             "p1": "Notre objectif est de construire des relations stables avec les importateurs européens en proposant des légumes biologiques cultivés sous contrôle direct depuis l'origine.",

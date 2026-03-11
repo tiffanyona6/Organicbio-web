@@ -175,6 +175,16 @@
             "p1": "The company coordinates its activity from Almería, one of Europe's main logistical fruit and vegetable centers, while production takes place on its own farms located in Almería and Morocco.",
             "p2": "This own production model allows us to guarantee direct control of the origin, constant quality, and a stable supply to the main European markets."
         },
+        "labels": {
+            "operational": "Operational",
+            "location": "Almería, Spain",
+            "export": "Export"
+        },
+        "tags": [
+            "Own production",
+            "Total traceability",
+            "International standards"
+        ],
         "vision": {
             "title": "Our Vision",
             "p1": "Our goal is to build stable relationships with European importers by offering organic vegetables grown under direct control from the source.",
@@ -336,7 +346,6 @@
         "tabs": {
             "info": "Product Info",
             "specs": "Technical Specs",
-            "fichaBtn": "ANSEHEN",
             "logistics": "Logistics & Packaging",
             "crop": {
                 "title": "Crop Information",

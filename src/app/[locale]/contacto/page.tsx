@@ -1,10 +1,8 @@
-import { getTranslations, setRequestLocale } from "next-intl/server";
+import { useTranslations } from "next-intl";
 import Image from "next/image";
 
-export default async function Contacto({ params }: { params: Promise<{ locale: string }> }) {
-    const { locale } = await params;
-    setRequestLocale(locale);
-    const t = await getTranslations('Contacto');
+export default function Contacto() {
+    const t = useTranslations('Contacto');
 
     return (
         <div className="bg-white min-h-screen">

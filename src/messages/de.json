@@ -175,6 +175,16 @@
             "p1": "Das Unternehmen koordiniert seine Aktivitäten von Almería aus, einem der wichtigsten Logistikzentren für Obst und Gemüse in Europa, während die Produktion auf eigenen Farmen in Almería und Marokko erfolgt.",
             "p2": "Dieses Eigenproduktionsmodell ermöglicht es uns, eine direkte Kontrolle der Herkunft, konstante Qualität und eine stabile Versorgung der wichtigsten europäischen Märkte zu gewährleisten."
         },
+        "labels": {
+            "operational": "Betrieblich",
+            "location": "Almería, Spanien",
+            "export": "Export"
+        },
+        "tags": [
+            "Eigene Produktion",
+            "Lückenlose Rückverfolgbarkeit",
+            "Internationale Standards"
+        ],
         "vision": {
             "title": "Unsere Vision",
             "p1": "Unser Ziel ist es, stabile Beziehungen zu europäischen Importeuren aufzubauen, indem wir ökologisches Gemüse anbieten, das unter direkter Kontrolle vom Ursprung an angebaut wird.",

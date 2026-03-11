@@ -4,16 +4,6 @@ import { Button } from "@/components/ui/Button";
 import { getTranslations } from "next-intl/server";
 import { PRODUCTS } from "@/lib/products";
 import RelatedProducts from "@/components/products/RelatedProducts";
-import { routing } from "@/i18n/routing";
-
-export function generateStaticParams() {
-    return routing.locales.flatMap((locale) =>
-        PRODUCTS.map((product) => ({
-            id: product.id,
-            locale: locale,
-        }))
-    );
-}
 
 export default async function ProductDetail({ params }: { params: Promise<{ id: string, locale: string }> }) {
     const resolvedParams = await params;
