@@ -26,6 +26,20 @@ export function generateStaticParams() {
 export const metadata: Metadata = {
   title: "Organic Bio Agriculture",
   description: "Productores y exportadores de agricultura ecológica en Almería.",
+  icons: {
+    icon: [
+      {
+        url: "/icon.png",
+        href: "/icon.png",
+      },
+    ],
+    apple: [
+      {
+        url: "/icon.png",
+        href: "/icon.png",
+      },
+    ],
+  },
 };
 
 export default async function RootLayout({
